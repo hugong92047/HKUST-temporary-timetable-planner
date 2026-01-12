@@ -7110,7 +7110,7 @@ const courseData = [
         "code": "COMP 2011",
         "title": "Programming with C++",
         "credits": 4,
-        "matchingRequired": false,
+        "matchingRequired": true,
         "exclusions": [
             "COMP 2012H"
         ],
@@ -7316,7 +7316,7 @@ const courseData = [
         "code": "COMP 2012",
         "title": "Object-Oriented Programming and Data Structures",
         "credits": 4,
-        "matchingRequired": false,
+        "matchingRequired": true,
         "exclusions": [
             "COMP 2012H"
         ],
@@ -26611,7 +26611,7 @@ const courseData = [
         "code": "ISDN 1007",
         "title": "From Design Thinking to Design Action: Defining Problems for Better Solutions",
         "credits": 3,
-        "matchingRequired": false,
+        "matchingRequired": true,
         "exclusions": [],
         "sections": [
             {
@@ -29392,7 +29392,7 @@ const courseData = [
         "code": "ISOM 3400",
         "title": "Business Applications Development in Python",
         "credits": 3,
-        "matchingRequired": false,
+        "matchingRequired": true,
         "exclusions": [
             "COMP 1021",
             "COMP 1023"
@@ -46903,7 +46903,7 @@ const courseData = [
         "code": "MECH 3907",
         "title": "Mechatronic Design and Prototyping",
         "credits": 3,
-        "matchingRequired": false,
+        "matchingRequired": true,
         "exclusions": [],
         "sections": [
             {
