@@ -673,7 +673,6 @@
             div.innerHTML = `<span>${subj}</span><span class="chevron">&rsaquo;</span>`;
             div.onclick = () => {
                 showCoursesForSubject(subj);
-                if(window.innerWidth <= 768) closeSidebar();
             };
             grid.appendChild(div);
         });
@@ -1105,6 +1104,7 @@
 </script>
 </body>
 </html>
+
 
 
 
