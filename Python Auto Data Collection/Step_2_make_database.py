@@ -8,26 +8,14 @@ import re
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 OUTPUT_FILE = os.path.join(SCRIPT_DIR, "courses.js")
 
-# List all your saved HTML files here
+# List of saved HTML files here (Must be in same folder as the this .py file)
+pattern = re.compile(r"^[A-Z]{4}\.html$")
+
 TARGET_FILES = [
-    "ACCT.html", "AESF.html", "AIAA.html", "AISC.html", "AMAT.html", "AMCC.html", 
-    "ARIN.html", "BEHI.html", "BIBU.html", "BIEN.html", "BSBE.html", "BTEC.html", 
-    "CENG.html", "CHEM.html", "CHMS.html", "CIEM.html", "CIVL.html", "CMAA.html", 
-    "COMP.html", "CPEG.html", "CSIT.html", "CTDL.html", "DASC.html", "DBAP.html", 
-    "DRAP.html", "DSAA.html", "DSCT.html", "ECON.html", "EEMT.html", "EESM.html", 
-    "ELEC.html", "EMIA.html", "ENEG.html", "ENGG.html", "ENTR.html", "ENVR.html", 
-    "ENVS.html", "EOAS.html", "EVNG.html", "EVSM.html", "FINA.html", "FOFB.html", 
-    "FTEC.html", "GBUS.html", "GNED.html", "HLTH.html", "HMAW.html", "HMMA.html", 
-    "HUMA.html", "IBTM.html", "IEDA.html", "IIMP.html", "INTR.html", "IOTA.html", 
-    "IPEN.html", "ISDN.html", "ISOM.html", "JEVE.html", "LABU.html", "LANG.html", 
-    "LIFS.html", "MAED.html", "MAFS.html", "MAIE.html", "MARK.html", "MASS.html", 
-    "MATH.html", "MCEE.html", "MECH.html", "MESF.html", "MFIT.html", "MGCS.html", 
-    "MGMT.html", "MICS.html", "MILE.html", "MIMT.html", "MSBD.html", "MSDM.html", 
-    "MSPY.html", "MTLE.html", "NANO.html", "OCES.html", "PDEV.html", "PHYS.html", 
-    "PPOL.html", "RMBI.html", "ROAS.html", "SBMT.html", "SCIE.html", "SEEN.html", 
-    "SGFN.html", "SHSS.html", "SMMG.html", "SOSC.html", "SUST.html", "TEMG.html", 
-    "UCOP.html", "UGOD.html", "UPOP.html", "UROP.html", "UTOP.html", "WBBA.html"
+    f for f in os.listdir(SCRIPT_DIR) 
+    if os.path.isfile(os.path.join(SCRIPT_DIR, f)) and pattern.match(f)
 ]
+TARGET_FILES.sort()
 
 def parse_time_string(time_str):
     if not time_str or time_str == "TBA": return None
@@ -169,3 +157,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
