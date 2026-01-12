@@ -1088,6 +1088,7 @@
     function closeModal() {
         document.getElementById('modalOverlay').style.display = 'none';
         currentModalCourse = null;
+        if(window.innerWidth <= 768) closeSidebar();
     }
 
     function closeModalOnOverlay(event) {
@@ -1104,6 +1105,7 @@
 </script>
 </body>
 </html>
+
 
 
 
