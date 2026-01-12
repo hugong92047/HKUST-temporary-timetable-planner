@@ -3,6 +3,8 @@ const courseData = [
         "code": "ACCT 2200",
         "title": "Principles of Accounting II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L01",
@@ -261,6 +263,10 @@ const courseData = [
         "code": "ACCT 3020",
         "title": "Financial Accounting II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ACCT 3030"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -316,6 +322,8 @@ const courseData = [
         "code": "ACCT 3210",
         "title": "Advanced Management Accounting",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -371,6 +379,8 @@ const courseData = [
         "code": "ACCT 3610",
         "title": "Business Law",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -419,6 +429,8 @@ const courseData = [
         "code": "ACCT 4410",
         "title": "Taxation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -501,6 +513,8 @@ const courseData = [
         "code": "ACCT 4610",
         "title": "Company Law",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -556,6 +570,8 @@ const courseData = [
         "code": "ACCT 4802",
         "title": "Valuation and Risk Management in Mergers and Acquisitions",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -579,6 +595,11 @@ const courseData = [
         "code": "ACCT 5100",
         "title": "Corporate Reporting",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "ACCT 5150",
+            "IMBA 5030"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -621,6 +642,8 @@ const courseData = [
         "code": "ACCT 5140",
         "title": "Financial Statement Analysis",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -713,6 +736,8 @@ const courseData = [
         "code": "ACCT 5180",
         "title": "Advanced Corporate Financial Reporting",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -815,6 +840,8 @@ const courseData = [
         "code": "ACCT 5220",
         "title": "International Treasury Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -847,6 +874,8 @@ const courseData = [
         "code": "ACCT 5320",
         "title": "Beyond the Headlines: Financial Reporting and Valuation Issues in M&A",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -914,6 +943,8 @@ const courseData = [
         "code": "ACCT 5430",
         "title": "Tax and Business Strategy",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -946,6 +977,8 @@ const courseData = [
         "code": "ACCT 5510",
         "title": "Auditing",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1038,6 +1071,8 @@ const courseData = [
         "code": "ACCT 5630",
         "title": "Business Law",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1070,6 +1105,8 @@ const courseData = [
         "code": "ACCT 5640",
         "title": "Company Law",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1117,6 +1154,8 @@ const courseData = [
         "code": "ACCT 5720",
         "title": "Advanced Data Analytics in Accounting",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1149,6 +1188,8 @@ const courseData = [
         "code": "ACCT 5801",
         "title": "Cryptocurrency, Blockchain and Their Business Applications",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1181,6 +1222,8 @@ const courseData = [
         "code": "ACCT 5902",
         "title": "ESG Measurement, Disclosure and Applications",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1213,6 +1256,8 @@ const courseData = [
         "code": "ACCT 5950",
         "title": "Financial Crime Risk Management and Governance",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1245,6 +1290,8 @@ const courseData = [
         "code": "ACCT 5960",
         "title": "Data Analytics for Financial Crime Investigation",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1277,6 +1324,10 @@ const courseData = [
         "code": "AESF 5050",
         "title": "Fracture Behavior of Polymers",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MESF 5050"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -1299,6 +1350,8 @@ const courseData = [
         "code": "AESF 5320",
         "title": "Advanced Aircraft Structures",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1321,6 +1374,8 @@ const courseData = [
         "code": "AESF 5350",
         "title": "Aircraft Propulsion",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1343,6 +1398,8 @@ const courseData = [
         "code": "AESF 5380",
         "title": "Computational Fluid Dynamics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1365,6 +1422,8 @@ const courseData = [
         "code": "AESF 5730",
         "title": "Airline Marketing",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1397,6 +1456,8 @@ const courseData = [
         "code": "AESF 5740",
         "title": "Building Airport Operational Resilience",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1419,6 +1480,8 @@ const courseData = [
         "code": "AESF 5750",
         "title": "Strategic Procurement Management in Aviation Industry",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1441,6 +1504,8 @@ const courseData = [
         "code": "AESF 5760",
         "title": "Flight Data Application in Maintenance, Safety, Efficiency and Flight Tracking",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1483,6 +1548,8 @@ const courseData = [
         "code": "AESF 6910U",
         "title": "Nondestructive Evaluation for Aerospace Structures",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1505,6 +1572,8 @@ const courseData = [
         "code": "AESF 6920A",
         "title": "Opportunities and Challenges for Hong Kong\u00e2\u0080\u0099s Aviation Industry under the Belt and Road Initiative",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1527,6 +1596,8 @@ const courseData = [
         "code": "AMCC 2020",
         "title": "Coding for Artistic Expression and Creation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1549,6 +1620,8 @@ const courseData = [
         "code": "AMCC 5150",
         "title": "Visual Computing for Visual Arts and Creativity",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1571,6 +1644,8 @@ const courseData = [
         "code": "AMCC 5170",
         "title": "Interactive Visual Art with Generative Models",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1593,6 +1668,8 @@ const courseData = [
         "code": "AMCC 5220",
         "title": "Technology in Music and Sound Art",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1615,6 +1692,8 @@ const courseData = [
         "code": "AMCC 5250",
         "title": "Filmmaking with AI Innovations",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1637,6 +1716,8 @@ const courseData = [
         "code": "AMCC 5310",
         "title": "Art ID, Blockchain and NFTs for Digital Creations",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1659,6 +1740,8 @@ const courseData = [
         "code": "AMCC 5320",
         "title": "Management Strategies for Art and Technology Projects",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1681,6 +1764,8 @@ const courseData = [
         "code": "AMCC 6500E",
         "title": "Archaeology of New Media Art",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1703,6 +1788,8 @@ const courseData = [
         "code": "AMCC 6500F",
         "title": "Curatorial Studies: A Critical and Practical Approach",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1725,6 +1812,8 @@ const courseData = [
         "code": "AMCC 6500G",
         "title": "Video Generation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1747,6 +1836,10 @@ const courseData = [
         "code": "ARIN 5104",
         "title": "Artificial Intelligence Ethics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MAIE 5103"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -1769,6 +1862,8 @@ const courseData = [
         "code": "ARIN 5204",
         "title": "Reinforcement Learning",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1791,6 +1886,10 @@ const courseData = [
         "code": "ARIN 5301",
         "title": "Human-Computer Interaction",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CSIT 5960"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -1813,6 +1912,11 @@ const courseData = [
         "code": "ARIN 5302",
         "title": "Medical Image Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "BEHI 5011",
+            "COMP 5423"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -1835,6 +1939,10 @@ const courseData = [
         "code": "ARIN 5303",
         "title": "Artificial Intelligence in Cybersecurity",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MAIE 5533"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -1857,6 +1965,8 @@ const courseData = [
         "code": "BEHI 5002",
         "title": "Biomaterials Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1879,6 +1989,10 @@ const courseData = [
         "code": "BEHI 5006",
         "title": "Synthetic Biology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "BIEN 5070"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -1901,6 +2015,8 @@ const courseData = [
         "code": "BEHI 5007",
         "title": "Genomics, Proteomics and Metabolomics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1923,6 +2039,8 @@ const courseData = [
         "code": "BEHI 5008",
         "title": "Pharmaceutical Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -1945,6 +2063,10 @@ const courseData = [
         "code": "BEHI 5010",
         "title": "Advanced Biochemical Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MCEE 5610"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -1967,6 +2089,11 @@ const courseData = [
         "code": "BEHI 5011",
         "title": "Artificial Intelligence and Medical Imaging",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5302",
+            "COMP 5423"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -1989,6 +2116,8 @@ const courseData = [
         "code": "BIBU 4830",
         "title": "Biotechnology Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2011,6 +2140,8 @@ const courseData = [
         "code": "BIEN 1600",
         "title": "Introduction to Bioengineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2058,6 +2189,10 @@ const courseData = [
         "code": "BIEN 2410",
         "title": "Cellular and Systems Physiology for Engineers",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LIFS 3040"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -2105,6 +2240,8 @@ const courseData = [
         "code": "BIEN 3320",
         "title": "Data Science for Biology and Medicine",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2143,6 +2280,10 @@ const courseData = [
         "code": "BIEN 3420",
         "title": "Biosensors and Bioinstrumentation for Healthcare",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 4810"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -2181,6 +2322,8 @@ const courseData = [
         "code": "BIEN 4000D",
         "title": "Introduction to Omics Technologies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2213,6 +2356,8 @@ const courseData = [
         "code": "BIEN 4110",
         "title": "Regulatory Affairs in the Healthcare Industry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2235,6 +2380,8 @@ const courseData = [
         "code": "BIEN 5010",
         "title": "Molecular Biology for Bioengineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2257,6 +2404,10 @@ const courseData = [
         "code": "BIEN 5820",
         "title": "Microfluidics and Biosensors",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 5820"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -2279,6 +2430,8 @@ const courseData = [
         "code": "BIEN 6800D",
         "title": "Bioengineering Seminar",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -2301,6 +2454,8 @@ const courseData = [
         "code": "BIEN 6810C",
         "title": "Bioengineering Colloquia",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -2323,6 +2478,8 @@ const courseData = [
         "code": "BIEN 6930F",
         "title": "Equilibrium Behavior, Kinetics, and Transport Phenomena in Chemical and Biological Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2345,6 +2502,8 @@ const courseData = [
         "code": "BTEC 5220",
         "title": "Business Operations of Biotechnology",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2467,6 +2626,8 @@ const courseData = [
         "code": "BTEC 5260",
         "title": "Bioanalytical Technology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2684,6 +2845,8 @@ const courseData = [
         "code": "BTEC 5340",
         "title": "Biomarkers and Medical Devices",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2721,6 +2884,8 @@ const courseData = [
         "code": "BTEC 5380",
         "title": "Drug Discovery and Development",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2858,6 +3023,8 @@ const courseData = [
         "code": "CENG 1110",
         "title": "Introduction to Chemical Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2896,6 +3063,8 @@ const courseData = [
         "code": "CENG 2210",
         "title": "Chemical and Biological Engineering Thermodynamics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -2934,6 +3103,10 @@ const courseData = [
         "code": "CENG 2220",
         "title": "Transport Phenomena I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MECH 2210"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -2981,6 +3154,11 @@ const courseData = [
         "code": "CENG 3110",
         "title": "Process Dynamics and Control",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 3200",
+            "MECH 3610"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3028,6 +3206,8 @@ const courseData = [
         "code": "CENG 3150",
         "title": "Integrated Chemical Process and Product Design",
         "credits": 5,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -3060,6 +3240,8 @@ const courseData = [
         "code": "CENG 3950",
         "title": "Chemical and Environmental Engineering Laboratory",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -3097,6 +3279,8 @@ const courseData = [
         "code": "CENG 4130",
         "title": "Plant Design and Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3129,6 +3313,8 @@ const courseData = [
         "code": "CENG 4140",
         "title": "Energy Resources, Conversions and Technologies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3152,6 +3338,8 @@ const courseData = [
         "code": "CENG 4510",
         "title": "Nature Engineering and DNA Nanotechnology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3175,6 +3363,10 @@ const courseData = [
         "code": "CENG 4720",
         "title": "Environmental Impact Assessment and Management Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 4430"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3198,6 +3390,10 @@ const courseData = [
         "code": "CENG 5210",
         "title": "Advanced Separation Processes",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CBME 5210"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3220,6 +3416,11 @@ const courseData = [
         "code": "CENG 5240",
         "title": "Deep Learning for Chemical and Biological Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "BEHI 5501",
+            "MCEE 5501"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3242,6 +3443,11 @@ const courseData = [
         "code": "CENG 5520",
         "title": "Polymer and Materials Characterization Techniques",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CENG 4000J",
+            "CBME 5520"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3264,6 +3470,12 @@ const courseData = [
         "code": "CENG 5840",
         "title": "Nanomaterials for Chemical Engineering Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CBME 5840",
+            "CENG 4540",
+            "NANO 5350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3301,6 +3513,8 @@ const courseData = [
         "code": "CENG 6000R",
         "title": "Introduction to Molecular Dynamics Simulations",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3323,6 +3537,8 @@ const courseData = [
         "code": "CENG 6000S",
         "title": "Plastic Electronics and their Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3345,6 +3561,8 @@ const courseData = [
         "code": "CENG 6000U",
         "title": "Systems Ionics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3367,6 +3585,8 @@ const courseData = [
         "code": "CENG 6800D",
         "title": "Chemical and Biomolecular Engineering Seminar",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -3389,6 +3609,8 @@ const courseData = [
         "code": "CENG 6810C",
         "title": "Chemical and Biological Engineering Colloquia",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -3411,6 +3633,13 @@ const courseData = [
         "code": "CHEM 1004",
         "title": "Chemistry in Everyday Life",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CHEM 1008",
+            "CHEM 1010",
+            "CHEM 1011",
+            "CHEM 1012"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3434,6 +3663,10 @@ const courseData = [
         "code": "CHEM 1008",
         "title": "Introductory Chemistry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1120"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3457,6 +3690,8 @@ const courseData = [
         "code": "CHEM 1011",
         "title": "General Chemistry A: Reactions, Thermodynamics, and Reaction Kinetics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3496,6 +3731,10 @@ const courseData = [
         "code": "CHEM 1012",
         "title": "General Chemistry B: Atomic Structure, Molecules, and Bonding Theories",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CHEM 1010"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3567,6 +3806,8 @@ const courseData = [
         "code": "CHEM 1051",
         "title": "Laboratory for General Chemistry A",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "LA1",
@@ -3664,6 +3905,8 @@ const courseData = [
         "code": "CHEM 1052",
         "title": "Laboratory for General Chemistry B",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "LA1",
@@ -3761,6 +4004,11 @@ const courseData = [
         "code": "CHEM 2155",
         "title": "Fundamental Organic Chemistry Laboratory",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "CHEM 2150",
+            "CHEM 2550"
+        ],
         "sections": [
             {
                 "id": "LA1",
@@ -3813,6 +4061,10 @@ const courseData = [
         "code": "CHEM 2311",
         "title": "Analytical Chemistry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CHEM 2310"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -3845,6 +4097,11 @@ const courseData = [
         "code": "CHEM 2355",
         "title": "Fundamental Analytical Chemistry Laboratory",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "CHEM 2350",
+            "CHEM 2555"
+        ],
         "sections": [
             {
                 "id": "LA1",
@@ -3897,6 +4154,8 @@ const courseData = [
         "code": "CHEM 3030",
         "title": "Introduction to AI for Chemistry",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3935,6 +4194,8 @@ const courseData = [
         "code": "CHEM 3120",
         "title": "Organic Chemistry II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3967,6 +4228,8 @@ const courseData = [
         "code": "CHEM 3220",
         "title": "Inorganic Chemistry II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -3999,6 +4262,8 @@ const courseData = [
         "code": "CHEM 3320",
         "title": "Instrumental Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4022,6 +4287,8 @@ const courseData = [
         "code": "CHEM 3420",
         "title": "Physical Chemistry II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4045,6 +4312,8 @@ const courseData = [
         "code": "CHEM 3550",
         "title": "Synthetic Chemistry Laboratory II",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "LA1",
@@ -4082,6 +4351,8 @@ const courseData = [
         "code": "CHEM 3555",
         "title": "Molecular Characterization Chemistry Laboratory II",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "LA1",
@@ -4119,6 +4390,8 @@ const courseData = [
         "code": "CHEM 4130",
         "title": "Medicinal Chemistry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4142,6 +4415,8 @@ const courseData = [
         "code": "CHEM 4240",
         "title": "Intermediate Inorganic Chemistry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4165,6 +4440,8 @@ const courseData = [
         "code": "CHEM 4330",
         "title": "Separation Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4188,6 +4465,8 @@ const courseData = [
         "code": "CHEM 4410",
         "title": "Physical Chemistry in Biological Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4211,6 +4490,11 @@ const courseData = [
         "code": "CHEM 4420",
         "title": "Statistical Machine Learning Methods for Chemical Data Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4211",
+            "MATH 4432"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -4234,6 +4518,8 @@ const courseData = [
         "code": "CHEM 4620",
         "title": "Organometallic Chemistry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4266,6 +4552,10 @@ const courseData = [
         "code": "CHEM 4689",
         "title": "Capstone Project",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CHEM 4691"
+        ],
         "sections": [
             {
                 "id": "LA1",
@@ -4288,6 +4578,10 @@ const courseData = [
         "code": "CHEM 4691",
         "title": "Capstone Research I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CHEM 4689"
+        ],
         "sections": [
             {
                 "id": "LA1",
@@ -4310,6 +4604,8 @@ const courseData = [
         "code": "CHEM 5130",
         "title": "Asymmetric Catalysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4332,6 +4628,8 @@ const courseData = [
         "code": "CHEM 5140",
         "title": "Chemical Biology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4354,6 +4652,8 @@ const courseData = [
         "code": "CHMS 5050",
         "title": "Optical and Electrical Methods",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4376,6 +4676,10 @@ const courseData = [
         "code": "CHMS 5111",
         "title": "Environmental Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CHMS 5110"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -4398,6 +4702,10 @@ const courseData = [
         "code": "CHMS 5112",
         "title": "Food and Drug Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CHMS 5110"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -4420,6 +4728,8 @@ const courseData = [
         "code": "CHMS 5120",
         "title": "Macromolecular Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4442,6 +4752,8 @@ const courseData = [
         "code": "CHMS 5130",
         "title": "Materials Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4464,6 +4776,8 @@ const courseData = [
         "code": "CHMS 5140",
         "title": "Laboratory Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4486,6 +4800,8 @@ const courseData = [
         "code": "CHMS 5201",
         "title": "Analytical Instrumentation Laboratory I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -4523,6 +4839,8 @@ const courseData = [
         "code": "CHMS 5202",
         "title": "Analytical Instrumentation Laboratory II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -4560,6 +4878,8 @@ const courseData = [
         "code": "CIEM 5160",
         "title": "Construction Financial Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4582,6 +4902,8 @@ const courseData = [
         "code": "CIEM 5190",
         "title": "Alternative Dispute Resolution: Law and Practice",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4604,6 +4926,11 @@ const courseData = [
         "code": "CIEM 5420",
         "title": "Biological Waste Treatment and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 5420",
+            "JEVE 5420"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -4626,6 +4953,10 @@ const courseData = [
         "code": "CIEM 5620",
         "title": "Travel Demand Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 5620"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -4648,6 +4979,8 @@ const courseData = [
         "code": "CIEM 5760",
         "title": "Engineering Geology and Rock Mechanics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4670,6 +5003,8 @@ const courseData = [
         "code": "CIEM 5790",
         "title": "Slope Engineering and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4692,6 +5027,10 @@ const courseData = [
         "code": "CIEM 5810",
         "title": "Engineering Risk, Reliability and Decision",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 5110"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -4714,6 +5053,8 @@ const courseData = [
         "code": "CIEM 6000V",
         "title": "Hydrosystems Engineering and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4736,6 +5077,8 @@ const courseData = [
         "code": "CIEM 6000W",
         "title": "Structural Health Monitoring: from Vibration to Vision",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4758,6 +5101,8 @@ const courseData = [
         "code": "CIVL 1000",
         "title": "Academic and Professional Development for Civil and Environmental Engineering I",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -4780,6 +5125,8 @@ const courseData = [
         "code": "CIVL 1010",
         "title": "Academic and Professional Development I",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -4802,6 +5149,8 @@ const courseData = [
         "code": "CIVL 1140",
         "title": "Environment and Society: Sustainable Development Goals and Carbon Neutrality",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4825,6 +5174,10 @@ const courseData = [
         "code": "CIVL 1161",
         "title": "Building the Future: Civil Engineering Challenges & Solutions",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 1160"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -4848,6 +5201,10 @@ const courseData = [
         "code": "CIVL 1210",
         "title": "Fundamental of Green Buildings",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ENVR 2070"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -4886,6 +5243,8 @@ const courseData = [
         "code": "CIVL 2000",
         "title": "Academic and Professional Development for Civil and Environmental Engineering II",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -4908,6 +5267,8 @@ const courseData = [
         "code": "CIVL 2010",
         "title": "Academic and Professional Development II",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -4930,6 +5291,8 @@ const courseData = [
         "code": "CIVL 2020",
         "title": "Industrial and BIM Training",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -4969,6 +5332,8 @@ const courseData = [
         "code": "CIVL 2110",
         "title": "Statics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5007,6 +5372,10 @@ const courseData = [
         "code": "CIVL 2120",
         "title": "Mechanics of Materials",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MECH 2040"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -5060,6 +5429,10 @@ const courseData = [
         "code": "CIVL 2170",
         "title": "Infrastructure Systems Engineering and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IEDA 3010"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -5113,6 +5486,8 @@ const courseData = [
         "code": "CIVL 2410",
         "title": "Environmental Assessment and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5166,6 +5541,10 @@ const courseData = [
         "code": "CIVL 2510",
         "title": "Fluid Mechanics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MECH 2210"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -5264,6 +5643,8 @@ const courseData = [
         "code": "CIVL 3010",
         "title": "Academic and Professional Development III",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -5286,6 +5667,8 @@ const courseData = [
         "code": "CIVL 3210",
         "title": "Introduction to Construction Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5339,6 +5722,8 @@ const courseData = [
         "code": "CIVL 3320",
         "title": "Reinforced Concrete Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5437,6 +5822,8 @@ const courseData = [
         "code": "CIVL 3420",
         "title": "Water and Wastewater Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5490,6 +5877,8 @@ const courseData = [
         "code": "CIVL 3610",
         "title": "Traffic and Transportation Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5543,6 +5932,8 @@ const courseData = [
         "code": "CIVL 3740",
         "title": "Geotechnical Analysis and Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5596,6 +5987,8 @@ const courseData = [
         "code": "CIVL 4100M",
         "title": "Design of Timber Structures",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5634,6 +6027,8 @@ const courseData = [
         "code": "CIVL 4100P",
         "title": "Resource Recovery from Bioresources",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5657,6 +6052,8 @@ const courseData = [
         "code": "CIVL 4270",
         "title": "Construction Law and Contract Administration",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5679,6 +6076,8 @@ const courseData = [
         "code": "CIVL 4340",
         "title": "Prestressed Concrete Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5716,6 +6115,10 @@ const courseData = [
         "code": "CIVL 4430",
         "title": "Environmental Impact Assessment",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CENG 4720"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -5738,6 +6141,8 @@ const courseData = [
         "code": "CIVL 4450",
         "title": "Carbon Footprint Analysis and Reduction",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5760,6 +6165,8 @@ const courseData = [
         "code": "CIVL 4640",
         "title": "Introduction to Smart City Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5783,6 +6190,8 @@ const courseData = [
         "code": "CIVL 4710",
         "title": "Soil Slope Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5805,6 +6214,10 @@ const courseData = [
         "code": "CIVL 4910",
         "title": "Civil and Environmental Engineering Final Year Project",
         "credits": 6,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 4920"
+        ],
         "sections": [
             {
                 "id": "T1",
@@ -5827,6 +6240,10 @@ const courseData = [
         "code": "CIVL 4920",
         "title": "Civil and Environmental Engineering Final Year Thesis",
         "credits": 6,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 4910"
+        ],
         "sections": [
             {
                 "id": "T1",
@@ -5849,6 +6266,8 @@ const courseData = [
         "code": "CIVL 5210",
         "title": "Principles of Project Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5871,6 +6290,8 @@ const courseData = [
         "code": "CIVL 5430",
         "title": "Aquatic Chemistry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5893,6 +6314,8 @@ const courseData = [
         "code": "CIVL 5510",
         "title": "Hydroclimate Data Analysis and Modelling",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5915,6 +6338,8 @@ const courseData = [
         "code": "CIVL 5530",
         "title": "Turbulence Processes in Hydrosystems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5937,6 +6362,8 @@ const courseData = [
         "code": "CIVL 5550",
         "title": "Modeling Fluid Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5959,6 +6386,8 @@ const courseData = [
         "code": "CIVL 5710",
         "title": "Advanced Soil Mechanics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -5981,6 +6410,10 @@ const courseData = [
         "code": "CIVL 5720",
         "title": "Advanced Foundation Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIEM 5720"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6003,6 +6436,10 @@ const courseData = [
         "code": "CIVL 5830",
         "title": "Advanced Mechanics of Materials",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIEM 5330"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6025,6 +6462,11 @@ const courseData = [
         "code": "CIVL 5840",
         "title": "Advanced Concrete Technology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIEM 5240",
+            "CIVL 4810"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6047,6 +6489,8 @@ const courseData = [
         "code": "CIVL 6010G",
         "title": "Directed Studies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -6069,6 +6513,8 @@ const courseData = [
         "code": "CIVL 6050O",
         "title": "Civil Engineering Seminar I",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -6092,6 +6538,8 @@ const courseData = [
         "code": "CIVL 6060T",
         "title": "Civil Engineering Seminar II",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -6115,6 +6563,8 @@ const courseData = [
         "code": "CIVL 6100R",
         "title": "Climate Change and Climate Modeling",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -6137,6 +6587,8 @@ const courseData = [
         "code": "CIVL 6100S",
         "title": "Introduction to Uncertainty Quantification",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -6159,6 +6611,8 @@ const courseData = [
         "code": "CIVL 6100T",
         "title": "Chemistry and Physics of Climate Change",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -6181,6 +6635,10 @@ const courseData = [
         "code": "COMP 1001",
         "title": "Exploring Multimedia and Internet Computing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 2010"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6218,6 +6676,14 @@ const courseData = [
         "code": "COMP 1021",
         "title": "Introduction to Computer Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 1022P",
+            "COMP 1023",
+            "COMP 2011",
+            "COMP 2012H",
+            "ISOM 3400"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6303,6 +6769,18 @@ const courseData = [
         "code": "COMP 1023",
         "title": "Introduction to Python Programming",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 1021",
+            "COMP 1022P",
+            "COMP 1029P",
+            "COMP 2011",
+            "COMP 2012H",
+            "COMP 2211",
+            "CIVL 1121",
+            "IEDA 4000G",
+            "ISOM 3400"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6496,6 +6974,12 @@ const courseData = [
         "code": "COMP 1942",
         "title": "Exploring and Visualizing Data",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4331",
+            "ISOM 3360",
+            "RMBI 4310"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6558,6 +7042,8 @@ const courseData = [
         "code": "COMP 1944",
         "title": "Artificial Intelligence Ethics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -6581,6 +7067,10 @@ const courseData = [
         "code": "COMP 1945",
         "title": "Artificial Intelligence for Everyone",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 2211"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6620,6 +7110,10 @@ const courseData = [
         "code": "COMP 2011",
         "title": "Programming with C++",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 2012H"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6822,6 +7316,10 @@ const courseData = [
         "code": "COMP 2012",
         "title": "Object-Oriented Programming and Data Structures",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 2012H"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -6953,6 +7451,8 @@ const courseData = [
         "code": "COMP 2211",
         "title": "Exploring Artificial Intelligence",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7062,6 +7562,10 @@ const courseData = [
         "code": "COMP 2611",
         "title": "Computer Organization",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 2350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -7161,6 +7665,11 @@ const courseData = [
         "code": "COMP 2711",
         "title": "Discrete Mathematical Tools for Computer Science",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 2711H",
+            "MATH 2343"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -7230,6 +7739,8 @@ const courseData = [
         "code": "COMP 3071",
         "title": "Honors Competitive Programming",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "LA1",
@@ -7252,6 +7763,11 @@ const courseData = [
         "code": "COMP 3111",
         "title": "Software Engineering",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 3111H",
+            "ISOM 3210"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -7289,6 +7805,10 @@ const courseData = [
         "code": "COMP 3211",
         "title": "Fundamentals of Artificial Intelligence",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 5211"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -7327,6 +7847,8 @@ const courseData = [
         "code": "COMP 3511",
         "title": "Operating Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7396,6 +7918,10 @@ const courseData = [
         "code": "COMP 3633",
         "title": "Competitive Programming in Cybersecurity II",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4633"
+        ],
         "sections": [
             {
                 "id": "LA1",
@@ -7418,6 +7944,10 @@ const courseData = [
         "code": "COMP 3711",
         "title": "Design and Analysis of Algorithms",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 3711H"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -7487,6 +8017,10 @@ const courseData = [
         "code": "COMP 3711H",
         "title": "Honors Design and Analysis of Algorithms",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 3711"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -7525,6 +8059,8 @@ const courseData = [
         "code": "COMP 4121",
         "title": "Modern Compiler Construction",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7562,6 +8098,10 @@ const courseData = [
         "code": "COMP 4211",
         "title": "Machine Learning",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 5212"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -7631,6 +8171,10 @@ const courseData = [
         "code": "COMP 4221",
         "title": "Introduction to Natural Language Processing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 5221"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -7678,6 +8222,8 @@ const courseData = [
         "code": "COMP 4332",
         "title": "Big Data Mining and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7716,6 +8262,11 @@ const courseData = [
         "code": "COMP 4421",
         "title": "Image Processing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 3130",
+            "MATH 4336"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -7754,6 +8305,8 @@ const courseData = [
         "code": "COMP 4431",
         "title": "Multimedia Computing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7792,6 +8345,8 @@ const courseData = [
         "code": "COMP 4441",
         "title": "Music Video Creation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7815,6 +8370,8 @@ const courseData = [
         "code": "COMP 4462",
         "title": "Data Visualization",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7853,6 +8410,8 @@ const courseData = [
         "code": "COMP 4471",
         "title": "Deep Learning in Computer Vision",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7891,6 +8450,8 @@ const courseData = [
         "code": "COMP 4521",
         "title": "Mobile Application Development",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7928,6 +8489,8 @@ const courseData = [
         "code": "COMP 4531",
         "title": "IoT and Smart Sensing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -7966,6 +8529,8 @@ const courseData = [
         "code": "COMP 4551",
         "title": "Large-Scale Machine Learning System for Foundation Models",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8004,6 +8569,12 @@ const courseData = [
         "code": "COMP 4621",
         "title": "Computer and Communication Networks",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 5621",
+            "ELEC 3120",
+            "ISOM 3180"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -8042,6 +8613,8 @@ const courseData = [
         "code": "COMP 4634",
         "title": "Cybersecurity",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8080,6 +8653,8 @@ const courseData = [
         "code": "COMP 4651",
         "title": "Cloud Computing and Big Data Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8127,6 +8702,8 @@ const courseData = [
         "code": "COMP 4900",
         "title": "Academic and Professional Development",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -8149,6 +8726,8 @@ const courseData = [
         "code": "COMP 4901C",
         "title": "Empathetic AI",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8172,6 +8751,8 @@ const courseData = [
         "code": "COMP 4901D",
         "title": "Embedded AI Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8195,6 +8776,8 @@ const courseData = [
         "code": "COMP 4911",
         "title": "IT Entrepreneurship",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8227,6 +8810,8 @@ const courseData = [
         "code": "COMP 5111",
         "title": "Fundamentals of Software Testing and Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8250,6 +8835,13 @@ const courseData = [
         "code": "COMP 5212",
         "title": "Machine Learning",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5103",
+            "CSIT 5910",
+            "MAIE 5212",
+            "MSBD 5012"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -8273,6 +8865,10 @@ const courseData = [
         "code": "COMP 5214",
         "title": "Advanced Deep Learning Architectures",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 5680"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -8296,6 +8892,8 @@ const courseData = [
         "code": "COMP 5311",
         "title": "Database Architecture and Implementation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8319,6 +8917,11 @@ const courseData = [
         "code": "COMP 5421",
         "title": "Computer Vision",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5201",
+            "MAIE 5421"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -8342,6 +8945,8 @@ const courseData = [
         "code": "COMP 5422",
         "title": "Deep 2D and 3D Visual Scene Understanding",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8365,6 +8970,11 @@ const courseData = [
         "code": "COMP 5423",
         "title": "Deep Learning for Medical Image Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5302",
+            "BEHI 5011"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -8388,6 +8998,10 @@ const courseData = [
         "code": "COMP 5631",
         "title": "Cryptography and Security",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CSIT 5710"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -8411,6 +9025,10 @@ const courseData = [
         "code": "COMP 5911",
         "title": "Entrepreneurial Me",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MAIE 5534"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -8443,6 +9061,8 @@ const courseData = [
         "code": "COMP 6211L",
         "title": "Hardware-Aware Deep Learning Computing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -8466,6 +9086,8 @@ const courseData = [
         "code": "COMP 6911",
         "title": "Computer Science and Engineering Seminar I",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -8488,6 +9110,8 @@ const courseData = [
         "code": "COMP 6912",
         "title": "Computer Science and Engineering Seminar II",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -8510,6 +9134,8 @@ const courseData = [
         "code": "CPEG 1930",
         "title": "Academic and Professional Development I",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -8862,6 +9488,8 @@ const courseData = [
         "code": "CPEG 2930",
         "title": "Academic and Professional Development II",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -9214,6 +9842,8 @@ const courseData = [
         "code": "CPEG 3930",
         "title": "Academic and Professional Development III",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -9566,6 +10196,13 @@ const courseData = [
         "code": "CSIT 5520",
         "title": "Natural Language Processing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5202",
+            "COMP 5221",
+            "MAIE 5221",
+            "MSBD 5018"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -9588,6 +10225,8 @@ const courseData = [
         "code": "CSIT 5530",
         "title": "Understanding Large Language Models",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -9610,6 +10249,8 @@ const courseData = [
         "code": "CSIT 5740",
         "title": "Introduction to Software Security",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -9632,6 +10273,12 @@ const courseData = [
         "code": "CSIT 5900",
         "title": "Artificial Intelligence",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5102",
+            "MAIE 5102",
+            "MSBD 5015"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -9654,6 +10301,11 @@ const courseData = [
         "code": "CSIT 5920",
         "title": "Financial Technology for Engineering Professionals",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 5330",
+            "ISOM 5340"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -9676,6 +10328,8 @@ const courseData = [
         "code": "CSIT 5930",
         "title": "Search Engines and Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -9698,6 +10352,8 @@ const courseData = [
         "code": "CSIT 5970",
         "title": "Advanced Cloud Computing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -9720,6 +10376,8 @@ const courseData = [
         "code": "CSIT 6000T",
         "title": "Digital Forensics - a Technical Perspective",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -9742,6 +10400,8 @@ const courseData = [
         "code": "CTDL 1902",
         "title": "AI and Society: Ethics, Cognition, and Critical Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -9764,6 +10424,8 @@ const courseData = [
         "code": "DASC 2020",
         "title": "Applied Linear Algebra for Least Squares Optimization and Machine Learning",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -9811,6 +10473,11 @@ const courseData = [
         "code": "DASC 2110",
         "title": "Object-oriented Programming for Data Analytics in Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 2012",
+            "COMP 2012H"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -9849,6 +10516,14 @@ const courseData = [
         "code": "DASC 2220",
         "title": "Statistics and Probability for Data Analytics in Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 2411",
+            "IEDA 2520",
+            "IEDA 2540",
+            "ISOM 2500",
+            "LIFS 3150"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -9887,6 +10562,10 @@ const courseData = [
         "code": "DASC 3240",
         "title": "Data Visualization in Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4462"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -9925,6 +10604,12 @@ const courseData = [
         "code": "DASC 3250",
         "title": "Numerical Methods for Data Analytics in Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 3312",
+            "MECH 4740",
+            "PHYS 3142"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -9972,6 +10657,11 @@ const courseData = [
         "code": "DASC 4020",
         "title": "Structured Query Language for Data Analytics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 3260",
+            "COMP 3311"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -10019,6 +10709,8 @@ const courseData = [
         "code": "DASC 4300",
         "title": "Capstone Project for Data Analytics in Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -10051,6 +10743,8 @@ const courseData = [
         "code": "DRAP 5003",
         "title": "Safety of Medicines: From Non-clinical Development to Pharmacovigilance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -10073,6 +10767,8 @@ const courseData = [
         "code": "DRAP 5004",
         "title": "China/USA/EU Regulatory Environment: Procedures and Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -10095,6 +10791,8 @@ const courseData = [
         "code": "DRAP 5104",
         "title": "Digital Health",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -10117,6 +10815,8 @@ const courseData = [
         "code": "DRAP 5105",
         "title": "Market Access for Pharmaceutical Products: Trends and Challenges",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -10139,6 +10839,8 @@ const courseData = [
         "code": "DRAP 5106",
         "title": "Clinical Pharmacology and Biostatistics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -10161,6 +10863,8 @@ const courseData = [
         "code": "DSCT 4900",
         "title": "Academic and Professional Development",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -10183,6 +10887,12 @@ const courseData = [
         "code": "ECON 1220",
         "title": "Thinking like an Economist I: Microeconomics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 2103",
+            "ECON 2113",
+            "SOSC 1440"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -10221,6 +10931,14 @@ const courseData = [
         "code": "ECON 2103",
         "title": "Principles of Microeconomics",
         "credits": 3,
+        "matchingRequired": true,
+        "exclusions": [
+            "ECON 1220",
+            "ECON 2113",
+            "ECON 3113",
+            "ECON 3133",
+            "SOSC 1440"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -10472,6 +11190,13 @@ const courseData = [
         "code": "ECON 2123",
         "title": "Macroeconomics",
         "credits": 3,
+        "matchingRequired": true,
+        "exclusions": [
+            "ECON 1221",
+            "ECON 3123",
+            "ECON 3143",
+            "SOSC 1440"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -10785,6 +11510,11 @@ const courseData = [
         "code": "ECON 3014",
         "title": "Managerial Microeconomics",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 3113",
+            "ECON 3133"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -10832,6 +11562,10 @@ const courseData = [
         "code": "ECON 3024",
         "title": "Managerial Macroeconomics",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 3143"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -10870,6 +11604,11 @@ const courseData = [
         "code": "ECON 3113",
         "title": "Microeconomic Theory I",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [
+            "ECON 3014",
+            "SOSC 1440"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -10948,6 +11687,12 @@ const courseData = [
         "code": "ECON 3123",
         "title": "Macroeconomic Theory I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 2123",
+            "ECON 3024",
+            "SOSC 1440"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -10986,6 +11731,12 @@ const courseData = [
         "code": "ECON 3143",
         "title": "Macroeconomic Theory II",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 2123",
+            "ECON 3024",
+            "SOSC 1440"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -11024,6 +11775,8 @@ const courseData = [
         "code": "ECON 3334",
         "title": "Introduction to Econometrics",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11093,6 +11846,8 @@ const courseData = [
         "code": "ECON 4114",
         "title": "Industrial Organization and Competitive Strategy",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11131,6 +11886,10 @@ const courseData = [
         "code": "ECON 4124",
         "title": "Applied Game Theory",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 4321"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -11169,6 +11928,8 @@ const courseData = [
         "code": "ECON 4264",
         "title": "Economics of Innovation and Entrepreneurship",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11216,6 +11977,11 @@ const courseData = [
         "code": "ECON 4304",
         "title": "Time Series Econometrics and Business Forecasting",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 4540",
+            "MATH 4425"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -11263,6 +12029,10 @@ const courseData = [
         "code": "ECON 4334",
         "title": "Money and Banking",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 5350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -11301,6 +12071,8 @@ const courseData = [
         "code": "ECON 4364",
         "title": "International Trade and Investment",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11339,6 +12111,8 @@ const courseData = [
         "code": "ECON 4434",
         "title": "Economic Development and Growth",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11377,6 +12151,10 @@ const courseData = [
         "code": "ECON 4454",
         "title": "Green Economy and Sustainability",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ENVR 3410"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -11415,6 +12193,8 @@ const courseData = [
         "code": "ECON 4464",
         "title": "Urban and Environment Economics",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11453,6 +12233,8 @@ const courseData = [
         "code": "ECON 4474",
         "title": "Hong Kong's Economy",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11491,6 +12273,8 @@ const courseData = [
         "code": "ECON 4999A",
         "title": "Mechanism Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11529,6 +12313,8 @@ const courseData = [
         "code": "ECON 5101",
         "title": "Econometric Thinking for Business Strategists",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11561,6 +12347,8 @@ const courseData = [
         "code": "ECON 5125",
         "title": "Behavioral Economics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11633,6 +12421,10 @@ const courseData = [
         "code": "ECON 5200",
         "title": "Global Macroeconomics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 5250"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -11665,6 +12457,8 @@ const courseData = [
         "code": "ECON 5220",
         "title": "Microeconomic Theory II",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11697,6 +12491,8 @@ const courseData = [
         "code": "ECON 5260",
         "title": "Macroeconomic Theory II",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11719,6 +12515,8 @@ const courseData = [
         "code": "ECON 5300",
         "title": "Econometrics",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11742,6 +12540,8 @@ const courseData = [
         "code": "ECON 5311",
         "title": "Applied Micro-econometrics",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11764,6 +12564,8 @@ const courseData = [
         "code": "ECON 5345",
         "title": "Quantitative Macroeconomics",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11786,6 +12588,8 @@ const courseData = [
         "code": "ECON 5346",
         "title": "Business Cycles and Monetary Policy",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11818,6 +12622,10 @@ const courseData = [
         "code": "ECON 5348",
         "title": "Financial Economics: Corporate Finance",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "FINA 5120"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -11850,6 +12658,10 @@ const courseData = [
         "code": "ECON 5349",
         "title": "Financial Economics: Portfolio Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "FINA 5210"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -11882,6 +12694,8 @@ const courseData = [
         "code": "ECON 5350",
         "title": "Banking and Financial Intermediation",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11904,6 +12718,11 @@ const courseData = [
         "code": "ECON 5351",
         "title": "Environmental Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PPOL 5351",
+            "ENVR 5250"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -11936,6 +12755,8 @@ const courseData = [
         "code": "ECON 5352",
         "title": "Housing Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -11978,6 +12799,10 @@ const courseData = [
         "code": "ECON 5353",
         "title": "Value Investing in Global Markets",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 5410"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -12050,6 +12875,8 @@ const courseData = [
         "code": "ECON 5360",
         "title": "Monetary Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12083,6 +12910,8 @@ const courseData = [
         "code": "ECON 5370",
         "title": "Using Data for Economics Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12125,6 +12954,8 @@ const courseData = [
         "code": "ECON 5390",
         "title": "Labor Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12157,6 +12988,8 @@ const courseData = [
         "code": "ECON 5420",
         "title": "Topics in Development Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12189,6 +13022,8 @@ const courseData = [
         "code": "ECON 5650",
         "title": "The Asset Management Industry",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12211,6 +13046,8 @@ const courseData = [
         "code": "ECON 5660",
         "title": "The Economics of ESG Investing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12253,6 +13090,8 @@ const courseData = [
         "code": "ECON 5670",
         "title": "Urban Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12285,6 +13124,8 @@ const courseData = [
         "code": "ECON 5700",
         "title": "Macroeconomic and Financial Risk Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12327,6 +13168,8 @@ const courseData = [
         "code": "ECON 6121C",
         "title": "Long-Run Economic Growth",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12350,6 +13193,8 @@ const courseData = [
         "code": "ECON 6121D",
         "title": "Time Series Econometrics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12372,6 +13217,8 @@ const courseData = [
         "code": "ECON 6121E",
         "title": "Advanced Economic Theory: Market Design",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12394,6 +13241,8 @@ const courseData = [
         "code": "ECON 6121F",
         "title": "Advances in International Trade",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12417,6 +13266,8 @@ const courseData = [
         "code": "ECON 6121G",
         "title": "Topics in Econometrics and Machine Learning",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12439,6 +13290,8 @@ const courseData = [
         "code": "ECON 6130A",
         "title": "AI in Asset Management Industry",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12471,6 +13324,8 @@ const courseData = [
         "code": "ECON 6130C",
         "title": "Macroeconomic Policies of China",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12503,6 +13358,8 @@ const courseData = [
         "code": "EEMT 5120",
         "title": "Operation/Production Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12525,6 +13382,8 @@ const courseData = [
         "code": "EEMT 5260",
         "title": "Product Development Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12547,6 +13406,8 @@ const courseData = [
         "code": "EEMT 5530",
         "title": "Financial Engineering and Risk Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12569,6 +13430,8 @@ const courseData = [
         "code": "EEMT 5540",
         "title": "IT for E-Commerce Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12591,6 +13454,10 @@ const courseData = [
         "code": "EEMT 5560",
         "title": "Integrated Business Solutions",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 5420"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -12613,6 +13480,8 @@ const courseData = [
         "code": "EEMT 6000J",
         "title": "Advanced Quality Technology and Industrial Analytics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12635,6 +13504,10 @@ const courseData = [
         "code": "EESM 5020",
         "title": "Digital VLSI System Design and Design Automation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 5160"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -12672,6 +13545,11 @@ const courseData = [
         "code": "EESM 5120",
         "title": "Advanced Analog IC Analysis and Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 5040",
+            "EESM 5760"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -12709,6 +13587,8 @@ const courseData = [
         "code": "EESM 5310",
         "title": "Power Management Circuits and Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12731,6 +13611,8 @@ const courseData = [
         "code": "EESM 5515",
         "title": "IP Networks",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12753,6 +13635,8 @@ const courseData = [
         "code": "EESM 5546",
         "title": "Wireless Communication Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12775,6 +13659,8 @@ const courseData = [
         "code": "EESM 5547",
         "title": "Multimedia Signal Processing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12797,6 +13683,8 @@ const courseData = [
         "code": "EESM 5600",
         "title": "Photonics Technology and Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12819,6 +13707,10 @@ const courseData = [
         "code": "EESM 5670",
         "title": "Advanced Architectures and Designs for Communication Networks",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "EESM 5539"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -12841,6 +13733,8 @@ const courseData = [
         "code": "EESM 5740",
         "title": "Stochastic Learning, Estimation, and Control",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12863,6 +13757,11 @@ const courseData = [
         "code": "EESM 5760",
         "title": "Integrated Design of RF Wireless Transceiver Systems and Building Blocks",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "EESM 5120",
+            "EESM 5320"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -12885,6 +13784,8 @@ const courseData = [
         "code": "EESM 5800",
         "title": "Modern Robotics: Theory, Development, and Case Study",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12907,6 +13808,8 @@ const courseData = [
         "code": "EESM 5820",
         "title": "Emerging Technologies in Telecommunications and 6G",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -12929,6 +13832,10 @@ const courseData = [
         "code": "EESM 5830",
         "title": "Engineering Thinking: From Research to Entrepreneurship",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 5900"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -12966,6 +13873,8 @@ const courseData = [
         "code": "EESM 6970",
         "title": "Guided Chip Design Project",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -13003,6 +13912,8 @@ const courseData = [
         "code": "ELEC 1010",
         "title": "Electronic and Information Technology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -13101,6 +14012,8 @@ const courseData = [
         "code": "ELEC 1030",
         "title": "The Rise of Autonomous Robots",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -13139,6 +14052,8 @@ const courseData = [
         "code": "ELEC 1100",
         "title": "Introduction to Electro-Robot Design",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -13261,6 +14176,8 @@ const courseData = [
         "code": "ELEC 1200",
         "title": "A System View of Communications: from Signals to Packets",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -13393,6 +14310,8 @@ const courseData = [
         "code": "ELEC 1910",
         "title": "Academic and Professional Development I",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -13865,6 +14784,8 @@ const courseData = [
         "code": "ELEC 2100",
         "title": "Signals and Systems",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -13993,6 +14914,11 @@ const courseData = [
         "code": "ELEC 2350",
         "title": "Introduction to Computer Organization and Design",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 2611",
+            "ISDN 4000F"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -14090,6 +15016,8 @@ const courseData = [
         "code": "ELEC 2400",
         "title": "Electronic Circuits",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -14249,6 +15177,12 @@ const courseData = [
         "code": "ELEC 2600",
         "title": "Probability and Random Processes in Engineering",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 2600H",
+            "MATH 2421",
+            "MATH 2431"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -14302,6 +15236,8 @@ const courseData = [
         "code": "ELEC 2910",
         "title": "Academic and Professional Development II",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -14759,6 +15695,8 @@ const courseData = [
         "code": "ELEC 3100",
         "title": "Signal Processing and Communications",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -14842,6 +15780,11 @@ const courseData = [
         "code": "ELEC 3130",
         "title": "Digital Image Processing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4421",
+            "MATH 4336"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -14865,6 +15808,8 @@ const courseData = [
         "code": "ELEC 3180",
         "title": "Data-Driven Portfolio Optimization",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -14888,6 +15833,11 @@ const courseData = [
         "code": "ELEC 3200",
         "title": "System Modeling, Analysis and Control",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "CENG 3110",
+            "MECH 3610"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -14941,6 +15891,8 @@ const courseData = [
         "code": "ELEC 3300",
         "title": "Introduction to Embedded Systems",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -15054,6 +16006,10 @@ const courseData = [
         "code": "ELEC 3310",
         "title": "Digital Fundamentals and System Design",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISDN 4000D"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -15137,6 +16093,12 @@ const courseData = [
         "code": "ELEC 3350",
         "title": "Principles of Machine Learning",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4211",
+            "EMIA 4110",
+            "MATH 4432"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -15174,6 +16136,8 @@ const courseData = [
         "code": "ELEC 3400",
         "title": "Introduction to Integrated Circuits and Systems",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -15272,6 +16236,8 @@ const courseData = [
         "code": "ELEC 3500",
         "title": "Integrated Circuit Devices",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -15355,6 +16321,8 @@ const courseData = [
         "code": "ELEC 3600",
         "title": "Electromagnetics: From Wireless to Photonic Applications",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -15408,6 +16376,8 @@ const courseData = [
         "code": "ELEC 3910",
         "title": "Academic and Professional Development III",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -15775,6 +16745,8 @@ const courseData = [
         "code": "ELEC 4010S",
         "title": "Microwave Theory and Applications",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -15838,6 +16810,8 @@ const courseData = [
         "code": "ELEC 4240",
         "title": "Deep Learning in Computer Vision",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -15876,6 +16850,10 @@ const courseData = [
         "code": "ELEC 4260",
         "title": "Intelligent Robots and Embodied AI",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 3210"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -15913,6 +16891,8 @@ const courseData = [
         "code": "ELEC 4350",
         "title": "AI Processor Architecture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -15951,6 +16931,8 @@ const courseData = [
         "code": "ELEC 4430",
         "title": "Integrated Power Electronics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -15974,6 +16956,8 @@ const courseData = [
         "code": "ELEC 4520",
         "title": "Integrated Circuit Fabrication Technology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16011,6 +16995,10 @@ const courseData = [
         "code": "ELEC 4610",
         "title": "Engineering Optics",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 3038"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16079,6 +17067,10 @@ const courseData = [
         "code": "ELEC 4840",
         "title": "Artificial Intelligence for Medical Image Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 5423"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16117,6 +17109,8 @@ const courseData = [
         "code": "ELEC 5050",
         "title": "Advanced CMOS Devices",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16139,6 +17133,8 @@ const courseData = [
         "code": "ELEC 5140",
         "title": "Advanced Computer Architecture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16161,6 +17157,10 @@ const courseData = [
         "code": "ELEC 5160",
         "title": "Digital VLSI System Design and Design Automation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "EESM 5020"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16183,6 +17183,8 @@ const courseData = [
         "code": "ELEC 5210",
         "title": "Advanced Topics in Nanoelectronics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16205,6 +17207,8 @@ const courseData = [
         "code": "ELEC 5240",
         "title": "Advanced Display Technologies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16228,6 +17232,8 @@ const courseData = [
         "code": "ELEC 5280",
         "title": "High Frequency Circuit Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16250,6 +17256,8 @@ const courseData = [
         "code": "ELEC 5460",
         "title": "Stochastic Optimization for Wireless Systems and Federated-Learning",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16272,6 +17280,10 @@ const courseData = [
         "code": "ELEC 5640",
         "title": "Robot Manipulation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MECH 5561"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16294,6 +17306,8 @@ const courseData = [
         "code": "ELEC 5650",
         "title": "Introduction to Networked Sensing, Estimation and Control",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16316,6 +17330,8 @@ const courseData = [
         "code": "ELEC 5660",
         "title": "Introduction to Aerial Robotics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16353,6 +17369,10 @@ const courseData = [
         "code": "ELEC 5680",
         "title": "Advanced Deep Learning Architectures",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 5214"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16376,6 +17396,8 @@ const courseData = [
         "code": "ELEC 5810",
         "title": "Introduction to Bioinformatics Algorithms",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16398,6 +17420,10 @@ const courseData = [
         "code": "ELEC 5820",
         "title": "Microfluidics and Biosensors",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "BIEN 5820"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16420,6 +17446,11 @@ const courseData = [
         "code": "ELEC 5900",
         "title": "Modern Engineering Research Methodologies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "EESM 5770",
+            "EESM 5830"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16442,6 +17473,8 @@ const courseData = [
         "code": "ELEC 6910E",
         "title": "Compound Semiconductor Device Physics and Technologies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16464,6 +17497,8 @@ const courseData = [
         "code": "ELEC 6910I",
         "title": "Internet Video Streaming",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16486,6 +17521,8 @@ const courseData = [
         "code": "ELEC 6950A",
         "title": "Departmental Seminar",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16508,6 +17545,8 @@ const courseData = [
         "code": "ELEC 6950B",
         "title": "Departmental Seminar",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16530,6 +17569,8 @@ const courseData = [
         "code": "EMIA 2020",
         "title": "Cross-disciplinary Design Thinking",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16597,6 +17638,8 @@ const courseData = [
         "code": "EMIA 2200",
         "title": "Introduction to Digital Media",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16634,6 +17677,8 @@ const courseData = [
         "code": "EMIA 2220",
         "title": "Technical Theater Arts",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16656,6 +17701,11 @@ const courseData = [
         "code": "EMIA 4110",
         "title": "Practical Machine Learning",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4211",
+            "MATH 4432"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16695,6 +17745,8 @@ const courseData = [
         "code": "EMIA 6500L",
         "title": "Artificial Intelligence for Financial Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16717,6 +17769,8 @@ const courseData = [
         "code": "EMIA 6500M",
         "title": "Generative Artificial Intelligence Governance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16739,6 +17793,8 @@ const courseData = [
         "code": "ENEG 1700",
         "title": "Introduction to Energy and Environmental Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16786,6 +17842,8 @@ const courseData = [
         "code": "ENEG 3910",
         "title": "Sustainable Energy Laboratory",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -16823,6 +17881,8 @@ const courseData = [
         "code": "ENEG 4130",
         "title": "Photovoltaic Materials and Devices",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16846,6 +17906,10 @@ const courseData = [
         "code": "ENEG 5400",
         "title": "Transport Phenomena and Its Application in Energy Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MECH 5280"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16868,6 +17932,8 @@ const courseData = [
         "code": "ENGG 1110",
         "title": "Engineering Solutions to Grand Challenges of the 21st Century",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16891,6 +17957,8 @@ const courseData = [
         "code": "ENGG 1400",
         "title": "Designing Your Life for Engineering Students",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -16913,6 +17981,8 @@ const courseData = [
         "code": "ENTR 1001",
         "title": "Entrepreneurship 1001: Designing Your Future",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16952,6 +18022,11 @@ const courseData = [
         "code": "ENTR 3012",
         "title": "Tech startup and entrepreneurs ecosystem: growth and innovation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "GBUS 2030",
+            "TEMG 3950"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -16975,6 +18050,8 @@ const courseData = [
         "code": "ENTR 3030",
         "title": "Social Innovations and Entrepreneurship",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -16997,6 +18074,8 @@ const courseData = [
         "code": "ENTR 4000F",
         "title": "Startup Sprint: Mastering the Launch Process",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17019,6 +18098,8 @@ const courseData = [
         "code": "ENTR 4000G",
         "title": "Inventions to Impact: Venture Creation Lab",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17041,6 +18122,8 @@ const courseData = [
         "code": "ENTR 4911",
         "title": "IT Entrepreneurship",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17073,6 +18156,8 @@ const courseData = [
         "code": "ENVR 1030",
         "title": "Environment and Health",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17096,6 +18181,10 @@ const courseData = [
         "code": "ENVR 1080",
         "title": "The Smart Consumer - Uncovering the Hidden Story behind the Product Label",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1943"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17119,6 +18208,10 @@ const courseData = [
         "code": "ENVR 1170",
         "title": "Science, Environment and Society - From Big Bang to Big Data",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 1190"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17142,6 +18235,8 @@ const courseData = [
         "code": "ENVR 2001",
         "title": "Academic and Professional Development I",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17164,6 +18259,10 @@ const courseData = [
         "code": "ENVR 2020",
         "title": "Urban Air Pollution",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2941"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17187,6 +18286,8 @@ const courseData = [
         "code": "ENVR 2090",
         "title": "Environmental Laboratory",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "LA1",
@@ -17209,6 +18310,8 @@ const courseData = [
         "code": "ENVR 3001",
         "title": "Academic and Professional Development II",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17231,6 +18334,8 @@ const courseData = [
         "code": "ENVR 3005",
         "title": "Environmental Risks: Principles and Practices",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17254,6 +18359,8 @@ const courseData = [
         "code": "ENVR 3010R",
         "title": "AI and Sustainability: Savior or Troublemaker",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17277,6 +18384,10 @@ const courseData = [
         "code": "ENVR 3210",
         "title": "Environmental Technology for Impact Assessment",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 2410"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17300,6 +18411,10 @@ const courseData = [
         "code": "ENVR 3310",
         "title": "Green Business Strategy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MGMT 3160"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17407,6 +18522,10 @@ const courseData = [
         "code": "ENVR 3410",
         "title": "Economics for Environmental Policy and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 4454"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17430,6 +18549,8 @@ const courseData = [
         "code": "ENVR 3420",
         "title": "Environmental Law and Regulations",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17452,6 +18573,8 @@ const courseData = [
         "code": "ENVR 4001",
         "title": "Academic and Professional Development III",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17474,6 +18597,11 @@ const courseData = [
         "code": "ENVR 4330",
         "title": "Environmental Geographical Information System",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ENVR 5330",
+            "EVSM 5240"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17496,6 +18624,8 @@ const courseData = [
         "code": "ENVR 4350",
         "title": "Governing Green Finance: National and International Perspectives and Approaches",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17519,6 +18649,11 @@ const courseData = [
         "code": "ENVR 5250",
         "title": "Environmental Economics and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 5351",
+            "PPOL 5351"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17541,6 +18676,8 @@ const courseData = [
         "code": "ENVR 5260",
         "title": "Environmental Policy and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17563,6 +18700,8 @@ const courseData = [
         "code": "ENVR 5320",
         "title": "Environmental Data Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17585,6 +18724,10 @@ const courseData = [
         "code": "ENVR 5330",
         "title": "Environmental Geographical Information System",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "EVSM 5240"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17607,6 +18750,8 @@ const courseData = [
         "code": "ENVR 5350",
         "title": "Climate Dynamics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17629,6 +18774,8 @@ const courseData = [
         "code": "ENVR 5360",
         "title": "Sustainable Development Research and Practice",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17651,6 +18798,8 @@ const courseData = [
         "code": "ENVR 5390",
         "title": "Satellite Remote Sensing and Informatics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17673,6 +18822,8 @@ const courseData = [
         "code": "ENVR 5430",
         "title": "Environmental Control Technologies for Urban Settings",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17695,6 +18846,8 @@ const courseData = [
         "code": "ENVR 6010P",
         "title": "Postgraduate Seminar",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -17732,6 +18885,10 @@ const courseData = [
         "code": "ENVS 5116",
         "title": "Environmental Impact and Risk Assessment",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "EVSM 6070"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17754,6 +18911,8 @@ const courseData = [
         "code": "ENVS 5117",
         "title": "Public Health and Hygiene",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17776,6 +18935,8 @@ const courseData = [
         "code": "ENVS 5118",
         "title": "Conservation and Sustainable Development",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17798,6 +18959,8 @@ const courseData = [
         "code": "ENVS 5119",
         "title": "Pollution Monitoring and Control",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17820,6 +18983,8 @@ const courseData = [
         "code": "ENVS 5120",
         "title": "Occupational Health and Safety",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17857,6 +19022,8 @@ const courseData = [
         "code": "EVNG 6050F",
         "title": "Environmental Engineering Seminar",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -17879,6 +19046,10 @@ const courseData = [
         "code": "EVSM 5240",
         "title": "GIS for Environmental Professionals",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ENVR 5330"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17901,6 +19072,8 @@ const courseData = [
         "code": "EVSM 5280",
         "title": "Air Pollution: From Science to Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17923,6 +19096,8 @@ const courseData = [
         "code": "EVSM 5300",
         "title": "Corporate Environmental Strategy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -17945,6 +19120,10 @@ const courseData = [
         "code": "EVSM 6070",
         "title": "Environmental Impact Assessment",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ENVS 5116"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -17967,6 +19146,11 @@ const courseData = [
         "code": "FINA 1303",
         "title": "Introduction to Financial Markets and Institutions",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "FINA 3103",
+            "CORE 1330"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -18006,6 +19190,10 @@ const courseData = [
         "code": "FINA 2203",
         "title": "Fundamentals of Business Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "FINA 2303"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -18045,6 +19233,10 @@ const courseData = [
         "code": "FINA 2303",
         "title": "Financial Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "FINA 2203"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -18188,6 +19380,8 @@ const courseData = [
         "code": "FINA 3103",
         "title": "Intermediate Investments",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18259,6 +19453,8 @@ const courseData = [
         "code": "FINA 3203",
         "title": "Derivative Securities",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18330,6 +19526,8 @@ const courseData = [
         "code": "FINA 3303",
         "title": "Intermediate Corporate Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18362,6 +19560,8 @@ const courseData = [
         "code": "FINA 3810",
         "title": "Bloomberg Market Concepts Certification",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "LA1",
@@ -18414,6 +19614,8 @@ const courseData = [
         "code": "FINA 4003",
         "title": "Wealth Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18437,6 +19639,8 @@ const courseData = [
         "code": "FINA 4013",
         "title": "Corporate Valuation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18459,6 +19663,8 @@ const courseData = [
         "code": "FINA 4203",
         "title": "Mergers, Acquisitions, and Corporate Restructuring",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18481,6 +19687,8 @@ const courseData = [
         "code": "FINA 4423",
         "title": "Family Office",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18504,6 +19712,8 @@ const courseData = [
         "code": "FINA 4513",
         "title": "Risk Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18543,6 +19753,8 @@ const courseData = [
         "code": "FINA 4603",
         "title": "Venture Capital Financing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18565,6 +19777,8 @@ const courseData = [
         "code": "FINA 4713",
         "title": "Introduction to Artificial Intelligence and Big Data in Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18588,6 +19802,8 @@ const courseData = [
         "code": "FINA 4723",
         "title": "Responsible Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18611,6 +19827,11 @@ const courseData = [
         "code": "FINA 4803",
         "title": "Quantitative Trading",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "FINA 4810",
+            "FINA 4814"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -18633,6 +19854,8 @@ const courseData = [
         "code": "FINA 4929R",
         "title": "Business Law, Compliance and Ethics in Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18655,6 +19878,8 @@ const courseData = [
         "code": "FINA 5110",
         "title": "Central Bank Operations",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18687,6 +19912,10 @@ const courseData = [
         "code": "FINA 5120",
         "title": "Corporate Finance",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "IMBA 5070"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -18899,6 +20128,8 @@ const courseData = [
         "code": "FINA 5150",
         "title": "Corporate Risk Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18946,6 +20177,8 @@ const courseData = [
         "code": "FINA 5210",
         "title": "Investment Analysis",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -18978,6 +20211,8 @@ const courseData = [
         "code": "FINA 5260",
         "title": "FinTech: The Future of the Financial Industry",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19010,6 +20245,8 @@ const courseData = [
         "code": "FINA 5270",
         "title": "Portfolio Management with Fintech Applications",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19032,6 +20269,8 @@ const courseData = [
         "code": "FINA 5280",
         "title": "Smart Applications of Distributed Ledger Technology",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19054,6 +20293,10 @@ const courseData = [
         "code": "FINA 5370",
         "title": "Equity Valuation",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "FINA 5350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -19096,6 +20339,8 @@ const courseData = [
         "code": "FINA 5390",
         "title": "Venture Capital and Private Equity",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19128,6 +20373,8 @@ const courseData = [
         "code": "FINA 5410",
         "title": "Market Microstructure",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19150,6 +20397,8 @@ const courseData = [
         "code": "FINA 5440",
         "title": "Risk Management for Financial Institutions",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19182,6 +20431,8 @@ const courseData = [
         "code": "FINA 5450",
         "title": "Hedge Funds",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19239,6 +20490,8 @@ const courseData = [
         "code": "FINA 5470",
         "title": "Mergers, Acquisitions and Restructuring",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19271,6 +20524,8 @@ const courseData = [
         "code": "FINA 5480",
         "title": "Commodities, Trade Finance and Infrastructures",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19303,6 +20558,8 @@ const courseData = [
         "code": "FINA 5490",
         "title": "Advanced Venture Capital Investing",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19395,6 +20652,8 @@ const courseData = [
         "code": "FINA 5500",
         "title": "VC Entrepreneurships",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19427,6 +20686,8 @@ const courseData = [
         "code": "FINA 5540",
         "title": "Alternative Investment Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19469,6 +20730,8 @@ const courseData = [
         "code": "FINA 5550",
         "title": "Carbon Management Basics for Financial Institutions",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19501,6 +20764,8 @@ const courseData = [
         "code": "FINA 5600",
         "title": "Real Estate Financing",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19533,6 +20798,8 @@ const courseData = [
         "code": "FINA 5670",
         "title": "Wealth Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19575,6 +20842,8 @@ const courseData = [
         "code": "FINA 5690",
         "title": "Family Office",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19597,6 +20866,8 @@ const courseData = [
         "code": "FINA 5700",
         "title": "Responsible Finance",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19629,6 +20900,8 @@ const courseData = [
         "code": "FINA 5710",
         "title": "Green Finance and Capital Markets",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19671,6 +20944,8 @@ const courseData = [
         "code": "FINA 5730",
         "title": "Sustainable Finance and Reporting Strategies in Hong Kong",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19733,6 +21008,8 @@ const courseData = [
         "code": "FINA 5840",
         "title": "Financial Modeling",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19755,6 +21032,8 @@ const courseData = [
         "code": "FINA 5870",
         "title": "Big Data in Finance",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19807,6 +21086,8 @@ const courseData = [
         "code": "FINA 6910P",
         "title": "International Banking",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19839,6 +21120,8 @@ const courseData = [
         "code": "FINA 6910T",
         "title": "Climate Finance and Energy Transition",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19861,6 +21144,8 @@ const courseData = [
         "code": "FINA 6910U",
         "title": "How Asia's Stock Markets Work",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19883,6 +21168,8 @@ const courseData = [
         "code": "FINA 6910W",
         "title": "Investments Through an Insurance Lens",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19905,6 +21192,8 @@ const courseData = [
         "code": "FINA 6910X",
         "title": "Political Economy of Finance",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19962,6 +21251,8 @@ const courseData = [
         "code": "FINA 7900B",
         "title": "Doctoral Seminar: Theoretical Asset Pricing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -19984,6 +21275,8 @@ const courseData = [
         "code": "FINA 7900P",
         "title": "Doctoral Seminar: Environmental Economics and Green Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20006,6 +21299,8 @@ const courseData = [
         "code": "FINA 7980D",
         "title": "Finance Workshops",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -20028,6 +21323,8 @@ const courseData = [
         "code": "FOFB 5120",
         "title": "Managing and Transferring Wealth for Sustainable Growth:Overview of Structures,Tools and Regulations",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20060,6 +21357,8 @@ const courseData = [
         "code": "FOFB 5210",
         "title": "Family Wealth Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20092,6 +21391,8 @@ const courseData = [
         "code": "FOFB 5530",
         "title": "Growing and Advancing Family Heritage through Entrepreneurship",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20134,6 +21435,8 @@ const courseData = [
         "code": "FOFB 5540",
         "title": "Art and Business Integration",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20166,6 +21469,8 @@ const courseData = [
         "code": "FOFB 5550",
         "title": "Family Collections: Appreciation, Transaction, Investment and Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20208,6 +21513,8 @@ const courseData = [
         "code": "FOFB 5580",
         "title": "Integrated Disciplines in the Family World",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20270,6 +21577,8 @@ const courseData = [
         "code": "FOFB 5610",
         "title": "Overview of Alternative Investments",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20302,6 +21611,8 @@ const courseData = [
         "code": "GBUS 1000",
         "title": "Global Leadership Development",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -20324,6 +21635,8 @@ const courseData = [
         "code": "GBUS 2010",
         "title": "Global Business Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20356,6 +21669,8 @@ const courseData = [
         "code": "GBUS 3030",
         "title": "Global Business Case Studies",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20379,6 +21694,8 @@ const courseData = [
         "code": "GBUS 3040",
         "title": "Business and ESG Management for Asia and Emerging Markets",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20401,6 +21718,8 @@ const courseData = [
         "code": "GBUS 3050",
         "title": "Deal Making in Asia and Emerging Markets",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20424,6 +21743,8 @@ const courseData = [
         "code": "GBUS 3060",
         "title": "Value Investing in Global Markets",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20456,6 +21777,8 @@ const courseData = [
         "code": "GBUS 4910",
         "title": "Capstone Project",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -20478,6 +21801,8 @@ const courseData = [
         "code": "GNED 2510",
         "title": "Career Building",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -20515,6 +21840,10 @@ const courseData = [
         "code": "HMAW 1905A",
         "title": "Behavioral Foundations of University Education: Habits, Mindsets, and Wellness",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IDPO 1010"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -21047,6 +22376,10 @@ const courseData = [
         "code": "HMAW 1905B",
         "title": "Behavioral Foundations of University Education: Habits, Mindsets, and Wellness",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IDPO 1010"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -21099,6 +22432,10 @@ const courseData = [
         "code": "HMAW 1905C",
         "title": "Behavioral Foundations of University Education: Habits, Mindsets, and Wellness",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IDPO 1010"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -21526,6 +22863,10 @@ const courseData = [
         "code": "HMAW 1905D",
         "title": "Behavioral Foundations of University Education: Habits, Mindsets, and Wellness",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IDPO 1010"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -21548,6 +22889,10 @@ const courseData = [
         "code": "HMAW 1905E",
         "title": "Behavioral Foundations of University Education: Habits, Mindsets, and Wellness",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IDPO 1010"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -21585,6 +22930,8 @@ const courseData = [
         "code": "HMMA 5005",
         "title": "Modern Chinese History",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -21607,6 +22954,10 @@ const courseData = [
         "code": "HMMA 5010",
         "title": "Traditional Chinese Literary Theory and Criticism",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "HUMA 5330"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -21629,6 +22980,8 @@ const courseData = [
         "code": "HMMA 5011",
         "title": "Chinese Culture in Jin Yong's Novels",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -21651,6 +23004,8 @@ const courseData = [
         "code": "HMMA 5012",
         "title": "Chinese Culture in Classics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -21673,6 +23028,10 @@ const courseData = [
         "code": "HUMA 1010",
         "title": "Introduction to Language",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1501"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -21696,6 +23055,10 @@ const courseData = [
         "code": "HUMA 1030",
         "title": "Structure of the Chinese Language",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1503"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -21719,6 +23082,10 @@ const courseData = [
         "code": "HUMA 1060",
         "title": "Introduction to Mandarin Chinese Grammar",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1504"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -21758,6 +23125,10 @@ const courseData = [
         "code": "HUMA 1100",
         "title": "Music of the World",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1631"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -21797,6 +23168,10 @@ const courseData = [
         "code": "HUMA 1102",
         "title": "Enjoyment of Classical Music",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1632"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -21836,6 +23211,10 @@ const courseData = [
         "code": "HUMA 1154",
         "title": "Photography",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1666"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -21873,6 +23252,10 @@ const courseData = [
         "code": "HUMA 1155",
         "title": "Video Art",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1667"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -21910,6 +23293,8 @@ const courseData = [
         "code": "HUMA 1160",
         "title": "Weiqi and Chinese Culture",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -21932,6 +23317,8 @@ const courseData = [
         "code": "HUMA 1221",
         "title": "Introduction to Game Studies",
         "credits": 3,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -21985,6 +23372,8 @@ const courseData = [
         "code": "HUMA 1411",
         "title": "Inside Chinese Documents and Archives: Methods and Perspectives",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22022,6 +23411,8 @@ const courseData = [
         "code": "HUMA 1412",
         "title": "China Through Time and Space: Chinese Historical Geography",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22059,6 +23450,11 @@ const courseData = [
         "code": "HUMA 1520",
         "title": "Modern East Asia",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1523",
+            "MGCS 5004"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -22116,6 +23512,10 @@ const courseData = [
         "code": "HUMA 1673",
         "title": "Art and Digital Culture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1668"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -22139,6 +23539,8 @@ const courseData = [
         "code": "HUMA 1674",
         "title": "China in Historical Maps",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22178,6 +23580,8 @@ const courseData = [
         "code": "HUMA 1677",
         "title": "East Asia and the West: From the Silk Road to The Belt and Road",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22235,6 +23639,8 @@ const courseData = [
         "code": "HUMA 1678",
         "title": "Introduction to Digital Humanities & AI",
         "credits": 3,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22324,6 +23730,8 @@ const courseData = [
         "code": "HUMA 1679",
         "title": "Central and Eastern Europe from 1917 to the Present",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22346,6 +23754,8 @@ const courseData = [
         "code": "HUMA 1681",
         "title": "Cold War in Europe 1945-1989",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22368,6 +23778,10 @@ const courseData = [
         "code": "HUMA 1920",
         "title": "Introduction to Moral Philosophy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1576"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -22392,6 +23806,8 @@ const courseData = [
         "code": "HUMA 1921",
         "title": "Philosophy of Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22459,6 +23875,8 @@ const courseData = [
         "code": "HUMA 2032",
         "title": "Language, Power and Identity",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22511,6 +23929,8 @@ const courseData = [
         "code": "HUMA 2034",
         "title": "Language Planning and Policy in Asian Contexts",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22534,6 +23954,10 @@ const courseData = [
         "code": "HUMA 2101",
         "title": "Enjoyment of Western Opera",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2631"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -22557,6 +23981,8 @@ const courseData = [
         "code": "HUMA 2103",
         "title": "Introduction to Music Composition",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22624,6 +24050,11 @@ const courseData = [
         "code": "HUMA 2104",
         "title": "Music Theory I: Introduction to Tonal Music",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2632",
+            "SISP 1709"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -22707,6 +24138,10 @@ const courseData = [
         "code": "HUMA 2107",
         "title": "Introduction to Electronic Music Composition",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2634"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -22774,6 +24209,10 @@ const courseData = [
         "code": "HUMA 2240",
         "title": "Reading Chinese Literature: Dreams of the Red Chamber",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2601"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -22806,6 +24245,8 @@ const courseData = [
         "code": "HUMA 2320",
         "title": "Chinese Drama",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22843,6 +24284,8 @@ const courseData = [
         "code": "HUMA 2331",
         "title": "Japanese Animation: Technology, Gender, and History",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22910,6 +24353,8 @@ const courseData = [
         "code": "HUMA 2400",
         "title": "Approaches to Humanities in China Studies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22947,6 +24392,8 @@ const courseData = [
         "code": "HUMA 2590",
         "title": "The Making of the Modern World: Renaissance to the Present",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -22970,6 +24417,11 @@ const courseData = [
         "code": "HUMA 2635",
         "title": "Cultural Diversity in China",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2554",
+            "MGCS 5032"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23007,6 +24459,8 @@ const courseData = [
         "code": "HUMA 2636",
         "title": "Medical Anthropology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23059,6 +24513,10 @@ const courseData = [
         "code": "HUMA 2661",
         "title": "Chinese Oil Painting",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2652"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23082,6 +24540,8 @@ const courseData = [
         "code": "HUMA 2831",
         "title": "Metaphysics: Study of Reality and Existence",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23121,6 +24581,10 @@ const courseData = [
         "code": "HUMA 2921",
         "title": "Ethical Theories and Contemporary Issues",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2573"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23143,6 +24607,10 @@ const courseData = [
         "code": "HUMA 2930",
         "title": "What am I? Personal Identity and the Self from a Philosophical Perspective",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2574"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23175,6 +24643,10 @@ const courseData = [
         "code": "HUMA 3030",
         "title": "Language, Communication and Culture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 3501"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23207,6 +24679,8 @@ const courseData = [
         "code": "HUMA 3103",
         "title": "Making Chamber Music B",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23259,6 +24733,8 @@ const courseData = [
         "code": "HUMA 3106",
         "title": "Music Theory IIB - Tonal and Post-Tonal Music Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23326,6 +24802,8 @@ const courseData = [
         "code": "HUMA 3204",
         "title": "Chinese Creative Writing-Reading Literary Classics and Writing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23348,6 +24826,10 @@ const courseData = [
         "code": "HUMA 3220",
         "title": "Modern Chinese Poetry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 3603"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23385,6 +24867,8 @@ const courseData = [
         "code": "HUMA 3630",
         "title": "Community and Cultural Identity",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23422,6 +24906,10 @@ const courseData = [
         "code": "HUMA 3800",
         "title": "Guided Studies in Chinese Philosophical Classics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 3571"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23454,6 +24942,10 @@ const courseData = [
         "code": "HUMA 3810",
         "title": "Taoism and the Chinese Tradition",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 3572"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23477,6 +24969,10 @@ const courseData = [
         "code": "HUMA 3900",
         "title": "Philosophical Inquiry into the Modern World",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 3574"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23499,6 +24995,8 @@ const courseData = [
         "code": "HUMA 4221",
         "title": "Chinese Classics and Their Reworking in Various Media Around the Globe",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23551,6 +25049,8 @@ const courseData = [
         "code": "HUMA 4530",
         "title": "History and the Future",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23573,6 +25073,8 @@ const courseData = [
         "code": "HUMA 4650",
         "title": "Western Painting: From Renaissance to Impressionism",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23596,6 +25098,10 @@ const courseData = [
         "code": "HUMA 5160",
         "title": "Chinese Phonetics and Phonology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "HMMA 5002"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23618,6 +25124,10 @@ const courseData = [
         "code": "HUMA 5230",
         "title": "Languages of China: Anthropological and Cognitive Dimensions",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "HMMA 5008"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23640,6 +25150,10 @@ const courseData = [
         "code": "HUMA 5300",
         "title": "Chinese Literary History",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "HMMA 5003"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23662,6 +25176,8 @@ const courseData = [
         "code": "HUMA 5342",
         "title": "Sentimental Republic: Emotion in Modern Chinese Literature",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23684,6 +25200,8 @@ const courseData = [
         "code": "HUMA 5351",
         "title": "Critical Film and Media Theory",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23707,6 +25225,8 @@ const courseData = [
         "code": "HUMA 5541",
         "title": "History and the Future",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23729,6 +25249,10 @@ const courseData = [
         "code": "HUMA 5700",
         "title": "Anthropological Studies of China",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "HMMA 5006"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23751,6 +25275,8 @@ const courseData = [
         "code": "HUMA 5905",
         "title": "Science and Values",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -23773,6 +25299,8 @@ const courseData = [
         "code": "HUMA 5930",
         "title": "Classical Chinese Philosophy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23795,6 +25323,10 @@ const courseData = [
         "code": "HUMA 5951",
         "title": "Music, Science, and the Sublime",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MGCS 5038"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23817,6 +25349,8 @@ const courseData = [
         "code": "IBTM 5060",
         "title": "Building Internet of Things: Technologies, Big Data and Strategies for the Building Manager",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23839,6 +25373,8 @@ const courseData = [
         "code": "IBTM 5200",
         "title": "Advanced Energy Conversion Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23861,6 +25397,10 @@ const courseData = [
         "code": "IBTM 5430",
         "title": "Indoor Air Quality Technology and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MECH 4350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -23883,6 +25423,8 @@ const courseData = [
         "code": "IBTM 5530",
         "title": "Risk Management and Decision-Making in Intelligent Building",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23905,6 +25447,8 @@ const courseData = [
         "code": "IBTM 5650",
         "title": "Project Engineering and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23927,6 +25471,8 @@ const courseData = [
         "code": "IBTM 5660",
         "title": "Utility Services",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -23949,6 +25495,8 @@ const courseData = [
         "code": "IEDA 1010",
         "title": "Academic and Professional Development I",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -24076,6 +25624,8 @@ const courseData = [
         "code": "IEDA 1020",
         "title": "Academic and Professional Development II",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -24143,6 +25693,12 @@ const courseData = [
         "code": "IEDA 1250",
         "title": "Optimizing Decisions for Personal and Business Development",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 2170",
+            "IEDA 3010",
+            "ISOM 3710"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -24205,6 +25761,12 @@ const courseData = [
         "code": "IEDA 1280",
         "title": "Decision Analytics for Modern Society",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IEDA 2010",
+            "CIVL 2170",
+            "ISOM 2700"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -24257,6 +25819,8 @@ const courseData = [
         "code": "IEDA 2100S",
         "title": "Computing in Industrial Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24309,6 +25873,12 @@ const courseData = [
         "code": "IEDA 2540",
         "title": "Statistics for Engineers",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 2411",
+            "ISOM 2500",
+            "LIFS 3150"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -24362,6 +25932,8 @@ const courseData = [
         "code": "IEDA 3410",
         "title": "Routing and Fleet Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24400,6 +25972,8 @@ const courseData = [
         "code": "IEDA 3460",
         "title": "Demand and Supply Analytics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24437,6 +26011,11 @@ const courseData = [
         "code": "IEDA 3560",
         "title": "Predictive Analytics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4211",
+            "IEDA 3302"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -24474,6 +26053,8 @@ const courseData = [
         "code": "IEDA 4000C",
         "title": "Online Markets",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24512,6 +26093,8 @@ const courseData = [
         "code": "IEDA 4000D",
         "title": "Introduction to Causal Inference",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24550,6 +26133,8 @@ const courseData = [
         "code": "IEDA 4000I",
         "title": "Generative AI and LLMs for Operations Research",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24588,6 +26173,8 @@ const courseData = [
         "code": "IEDA 4000J",
         "title": "Blockchain and Web3",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24626,6 +26213,10 @@ const courseData = [
         "code": "IEDA 4100",
         "title": "Integrated Production Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 2700"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -24664,6 +26255,10 @@ const courseData = [
         "code": "IEDA 4130",
         "title": "System Simulation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 4720"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -24701,6 +26296,8 @@ const courseData = [
         "code": "IEDA 4200",
         "title": "Design of Logistics and Manufacturing Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24748,6 +26345,8 @@ const courseData = [
         "code": "IEDA 4331",
         "title": "Quantitative Methods in Financial Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24786,6 +26385,8 @@ const courseData = [
         "code": "IEDA 4500",
         "title": "Engineering Foundations of FinTech",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24823,6 +26424,10 @@ const courseData = [
         "code": "IEDA 5170",
         "title": "Production and Operations Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 5700"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -24845,6 +26450,8 @@ const courseData = [
         "code": "IEDA 5230",
         "title": "Deterministic Models in Operations Research",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24867,6 +26474,8 @@ const courseData = [
         "code": "IEDA 5250",
         "title": "Stochastic Models in Operations Research",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24889,6 +26498,8 @@ const courseData = [
         "code": "IEDA 6300A",
         "title": "Al Applications in Logistics and Supply Chain Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24911,6 +26522,8 @@ const courseData = [
         "code": "IEDA 6800D",
         "title": "Departmental Seminar",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -24933,6 +26546,8 @@ const courseData = [
         "code": "IIMP 6090",
         "title": "Postgraduate Seminar",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -24955,6 +26570,8 @@ const courseData = [
         "code": "ISDN 1004",
         "title": "Sketching",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "LA1",
@@ -24994,6 +26611,8 @@ const courseData = [
         "code": "ISDN 1007",
         "title": "From Design Thinking to Design Action: Defining Problems for Better Solutions",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25061,6 +26680,10 @@ const courseData = [
         "code": "ISDN 1200",
         "title": "Design Thinking for Technological Innovations",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISDN 1001"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -25098,6 +26721,10 @@ const courseData = [
         "code": "ISDN 2000",
         "title": "What is Design and Why Design?",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2261"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -25135,6 +26762,8 @@ const courseData = [
         "code": "ISDN 2002",
         "title": "Second Year Design Project II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25157,6 +26786,8 @@ const courseData = [
         "code": "ISDN 2110",
         "title": "From Ideas to Assets: Practice of the Creative Economy System",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25179,6 +26810,8 @@ const courseData = [
         "code": "ISDN 2200",
         "title": "Systems Thinking and Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25216,6 +26849,8 @@ const courseData = [
         "code": "ISDN 2210",
         "title": "Introduction to Brand Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25253,6 +26888,8 @@ const courseData = [
         "code": "ISDN 2400",
         "title": "Physical Prototyping",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25290,6 +26927,8 @@ const courseData = [
         "code": "ISDN 2603",
         "title": "Materials, Shape and Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25327,6 +26966,8 @@ const courseData = [
         "code": "ISDN 3000E",
         "title": "Programming for Integrative Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25364,6 +27005,8 @@ const courseData = [
         "code": "ISDN 3001",
         "title": "Third Year Design Project I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25386,6 +27029,8 @@ const courseData = [
         "code": "ISDN 3002",
         "title": "Third Year Design Project II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25408,6 +27053,8 @@ const courseData = [
         "code": "ISDN 3004",
         "title": "Advanced Sketching",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25460,6 +27107,8 @@ const courseData = [
         "code": "ISDN 3150",
         "title": "AI for Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25497,6 +27146,8 @@ const courseData = [
         "code": "ISDN 4000W",
         "title": "Designing for Sustainability: Fashion and Innovation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25534,6 +27185,8 @@ const courseData = [
         "code": "ISDN 4200",
         "title": "Product Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25557,6 +27210,10 @@ const courseData = [
         "code": "ISDN 5060",
         "title": "Embedded Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "EESM 5060"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -25594,6 +27251,8 @@ const courseData = [
         "code": "ISDN 5102",
         "title": "Entrepreneurial Literacy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25616,6 +27275,8 @@ const courseData = [
         "code": "ISDN 5230",
         "title": "Artificial Intelligence of Things for Healthcare",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25638,6 +27299,8 @@ const courseData = [
         "code": "ISDN 5260",
         "title": "Systems Design: Going Beyond the Prototype into Product Ecosystems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25660,6 +27323,8 @@ const courseData = [
         "code": "ISDN 5600",
         "title": "Magnetism: From Quantum Mechanics to Medical Robots",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25682,6 +27347,8 @@ const courseData = [
         "code": "ISDN 5610",
         "title": "Integrated Sensing, Communication, and Intelligence",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25704,6 +27371,8 @@ const courseData = [
         "code": "ISDN 5620",
         "title": "Fashion Future: Integrating Technology, Sustainability, and Entrepreneurship in the Industry 4.0 Era",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25726,6 +27395,8 @@ const courseData = [
         "code": "ISDN 6660I",
         "title": "Integrative Systems and Design Seminar",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25748,6 +27419,10 @@ const courseData = [
         "code": "ISOM 1380",
         "title": "Technology and Innovation: Social and Business Perspectives",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1340"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -25787,6 +27462,8 @@ const courseData = [
         "code": "ISOM 1400",
         "title": "Digital Philanthropy: Harnessing Technology for Social Changes and Beyond",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -25810,6 +27487,10 @@ const courseData = [
         "code": "ISOM 2010",
         "title": "Introduction to Information Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 1001"
+        ],
         "sections": [
             {
                 "id": "L01",
@@ -26118,6 +27799,11 @@ const courseData = [
         "code": "ISOM 2020",
         "title": "Coding for Business",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 1021",
+            "COMP 1023"
+        ],
         "sections": [
             {
                 "id": "L01",
@@ -26440,6 +28126,15 @@ const courseData = [
         "code": "ISOM 2500",
         "title": "Business Statistics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 2160",
+            "IEDA 2520",
+            "IEDA 2540",
+            "LIFS 3150",
+            "MATH 2411",
+            "MATH 3423"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -26552,6 +28247,8 @@ const courseData = [
         "code": "ISOM 2600",
         "title": "Introduction to Business Analytics",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -26784,6 +28481,10 @@ const courseData = [
         "code": "ISOM 2700",
         "title": "Operations Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IEDA 4100"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -26912,6 +28613,10 @@ const courseData = [
         "code": "ISOM 3010",
         "title": "Information Systems Project Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 4750"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27029,6 +28734,10 @@ const courseData = [
         "code": "ISOM 3180",
         "title": "Telecommunications and Computer Networking Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4621"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27097,6 +28806,8 @@ const courseData = [
         "code": "ISOM 3210",
         "title": "Information Systems Analysis and Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -27150,6 +28861,10 @@ const courseData = [
         "code": "ISOM 3230",
         "title": "Business Programming in VBA",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 1022Q"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27212,6 +28927,11 @@ const courseData = [
         "code": "ISOM 3260",
         "title": "Database Design and Administration",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 3311",
+            "IEDA 3300"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27324,6 +29044,8 @@ const courseData = [
         "code": "ISOM 3270",
         "title": "Blockchain Programming in Business Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -27361,6 +29083,11 @@ const courseData = [
         "code": "ISOM 3320",
         "title": "Business Applications Development in Java",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 1022P",
+            "COMP 3021"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27399,6 +29126,8 @@ const courseData = [
         "code": "ISOM 3330",
         "title": "Data Visualization and Visual Analytics",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -27438,6 +29167,8 @@ const courseData = [
         "code": "ISOM 3350",
         "title": "FinTech and Cryptoventures",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -27461,6 +29192,11 @@ const courseData = [
         "code": "ISOM 3360",
         "title": "Data Mining for Business Analytics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4331",
+            "IEDA 3560"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27576,6 +29312,8 @@ const courseData = [
         "code": "ISOM 3370",
         "title": "Big Data Technologies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -27599,6 +29337,8 @@ const courseData = [
         "code": "ISOM 3380",
         "title": "Advanced Network Management (CISCO - ICND)",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -27652,6 +29392,11 @@ const courseData = [
         "code": "ISOM 3400",
         "title": "Business Applications Development in Python",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 1021",
+            "COMP 1023"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27776,6 +29521,10 @@ const courseData = [
         "code": "ISOM 3530",
         "title": "Business Data Analytics",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 3424"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27814,6 +29563,11 @@ const courseData = [
         "code": "ISOM 3710",
         "title": "Business Modeling and Optimization",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 2170",
+            "IEDA 3010"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27892,6 +29646,10 @@ const courseData = [
         "code": "ISOM 3760",
         "title": "Logistics Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IEDA 3450"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27915,6 +29673,11 @@ const courseData = [
         "code": "ISOM 3770",
         "title": "Global Supply Chain Management",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "IEDA 4410",
+            "ISOM 3780"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27967,6 +29730,10 @@ const courseData = [
         "code": "ISOM 3780",
         "title": "Sustainable Supply Chain Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 3770"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -27989,6 +29756,8 @@ const courseData = [
         "code": "ISOM 3900",
         "title": "Decision Analytics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28028,6 +29797,8 @@ const courseData = [
         "code": "ISOM 4000D",
         "title": "Generative AI and Large Language Models",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28051,6 +29822,8 @@ const courseData = [
         "code": "ISOM 4020",
         "title": "Innovation Management and Technology Entrepreneurship",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28074,6 +29847,8 @@ const courseData = [
         "code": "ISOM 4200",
         "title": "Information and Cyber Security Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28096,6 +29871,8 @@ const courseData = [
         "code": "ISOM 4300",
         "title": "Information Systems Control and Assurance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28119,6 +29896,8 @@ const courseData = [
         "code": "ISOM 4520",
         "title": "Statistics for Financial Risk Management",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28156,6 +29935,11 @@ const courseData = [
         "code": "ISOM 4540",
         "title": "Time Series Analysis and Forecasting",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 4304",
+            "MATH 4425"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -28194,6 +29978,8 @@ const courseData = [
         "code": "ISOM 4750",
         "title": "Business Project Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28226,6 +30012,8 @@ const courseData = [
         "code": "ISOM 4760",
         "title": "Operations Strategy for Technology Value Chains",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28249,6 +30037,10 @@ const courseData = [
         "code": "ISOM 4780",
         "title": "Integrated Planning and Execution",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 2040"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -28272,6 +30064,8 @@ const courseData = [
         "code": "ISOM 4810",
         "title": "OM Best Practices",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28295,6 +30089,8 @@ const courseData = [
         "code": "ISOM 4830",
         "title": "Analytics for Service Operations",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28317,6 +30113,8 @@ const courseData = [
         "code": "ISOM 4860",
         "title": "Decision and Data Analytics in Financial Markets",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28340,6 +30138,11 @@ const courseData = [
         "code": "ISOM 5020",
         "title": "Technology Strategy and Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "IMBA 5120",
+            "ISOM 5100"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -28407,6 +30210,8 @@ const courseData = [
         "code": "ISOM 5040",
         "title": "Incident Response Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28449,6 +30254,8 @@ const courseData = [
         "code": "ISOM 5060",
         "title": "Protection of Information Assets",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28471,6 +30278,8 @@ const courseData = [
         "code": "ISOM 5080",
         "title": "Digital Forensics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28493,6 +30302,8 @@ const courseData = [
         "code": "ISOM 5090",
         "title": "Security Assessment and Protection",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28525,6 +30336,8 @@ const courseData = [
         "code": "ISOM 5110",
         "title": "Programming R for Analytics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28557,6 +30370,8 @@ const courseData = [
         "code": "ISOM 5120",
         "title": "Visualizing Data for Business Decisions",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28579,6 +30394,8 @@ const courseData = [
         "code": "ISOM 5170",
         "title": "Big Data Technologies",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28601,6 +30418,8 @@ const courseData = [
         "code": "ISOM 5190",
         "title": "Advanced Network and Security Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28633,6 +30452,8 @@ const courseData = [
         "code": "ISOM 5220",
         "title": "FinTech Regulation and Compliance",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28700,6 +30521,8 @@ const courseData = [
         "code": "ISOM 5230",
         "title": "Privacy Management in the Digital Age",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28722,6 +30545,8 @@ const courseData = [
         "code": "ISOM 5240",
         "title": "Deep Learning Business Applications with Python",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28769,6 +30594,8 @@ const courseData = [
         "code": "ISOM 5250",
         "title": "Business Modeling with VBA",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28816,6 +30643,8 @@ const courseData = [
         "code": "ISOM 5270",
         "title": "Big Data Analytics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -28978,6 +30807,8 @@ const courseData = [
         "code": "ISOM 5320",
         "title": "Digital Business and Web Analytics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29045,6 +30876,11 @@ const courseData = [
         "code": "ISOM 5330",
         "title": "Financial Technology for Business Professionals",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 5340",
+            "CSIT 5920"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -29112,6 +30948,8 @@ const courseData = [
         "code": "ISOM 5360",
         "title": "Information Systems Auditing",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29179,6 +31017,8 @@ const courseData = [
         "code": "ISOM 5390",
         "title": "Digital and Social Media Strategy",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29211,6 +31051,11 @@ const courseData = [
         "code": "ISOM 5420",
         "title": "Integrated Business Simulation and Strategy",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 5030",
+            "EEMT 5560"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -29283,6 +31128,8 @@ const courseData = [
         "code": "ISOM 5430",
         "title": "Machine Learning in Practice",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29315,6 +31162,8 @@ const courseData = [
         "code": "ISOM 5450",
         "title": "Technology Consulting",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29367,6 +31216,11 @@ const courseData = [
         "code": "ISOM 5460",
         "title": "Project Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 5770",
+            "MIMT 5350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -29444,6 +31298,8 @@ const courseData = [
         "code": "ISOM 5480",
         "title": "Technology Entrepreneurship",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29466,6 +31322,8 @@ const courseData = [
         "code": "ISOM 5535",
         "title": "High Dimensional Statistics with Business Applications",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29533,6 +31391,10 @@ const courseData = [
         "code": "ISOM 5550",
         "title": "Statistical Methods for Business and Economics I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 5431"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -29555,6 +31417,8 @@ const courseData = [
         "code": "ISOM 5580",
         "title": "Practical AI for Business",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29587,6 +31451,8 @@ const courseData = [
         "code": "ISOM 5640",
         "title": "Social Media and Network Analysis",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29654,6 +31520,11 @@ const courseData = [
         "code": "ISOM 5700",
         "title": "Operations Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "IEDA 5170",
+            "IMBA 5110"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -29751,6 +31622,8 @@ const courseData = [
         "code": "ISOM 5715",
         "title": "Decision Analytics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29863,6 +31736,8 @@ const courseData = [
         "code": "ISOM 5725",
         "title": "Service Analytics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29905,6 +31780,8 @@ const courseData = [
         "code": "ISOM 5740",
         "title": "Managing Financial Services Operations",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -29937,6 +31814,8 @@ const courseData = [
         "code": "ISOM 5755",
         "title": "Mastering the Customer Experience: Mapping the End-to-End Customer Journey",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30054,6 +31933,8 @@ const courseData = [
         "code": "ISOM 5765",
         "title": "Managing Business to Create Value through Sustainability",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30086,6 +31967,11 @@ const courseData = [
         "code": "ISOM 5770",
         "title": "Business Project Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 5460",
+            "MIMT 5350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -30118,6 +32004,8 @@ const courseData = [
         "code": "ISOM 5820",
         "title": "OM Best Practices",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30150,6 +32038,8 @@ const courseData = [
         "code": "ISOM 6000U",
         "title": "Digital Transformation: Principle to Application",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30172,6 +32062,8 @@ const courseData = [
         "code": "ISOM 6000V",
         "title": "Capital Raising Strategies for Technology Entrepreneurs",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30194,6 +32086,8 @@ const courseData = [
         "code": "ISOM 6010B",
         "title": "AI in Finance",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30226,6 +32120,8 @@ const courseData = [
         "code": "ISOM 6010C",
         "title": "Blockchain Technology & Web3 Business Applications",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30248,6 +32144,8 @@ const courseData = [
         "code": "ISOM 6010D",
         "title": "Generative AI in Finance: Risks, Ethics, and Governance",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30280,6 +32178,11 @@ const courseData = [
         "code": "JEVE 5320",
         "title": "Water Quality and Assessment",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CBME 5320",
+            "CENG 5320"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -30302,6 +32205,11 @@ const courseData = [
         "code": "JEVE 5420",
         "title": "Biological Waste Treatment and Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIEM 5420",
+            "CIVL 5420"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -30324,6 +32232,10 @@ const courseData = [
         "code": "JEVE 5430",
         "title": "Solid Waste Landfill Engineering Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 5460"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -30346,6 +32258,8 @@ const courseData = [
         "code": "JEVE 5440",
         "title": "Hazardous Waste Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30368,6 +32282,8 @@ const courseData = [
         "code": "JEVE 5530",
         "title": "Environmental Management and Regulatory Compliance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30390,6 +32306,12 @@ const courseData = [
         "code": "JEVE 5820",
         "title": "Energy, Environment and Sustainable Development",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MCEE 5820",
+            "CENG 5910",
+            "ENEG 5050"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -30412,6 +32334,8 @@ const courseData = [
         "code": "JEVE 6000G",
         "title": "Advanced Technology for Water and Energy Nexus",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30434,6 +32358,8 @@ const courseData = [
         "code": "JEVE 6000I",
         "title": "Advanced Air and Noise Pollution Control for Environmental Professionals",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -30476,6 +32402,11 @@ const courseData = [
         "code": "LABU 2040",
         "title": "Business Case Analyses",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LABU 2051",
+            "LABU 2052"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -30499,6 +32430,8 @@ const courseData = [
         "code": "LABU 2060",
         "title": "Effective Communication in Business",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -30538,6 +32471,30 @@ const courseData = [
         "code": "LANG 1101",
         "title": "Pinyin for Non-Chinese Language Background Students",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1122",
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1117",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1416",
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424",
+            "LANG 1425",
+            "LANG 1426",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -30561,6 +32518,31 @@ const courseData = [
         "code": "LANG 1102",
         "title": "Chinese Characters for Non-Chinese Language Background Students I",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1103",
+            "LANG 1122",
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1117",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1416",
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424",
+            "LANG 1425",
+            "LANG 1426",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -30584,6 +32566,30 @@ const courseData = [
         "code": "LANG 1103",
         "title": "Chinese Characters for Non-Chinese Language Background Students II",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1122",
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1117",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1416",
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424",
+            "LANG 1425",
+            "LANG 1426",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -30607,6 +32613,8 @@ const courseData = [
         "code": "LANG 1130",
         "title": "Cantonese for Non-Chinese Language Background Students I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -30662,6 +32670,8 @@ const courseData = [
         "code": "LANG 1133",
         "title": "Cantonese for Chinese Language Background Students I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -30717,6 +32727,11 @@ const courseData = [
         "code": "LANG 1210",
         "title": "Japanese Language and Culture for Beginners I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1211",
+            "LANG 1212"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -30740,6 +32755,10 @@ const courseData = [
         "code": "LANG 1211",
         "title": "Communicative Japanese for Beginners I",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1210"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -30795,6 +32814,10 @@ const courseData = [
         "code": "LANG 1212",
         "title": "Japanese Vocabulary and Grammar Essentials I",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1210"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -30847,6 +32870,8 @@ const courseData = [
         "code": "LANG 1310",
         "title": "French: World Language and Culture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -30902,6 +32927,8 @@ const courseData = [
         "code": "LANG 1330",
         "title": "Spanish and the Other America",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -30966,6 +32993,14 @@ const courseData = [
         "code": "LANG 1402",
         "title": "English for University Studies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1002",
+            "LANG 1003",
+            "LANG 1401",
+            "LANG 1403",
+            "LANG 1404"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -30989,6 +33024,8 @@ const courseData = [
         "code": "LANG 1405",
         "title": "Mediated Me: An Introduction to Digital Literacy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L01",
@@ -31011,6 +33048,14 @@ const courseData = [
         "code": "LANG 1406",
         "title": "Academic English for Business Studies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1403",
+            "LANG 1404",
+            "LANG 1407",
+            "LANG 1408",
+            "LANG 1409"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -31552,6 +33597,14 @@ const courseData = [
         "code": "LANG 1407",
         "title": "Academic English for Engineering Studies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1403",
+            "LANG 1404",
+            "LANG 1406",
+            "LANG 1408",
+            "LANG 1409"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -32285,6 +34338,14 @@ const courseData = [
         "code": "LANG 1408",
         "title": "Academic English for Humanities and Social Science Studies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1403",
+            "LANG 1404",
+            "LANG 1406",
+            "LANG 1407",
+            "LANG 1409"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -32381,6 +34442,14 @@ const courseData = [
         "code": "LANG 1409",
         "title": "Academic English for Science Studies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1403",
+            "LANG 1404",
+            "LANG 1406",
+            "LANG 1407",
+            "LANG 1408"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -33198,6 +35267,13 @@ const courseData = [
         "code": "LANG 1416C",
         "title": "Effective Chinese Communication",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -33312,6 +35388,13 @@ const courseData = [
         "code": "LANG 1416I",
         "title": "Effective Chinese Communication",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -33335,6 +35418,13 @@ const courseData = [
         "code": "LANG 1416P",
         "title": "Effective Chinese Communication",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -33472,6 +35562,30 @@ const courseData = [
         "code": "LANG 1421",
         "title": "Chinese Communication in the Digital Era",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1101",
+            "LANG 1102",
+            "LANG 1103",
+            "LANG 1511",
+            "LANG 1512",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515",
+            "LANG 1411",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1120",
+            "LANG 1121",
+            "LANG 1122",
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -33634,6 +35748,30 @@ const courseData = [
         "code": "LANG 1422",
         "title": "Chinese for Workplace Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1101",
+            "LANG 1102",
+            "LANG 1103",
+            "LANG 1511",
+            "LANG 1512",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515",
+            "LANG 1411",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1120",
+            "LANG 1121",
+            "LANG 1122",
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -33924,6 +36062,23 @@ const courseData = [
         "code": "LANG 1424C",
         "title": "Chinese Writing in Cultural Contexts",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1101",
+            "LANG 1102",
+            "LANG 1103",
+            "LANG 1511",
+            "LANG 1512",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515",
+            "LANG 1411",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1120"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34166,6 +36321,23 @@ const courseData = [
         "code": "LANG 1424P",
         "title": "Chinese Writing in Cultural Contexts",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1101",
+            "LANG 1102",
+            "LANG 1103",
+            "LANG 1511",
+            "LANG 1512",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515",
+            "LANG 1411",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1120"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34296,6 +36468,30 @@ const courseData = [
         "code": "LANG 1425",
         "title": "Chinese Communication in Interpersonal Relations \u00e4\u00b8\u00ad\u00e6\u0096\u0087\u00e5\u0082\u00b3\u00e6\u0084\u008f\u00e8\u0088\u0087\u00e4\u00ba\u00ba\u00e9\u009a\u009b\u00e9\u0097\u009c\u00e4\u00bf\u0082",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1101",
+            "LANG 1102",
+            "LANG 1103",
+            "LANG 1120",
+            "LANG 1121",
+            "LANG 1122",
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1411",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1511",
+            "LANG 1512",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34344,6 +36540,30 @@ const courseData = [
         "code": "LANG 1426",
         "title": "Chinese Communication in Film and Literary Contexts",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1101",
+            "LANG 1102",
+            "LANG 1103",
+            "LANG 1120",
+            "LANG 1121",
+            "LANG 1122",
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1411",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1511",
+            "LANG 1512",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34383,6 +36603,34 @@ const courseData = [
         "code": "LANG 1511",
         "title": "Chinese for Non-Chinese Language Background Students I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1120",
+            "LANG 1121",
+            "LANG 1122",
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1117",
+            "LANG 1411",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1414",
+            "LANG 1415",
+            "LANG 1416",
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424",
+            "LANG 1425",
+            "LANG 1426",
+            "LANG 1512",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34497,6 +36745,29 @@ const courseData = [
         "code": "LANG 1512",
         "title": "Chinese for Non-Chinese Language Background Students II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1122",
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1117",
+            "LANG 1412",
+            "LANG 1413",
+            "LANG 1415",
+            "LANG 1416",
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424",
+            "LANG 1425",
+            "LANG 1426",
+            "LANG 1513",
+            "LANG 1514",
+            "LANG 1515"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34536,6 +36807,26 @@ const courseData = [
         "code": "LANG 1513",
         "title": "Chinese for Non-Chinese Language Background Students III",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1123",
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1117",
+            "LANG 1413",
+            "LANG 1415",
+            "LANG 1416",
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424",
+            "LANG 1425",
+            "LANG 1426",
+            "LANG 1514",
+            "LANG 1515"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34575,6 +36866,23 @@ const courseData = [
         "code": "LANG 1514",
         "title": "Chinese for Non-Chinese Language Background Students IV",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1124",
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1117",
+            "LANG 1413",
+            "LANG 1416",
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424",
+            "LANG 1425",
+            "LANG 1426",
+            "LANG 1515"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34598,6 +36906,21 @@ const courseData = [
         "code": "LANG 1515",
         "title": "Chinese for Non-Chinese Language Background Students V",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 1125",
+            "LANG 1126",
+            "LANG 1127",
+            "LANG 1117",
+            "LANG 1413",
+            "LANG 1416",
+            "LANG 1421",
+            "LANG 1422",
+            "LANG 1423",
+            "LANG 1424",
+            "LANG 1425",
+            "LANG 1426"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34621,6 +36944,8 @@ const courseData = [
         "code": "LANG 2010",
         "title": "English for Science I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -34694,6 +37019,8 @@ const courseData = [
         "code": "LANG 2030",
         "title": "Technical Communication I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -34749,6 +37076,13 @@ const courseData = [
         "code": "LANG 2061",
         "title": "Professional Writing for the Workplace",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 3700",
+            "LABU 2040",
+            "LABU 2060",
+            "LANG 2063"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -34998,6 +37332,12 @@ const courseData = [
         "code": "LANG 2062",
         "title": "Professional Speaking for the Workplace",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LABU 2040",
+            "LABU 2060",
+            "LANG 2064"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -35224,6 +37564,10 @@ const courseData = [
         "code": "LANG 2063",
         "title": "Writing for Workplace Success",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 2061"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -35263,6 +37607,10 @@ const courseData = [
         "code": "LANG 2064",
         "title": "Speaking for Workplace Success",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 2062"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -35327,6 +37675,10 @@ const courseData = [
         "code": "LANG 2065",
         "title": "Research Writing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 3060"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -35350,6 +37702,8 @@ const courseData = [
         "code": "LANG 2066",
         "title": "Dynamic Science Communication: Engaging Audiences with Science Busking",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -35389,6 +37743,8 @@ const courseData = [
         "code": "LANG 2067",
         "title": "Digital Communication: Expressing Your Perspective in Digital Spaces",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -35412,6 +37768,8 @@ const courseData = [
         "code": "LANG 2068",
         "title": "Speaking with Impact",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -35467,6 +37825,8 @@ const courseData = [
         "code": "LANG 2069",
         "title": "Supercommunication Offline and On: The Art of Connecting",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -35506,6 +37866,8 @@ const courseData = [
         "code": "LANG 2071",
         "title": "From Proposal to Applause: Navigating the Academic Conference Journey",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -35545,6 +37907,11 @@ const courseData = [
         "code": "LANG 2200",
         "title": "Japanese Language and Culture for Beginners II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 2201",
+            "LANG 2202"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -35568,6 +37935,10 @@ const courseData = [
         "code": "LANG 2201",
         "title": "Communicative Japanese for Beginners II",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 2200"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -35591,6 +37962,10 @@ const courseData = [
         "code": "LANG 2202",
         "title": "Japanese Vocabulary and Grammar Essentials II",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 2200"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -35628,6 +38003,8 @@ const courseData = [
         "code": "LANG 4090",
         "title": "Report Writing for Final Year Engineering Projects",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -35651,6 +38028,8 @@ const courseData = [
         "code": "LANG 4091",
         "title": "Presentation Skills for Final Year Projects",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -35674,6 +38053,8 @@ const courseData = [
         "code": "LANG 5000",
         "title": "Foundation in Listening & Speaking for Postgraduate Students",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -35729,6 +38110,15 @@ const courseData = [
         "code": "LANG 5005B",
         "title": "Communicating Research in English",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 5001",
+            "LANG 5002",
+            "LANG 5010",
+            "LANG 5071",
+            "LANG 5080",
+            "LANG 5081"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -35768,6 +38158,15 @@ const courseData = [
         "code": "LANG 5005C",
         "title": "Communicating Research in English",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 5001",
+            "LANG 5002",
+            "LANG 5010",
+            "LANG 5071",
+            "LANG 5080",
+            "LANG 5081"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -35896,6 +38295,15 @@ const courseData = [
         "code": "LANG 5005E",
         "title": "Communicating Research in English",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "LANG 5001",
+            "LANG 5002",
+            "LANG 5010",
+            "LANG 5071",
+            "LANG 5080",
+            "LANG 5081"
+        ],
         "sections": [
             {
                 "id": "T01",
@@ -36284,6 +38692,8 @@ const courseData = [
         "code": "LANG 5330",
         "title": "Basic Spanish for International Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -36307,6 +38717,8 @@ const courseData = [
         "code": "LIFS 1901",
         "title": "General Biology I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36346,6 +38758,8 @@ const courseData = [
         "code": "LIFS 1902",
         "title": "General Biology II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36385,6 +38799,8 @@ const courseData = [
         "code": "LIFS 1904",
         "title": "Laboratory for General Biology II",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "LA1",
@@ -36452,6 +38868,8 @@ const courseData = [
         "code": "LIFS 1930",
         "title": "Nature of Life Sciences",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -36489,6 +38907,8 @@ const courseData = [
         "code": "LIFS 1980",
         "title": "Guided Study on Biomedical and Health Sciences",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36511,6 +38931,8 @@ const courseData = [
         "code": "LIFS 2040",
         "title": "Cell Biology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36566,6 +38988,8 @@ const courseData = [
         "code": "LIFS 2080",
         "title": "Plant Biology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36623,6 +39047,8 @@ const courseData = [
         "code": "LIFS 2220",
         "title": "Biochemistry II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36662,6 +39088,8 @@ const courseData = [
         "code": "LIFS 2240",
         "title": "Cell Biology Laboratory",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -36699,6 +39127,8 @@ const courseData = [
         "code": "LIFS 3020",
         "title": "Molecular and Cellular Biology II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36722,6 +39152,8 @@ const courseData = [
         "code": "LIFS 3040",
         "title": "Animal Physiology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36761,6 +39193,8 @@ const courseData = [
         "code": "LIFS 3060",
         "title": "Microbiology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36809,6 +39243,8 @@ const courseData = [
         "code": "LIFS 3070",
         "title": "Introduction to Biophysical Instrumentation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -36841,6 +39277,11 @@ const courseData = [
         "code": "LIFS 3150",
         "title": "Biostatistics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 2500",
+            "MATH 2411"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -36864,6 +39305,8 @@ const courseData = [
         "code": "LIFS 3220",
         "title": "Animal Physiology Laboratory",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -36911,6 +39354,8 @@ const courseData = [
         "code": "LIFS 3260",
         "title": "Microbiology Laboratory",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -36958,6 +39403,8 @@ const courseData = [
         "code": "LIFS 3370",
         "title": "Human Genetics in Practice",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -36995,6 +39442,8 @@ const courseData = [
         "code": "LIFS 3580",
         "title": "Bioinformatics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37027,6 +39476,8 @@ const courseData = [
         "code": "LIFS 4000C",
         "title": "Nutraceuticals and Chinese Herbs in Health and Disease",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37059,6 +39510,8 @@ const courseData = [
         "code": "LIFS 4060",
         "title": "Immunobiology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37082,6 +39535,8 @@ const courseData = [
         "code": "LIFS 4140",
         "title": "Cancer Biology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37105,6 +39560,8 @@ const courseData = [
         "code": "LIFS 4190",
         "title": "Cellular Signaling",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37162,6 +39619,8 @@ const courseData = [
         "code": "LIFS 4320",
         "title": "Data Science for Biology and Medicine",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37200,6 +39659,8 @@ const courseData = [
         "code": "LIFS 4540",
         "title": "Structure and Function of Proteins",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37232,6 +39693,8 @@ const courseData = [
         "code": "LIFS 4630",
         "title": "Advanced Topics in Biotechnology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37271,6 +39734,8 @@ const courseData = [
         "code": "LIFS 4800",
         "title": "Epigenetics and Chromosome Biology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37294,6 +39759,8 @@ const courseData = [
         "code": "LIFS 4884",
         "title": "Application of RNA Technology to Human Diseases",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37332,6 +39799,8 @@ const courseData = [
         "code": "LIFS 4888",
         "title": "Development and Registration of Pharmaceutical Products",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37364,6 +39833,8 @@ const courseData = [
         "code": "LIFS 4950",
         "title": "Neurochemistry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37387,6 +39858,10 @@ const courseData = [
         "code": "LIFS 5001",
         "title": "Responsible Conduct of Biomedical and Biotechnology Research",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "BIEN 5001"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -37409,6 +39884,8 @@ const courseData = [
         "code": "LIFS 5260",
         "title": "Biochemical and Molecular Basis of Diseases",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37431,6 +39908,8 @@ const courseData = [
         "code": "LIFS 6115I",
         "title": "Current Topics in Development and Systems Biology",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37453,6 +39932,8 @@ const courseData = [
         "code": "LIFS 6116I",
         "title": "Current Topics in Genomics and Bioinformatics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37475,6 +39956,8 @@ const courseData = [
         "code": "LIFS 6117I",
         "title": "Current Topics in Cell Biology",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37497,6 +39980,8 @@ const courseData = [
         "code": "LIFS 6410J",
         "title": "Seminar Enrichment Course",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -37519,6 +40004,8 @@ const courseData = [
         "code": "LIFS 6660",
         "title": "Molecular Medicine",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37551,6 +40038,8 @@ const courseData = [
         "code": "LIFS 6800",
         "title": "Frontiers in Nucleic Acid Research",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37574,6 +40063,8 @@ const courseData = [
         "code": "MAED 5032",
         "title": "Applications of Geometry and Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37596,6 +40087,8 @@ const courseData = [
         "code": "MAED 5111",
         "title": "Classical and Abstract Algebra",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37618,6 +40111,8 @@ const courseData = [
         "code": "MAED 5211",
         "title": "Classical and Modern Geometry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37640,6 +40135,8 @@ const courseData = [
         "code": "MAED 5421",
         "title": "Probability and Statistics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37662,6 +40159,8 @@ const courseData = [
         "code": "MAED 5611",
         "title": "Pedagogy in Mathematics Teaching",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37684,6 +40183,8 @@ const courseData = [
         "code": "MAED 5821",
         "title": "Topics in Mathematics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37706,6 +40207,10 @@ const courseData = [
         "code": "MAFS 5040",
         "title": "Quantitative Methods for Fixed-Income Instruments",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 5520"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -37728,6 +40233,11 @@ const courseData = [
         "code": "MAFS 5130",
         "title": "Quantitative Analysis of Financial Time Series",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MSBD 5006",
+            "MSDM 5053"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -37750,6 +40260,8 @@ const courseData = [
         "code": "MAFS 5210",
         "title": "Mathematical Models of Investment",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37772,6 +40284,8 @@ const courseData = [
         "code": "MAFS 5220",
         "title": "Quantitative Risk Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37794,6 +40308,8 @@ const courseData = [
         "code": "MAFS 5330",
         "title": "Structured Products: Analysis and Pricing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37816,6 +40332,8 @@ const courseData = [
         "code": "MAFS 5340",
         "title": "Machine Learning and Its Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37838,6 +40356,10 @@ const courseData = [
         "code": "MAFS 5370",
         "title": "Reinforcement Learning with Financial Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MSBD 5021"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -37860,6 +40382,10 @@ const courseData = [
         "code": "MAIE 5101",
         "title": "Programming for Artificial Intelligence",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5101"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -37882,6 +40408,12 @@ const courseData = [
         "code": "MAIE 5102",
         "title": "AI Fundamentals: Concepts and Methods",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5102",
+            "CSIT 5900",
+            "MSBD 5015"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -37904,6 +40436,8 @@ const courseData = [
         "code": "MAIE 5211",
         "title": "Theory of Computation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -37926,6 +40460,10 @@ const courseData = [
         "code": "MAIE 5531",
         "title": "Generative Al and Large Language Models",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5203"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -37948,6 +40486,10 @@ const courseData = [
         "code": "MAIE 5533",
         "title": "Artificial Intelligence in Cybersecurity",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ARIN 5303"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -37970,6 +40512,10 @@ const courseData = [
         "code": "MAIE 5534",
         "title": "Entrepreneurial Me",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 5911"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -37992,6 +40538,8 @@ const courseData = [
         "code": "MAIE 5535",
         "title": "Startup Seminars for AI",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38029,6 +40577,8 @@ const courseData = [
         "code": "MAIE 6000B",
         "title": "Generative AI in Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38051,6 +40601,10 @@ const courseData = [
         "code": "MARK 1220",
         "title": "Marketing and Society",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1360"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -38074,6 +40628,8 @@ const courseData = [
         "code": "MARK 2120",
         "title": "Marketing Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38209,6 +40765,8 @@ const courseData = [
         "code": "MARK 3220",
         "title": "Marketing Research",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38278,6 +40836,8 @@ const courseData = [
         "code": "MARK 3420",
         "title": "Consumer Behavior",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38378,6 +40938,8 @@ const courseData = [
         "code": "MARK 3430",
         "title": "Global Marketing",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38416,6 +40978,8 @@ const courseData = [
         "code": "MARK 3460",
         "title": "Retail management in the digital age",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38485,6 +41049,8 @@ const courseData = [
         "code": "MARK 3480",
         "title": "Pricing Strategy",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38554,6 +41120,8 @@ const courseData = [
         "code": "MARK 3610",
         "title": "Digital Marketing",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38654,6 +41222,8 @@ const courseData = [
         "code": "MARK 4210",
         "title": "Strategic Marketing",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38754,6 +41324,8 @@ const courseData = [
         "code": "MARK 5100",
         "title": "Customer Relationship Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38796,6 +41368,8 @@ const courseData = [
         "code": "MARK 5110",
         "title": "Content Marketing",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -38888,6 +41462,10 @@ const courseData = [
         "code": "MARK 5120",
         "title": "Marketing Strategy",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "IMBA 5050"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -38970,6 +41548,8 @@ const courseData = [
         "code": "MARK 5260",
         "title": "Luxury Strategy",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39012,6 +41592,10 @@ const courseData = [
         "code": "MARK 5290",
         "title": "Understanding Consumers",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "MIMT 5310"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -39044,6 +41628,8 @@ const courseData = [
         "code": "MARK 5300",
         "title": "Pricing Strategy",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39076,6 +41662,10 @@ const courseData = [
         "code": "MARK 5310",
         "title": "Applied Marketing Research for Managers",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "MIMT 5010"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -39133,6 +41723,8 @@ const courseData = [
         "code": "MARK 5330",
         "title": "Brand Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39210,6 +41802,8 @@ const courseData = [
         "code": "MARK 5380",
         "title": "Mastering D2C Marketing",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39232,6 +41826,8 @@ const courseData = [
         "code": "MARK 5410",
         "title": "Seminar in Quantitative Modeling",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39254,6 +41850,8 @@ const courseData = [
         "code": "MARK 5430",
         "title": "Digital Marketing",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39286,6 +41884,8 @@ const courseData = [
         "code": "MARK 5500",
         "title": "Sustainable Marketing",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39338,6 +41938,8 @@ const courseData = [
         "code": "MARK 5688",
         "title": "Marketing Strategy Simulation",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39390,6 +41992,8 @@ const courseData = [
         "code": "MARK 6901G",
         "title": "Design Thinking for Marketing",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39422,6 +42026,8 @@ const courseData = [
         "code": "MARK 6901H",
         "title": "New Product Development Using Design Thinking",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39454,6 +42060,8 @@ const courseData = [
         "code": "MARK 6901I",
         "title": "Marketing Strategies for Financial Services",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39496,6 +42104,8 @@ const courseData = [
         "code": "MARK 6901K",
         "title": "B2B Marketing in the Digital Era",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39538,6 +42148,8 @@ const courseData = [
         "code": "MARK 6901L",
         "title": "Marketing Innovation",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39580,6 +42192,10 @@ const courseData = [
         "code": "MASS 5010",
         "title": "Research Methods in Social Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 5110"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -39602,6 +42218,12 @@ const courseData = [
         "code": "MASS 5020",
         "title": "Social Statistics I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MGCS 5010",
+            "SOSC 4610",
+            "SOSC 5090"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -39639,6 +42261,10 @@ const courseData = [
         "code": "MASS 5030",
         "title": "Social Stratification and Mobility",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MGCS 5020"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -39661,6 +42287,8 @@ const courseData = [
         "code": "MASS 5050",
         "title": "Economic Transformations in Post-Mao China",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39683,6 +42311,11 @@ const courseData = [
         "code": "MASS 5060",
         "title": "Political Changes and Political Participation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MGCS 5021",
+            "SOSC 5480"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -39705,6 +42338,10 @@ const courseData = [
         "code": "MASS 5200",
         "title": "Comparative Governance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MGCS 5520"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -39727,6 +42364,10 @@ const courseData = [
         "code": "MASS 5210",
         "title": "Economic Development",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 6030I"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -39749,6 +42390,8 @@ const courseData = [
         "code": "MASS 5240",
         "title": "Topics in Gender and Society",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39771,6 +42414,8 @@ const courseData = [
         "code": "MASS 5260",
         "title": "Geographical Information Systems and Census Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39793,6 +42438,8 @@ const courseData = [
         "code": "MASS 5981",
         "title": "Environment and Human Behavior",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -39815,6 +42462,14 @@ const courseData = [
         "code": "MATH 1013",
         "title": "Calculus I",
         "credits": 3,
+        "matchingRequired": true,
+        "exclusions": [
+            "MATH 1012",
+            "MATH 1014",
+            "MATH 1020",
+            "MATH 1023",
+            "MATH 1024"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -39944,6 +42599,11 @@ const courseData = [
         "code": "MATH 1014",
         "title": "Calculus II",
         "credits": 3,
+        "matchingRequired": true,
+        "exclusions": [
+            "MATH 1020",
+            "MATH 1024"
+        ],
         "sections": [
             {
                 "id": "L01",
@@ -40771,6 +43431,10 @@ const courseData = [
         "code": "MATH 1024",
         "title": "Honors Calculus II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 1014"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -40839,6 +43503,10 @@ const courseData = [
         "code": "MATH 2011",
         "title": "Introduction to Multivariable Calculus",
         "credits": 3,
+        "matchingRequired": true,
+        "exclusions": [
+            "MATH 2023"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41038,6 +43706,10 @@ const courseData = [
         "code": "MATH 2023",
         "title": "Multivariable Calculus",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 2011"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41115,6 +43787,10 @@ const courseData = [
         "code": "MATH 2033",
         "title": "Mathematical Analysis",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [
+            "MATH 2043"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41244,6 +43920,10 @@ const courseData = [
         "code": "MATH 2043",
         "title": "Honors Mathematical Analysis",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 2033"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41297,6 +43977,12 @@ const courseData = [
         "code": "MATH 2111",
         "title": "Matrix Algebra and Applications",
         "credits": 3,
+        "matchingRequired": true,
+        "exclusions": [
+            "MATH 2121",
+            "MATH 2131",
+            "MATH 2350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41435,6 +44121,12 @@ const courseData = [
         "code": "MATH 2121",
         "title": "Linear Algebra",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 2111",
+            "MATH 2131",
+            "MATH 2350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41488,6 +44180,11 @@ const courseData = [
         "code": "MATH 2343",
         "title": "Discrete Structures",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 2711",
+            "COMP 2711H"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41535,6 +44232,15 @@ const courseData = [
         "code": "MATH 2350",
         "title": "Applied Linear Algebra and Differential Equations",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 2111",
+            "MATH 2121",
+            "MATH 2131",
+            "MATH 2351",
+            "MATH 2352",
+            "PHYS 2124"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41597,6 +44303,12 @@ const courseData = [
         "code": "MATH 2351",
         "title": "Introduction to Differential Equations",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 2350",
+            "MATH 2352",
+            "PHYS 2124"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41659,6 +44371,12 @@ const courseData = [
         "code": "MATH 2352",
         "title": "Differential Equations",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 2350",
+            "MATH 2351",
+            "PHYS 2124"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41721,6 +44439,12 @@ const courseData = [
         "code": "MATH 2411",
         "title": "Applied Statistics",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [
+            "IEDA 2540",
+            "ISOM 2500",
+            "LIFS 3150"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41829,6 +44553,14 @@ const courseData = [
         "code": "MATH 2421",
         "title": "Probability",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [
+            "IEDA 2520",
+            "MATH 2431",
+            "ELEC 2600",
+            "ELEC 2600H",
+            "ISOM 3540"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41928,6 +44660,13 @@ const courseData = [
         "code": "MATH 2431",
         "title": "Honors Probability",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 2600",
+            "ELEC 2600H",
+            "ISOM 3540",
+            "MATH 2421"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -41981,6 +44720,8 @@ const courseData = [
         "code": "MATH 2511",
         "title": "Fundamentals of Actuarial Mathematics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42019,6 +44760,10 @@ const courseData = [
         "code": "MATH 3033",
         "title": "Real Analysis",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 3043"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -42081,6 +44826,8 @@ const courseData = [
         "code": "MATH 3131",
         "title": "Honors in Linear and Abstract Algebra II",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42119,6 +44866,8 @@ const courseData = [
         "code": "MATH 3322",
         "title": "Matrix Computation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42172,6 +44921,10 @@ const courseData = [
         "code": "MATH 3424",
         "title": "Regression Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 5520"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -42225,6 +44978,8 @@ const courseData = [
         "code": "MATH 3425",
         "title": "Stochastic Modeling",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42278,6 +45033,8 @@ const courseData = [
         "code": "MATH 3426",
         "title": "Sampling",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42331,6 +45088,8 @@ const courseData = [
         "code": "MATH 4023",
         "title": "Complex Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42384,6 +45143,8 @@ const courseData = [
         "code": "MATH 4033",
         "title": "Calculus on Manifolds",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42422,6 +45183,8 @@ const courseData = [
         "code": "MATH 4225",
         "title": "Topology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42469,6 +45232,10 @@ const courseData = [
         "code": "MATH 4321",
         "title": "Game Theory",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 4124"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -42522,6 +45289,11 @@ const courseData = [
         "code": "MATH 4336",
         "title": "Introduction to Mathematics of Image Processing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 4421",
+            "ELEC 3130"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -42560,6 +45332,8 @@ const courseData = [
         "code": "MATH 4343",
         "title": "Introduction to Graph Theory",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42598,6 +45372,8 @@ const courseData = [
         "code": "MATH 4351",
         "title": "Numerical Solutions of Partial Differential Equations",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42645,6 +45421,8 @@ const courseData = [
         "code": "MATH 4360",
         "title": "Mathematical Modeling",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42683,6 +45461,8 @@ const courseData = [
         "code": "MATH 4429",
         "title": "Credibility Theory and its Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42721,6 +45501,8 @@ const courseData = [
         "code": "MATH 4512",
         "title": "Fundamentals of Mathematical Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42759,6 +45541,8 @@ const courseData = [
         "code": "MATH 4513",
         "title": "Life Contingencies Models and Insurance Risk",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42797,6 +45581,10 @@ const courseData = [
         "code": "MATH 4514",
         "title": "Financial Economics in Actuarial Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "FINA 3203"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -42835,6 +45623,13 @@ const courseData = [
         "code": "MATH 4991",
         "title": "Capstone Project in Pure Mathematics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 4992",
+            "MATH 4993",
+            "MATH 4994",
+            "MATH 4999"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -42873,6 +45668,8 @@ const courseData = [
         "code": "MATH 5112",
         "title": "Advanced Algebra II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42896,6 +45693,8 @@ const courseData = [
         "code": "MATH 5143",
         "title": "Introduction to Lie Algebras",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42919,6 +45718,8 @@ const courseData = [
         "code": "MATH 5261",
         "title": "Algebraic Geometry II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42941,6 +45742,8 @@ const courseData = [
         "code": "MATH 5312",
         "title": "Advanced Numerical Methods II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42964,6 +45767,8 @@ const courseData = [
         "code": "MATH 5353",
         "title": "Multiscale Modeling and Computation for Non-equilibrium Flows",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -42986,6 +45791,8 @@ const courseData = [
         "code": "MATH 5412",
         "title": "Advanced Probability Theory II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43008,6 +45815,8 @@ const courseData = [
         "code": "MATH 5432",
         "title": "Advanced Mathematical Statistics II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43030,6 +45839,8 @@ const courseData = [
         "code": "MATH 6900A",
         "title": "Mathematics Seminar",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -43052,6 +45863,8 @@ const courseData = [
         "code": "MATH 6900B",
         "title": "Mathematics Seminar",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -43074,6 +45887,8 @@ const courseData = [
         "code": "MATH 6900C",
         "title": "Mathematics Seminar",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -43096,6 +45911,8 @@ const courseData = [
         "code": "MATH 6900D",
         "title": "Mathematics Seminar",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -43118,6 +45935,8 @@ const courseData = [
         "code": "MCEE 5015",
         "title": "Solar Energy Science and Technology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43140,6 +45959,8 @@ const courseData = [
         "code": "MCEE 5110",
         "title": "Theory and Practice in Heterogeneous Catalysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43162,6 +45983,8 @@ const courseData = [
         "code": "MCEE 5502",
         "title": "Energy Policy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43184,6 +46007,10 @@ const courseData = [
         "code": "MCEE 5610",
         "title": "Advanced Biochemical Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "BEHI 5010"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -43206,6 +46033,8 @@ const courseData = [
         "code": "MCEE 5750",
         "title": "Process Safety Management and Risk Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43228,6 +46057,8 @@ const courseData = [
         "code": "MCEE 5860",
         "title": "Chemical Product Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43250,6 +46081,8 @@ const courseData = [
         "code": "MCEE 6000E",
         "title": "Entrepreneurship: From Lab to Market",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43272,6 +46105,8 @@ const courseData = [
         "code": "MECH 1001",
         "title": "Academic and Professional Development I",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -43294,6 +46129,8 @@ const courseData = [
         "code": "MECH 1905",
         "title": "Buildings for Contemporary Living",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43326,6 +46163,8 @@ const courseData = [
         "code": "MECH 1906",
         "title": "Mechanical Engineering for Modern Life",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43349,6 +46188,8 @@ const courseData = [
         "code": "MECH 1908",
         "title": "Exploration of Mechanical Design and Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43372,6 +46213,10 @@ const courseData = [
         "code": "MECH 2040",
         "title": "Solid Mechanics I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CIVL 2120"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -43426,6 +46271,12 @@ const courseData = [
         "code": "MECH 2210",
         "title": "Fluid Mechanics",
         "credits": 3,
+        "matchingRequired": true,
+        "exclusions": [
+            "CENG 2220",
+            "CIVL 2510",
+            "MATH 4326"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -43495,6 +46346,10 @@ const courseData = [
         "code": "MECH 2410",
         "title": "Engineering Materials I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 3040"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -43603,6 +46458,8 @@ const courseData = [
         "code": "MECH 2520",
         "title": "Design and Manufacturing I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43685,6 +46542,8 @@ const courseData = [
         "code": "MECH 3510",
         "title": "Computer-Aided Design and Manufacturing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43722,6 +46581,8 @@ const courseData = [
         "code": "MECH 3620",
         "title": "Aircraft Design",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43760,6 +46621,8 @@ const courseData = [
         "code": "MECH 3630",
         "title": "Electrical Technology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43813,6 +46676,8 @@ const courseData = [
         "code": "MECH 3660",
         "title": "Gas Turbines and Jet Propulsion",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43851,6 +46716,8 @@ const courseData = [
         "code": "MECH 3680",
         "title": "Avionics Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43874,6 +46741,8 @@ const courseData = [
         "code": "MECH 3690",
         "title": "Aerospace Engineering Laboratory",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43926,6 +46795,8 @@ const courseData = [
         "code": "MECH 3740",
         "title": "Introduction to Aerospace Computational Fluid Dynamics (CFD)",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -43948,6 +46819,8 @@ const courseData = [
         "code": "MECH 3830",
         "title": "Laboratory",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44030,6 +46903,8 @@ const courseData = [
         "code": "MECH 3907",
         "title": "Mechatronic Design and Prototyping",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44157,6 +47032,8 @@ const courseData = [
         "code": "MECH 4100",
         "title": "Experiential Projects in Aerospace Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44194,6 +47071,8 @@ const courseData = [
         "code": "MECH 4340",
         "title": "Air Conditioning Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44232,6 +47111,11 @@ const courseData = [
         "code": "MECH 4350",
         "title": "Indoor Air Quality in Buildings",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "IBTM 5430",
+            "JEVE 5350"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44254,6 +47138,8 @@ const courseData = [
         "code": "MECH 4710",
         "title": "Introduction to Robotics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44292,6 +47178,10 @@ const courseData = [
         "code": "MECH 4740",
         "title": "Numerical Methods in Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 3312"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44330,6 +47220,8 @@ const courseData = [
         "code": "MECH 4890",
         "title": "Introduction to Nanosatellite Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44352,6 +47244,10 @@ const courseData = [
         "code": "MECH 5280",
         "title": "Transport Phenomena and Its Application in Energy Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ENEG 5400"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44374,6 +47270,8 @@ const courseData = [
         "code": "MECH 5320",
         "title": "Convective Heat and Mass Transfer",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44396,6 +47294,11 @@ const courseData = [
         "code": "MECH 5410",
         "title": "Advanced Mechanical Behavior of Materials",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "AESF 5410",
+            "MESF 5410"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44418,6 +47321,10 @@ const courseData = [
         "code": "MECH 5561",
         "title": "Robot Manipulation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ELEC 5640"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44440,6 +47347,8 @@ const courseData = [
         "code": "MECH 5980",
         "title": "Processes in Manufacturing Systems",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44462,6 +47371,8 @@ const courseData = [
         "code": "MECH 6910V",
         "title": "Electrochemistry and Electrochemical Engineering",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44484,6 +47395,8 @@ const courseData = [
         "code": "MECH 6910W",
         "title": "Smart Materials and Sensors",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44506,6 +47419,10 @@ const courseData = [
         "code": "MESF 5050",
         "title": "Fracture Behavior of Polymers",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "AESF 5050"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44528,6 +47445,8 @@ const courseData = [
         "code": "MESF 5450",
         "title": "Intermediate Heat and Mass Transfer",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44550,6 +47469,8 @@ const courseData = [
         "code": "MESF 5550",
         "title": "Robotics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44572,6 +47493,8 @@ const courseData = [
         "code": "MESF 5940",
         "title": "Advanced Materials Analytics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44594,6 +47517,8 @@ const courseData = [
         "code": "MESF 5950",
         "title": "Mechanical Properties and Microstructure of Materials",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44616,6 +47541,8 @@ const courseData = [
         "code": "MESF 5980",
         "title": "Sustainable Engineering and Energy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44638,6 +47565,8 @@ const courseData = [
         "code": "MFIT 5001",
         "title": "AI for FinTech",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44660,6 +47589,11 @@ const courseData = [
         "code": "MFIT 5004",
         "title": "Financial Data Mining",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "CSIT 5210",
+            "MSBD 5002"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44682,6 +47616,8 @@ const courseData = [
         "code": "MFIT 5009",
         "title": "Optimization in FinTech",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44704,6 +47640,11 @@ const courseData = [
         "code": "MFIT 5010",
         "title": "Statistical Machine Learning",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 5470",
+            "MSDM 5054"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44726,6 +47667,8 @@ const courseData = [
         "code": "MFIT 5013",
         "title": "Capstone FinTech Cases and Analysis",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44748,6 +47691,8 @@ const courseData = [
         "code": "MFIT 6000C",
         "title": "Algorithmic Trading",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44780,6 +47725,8 @@ const courseData = [
         "code": "MFIT 6000D",
         "title": "Exploring Virtual Assets: Opportunities and Challenges",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44812,6 +47759,8 @@ const courseData = [
         "code": "MFIT 6000E",
         "title": "Behavioral Science for FinTech",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44834,6 +47783,8 @@ const courseData = [
         "code": "MGCS 5001",
         "title": "Understanding China, 1700-2000: A Data-Analytic Approach",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44856,6 +47807,8 @@ const courseData = [
         "code": "MGCS 5009",
         "title": "The Economic History of Late Imperial China",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44878,6 +47831,12 @@ const courseData = [
         "code": "MGCS 5010",
         "title": "Introduction to Social Statistics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 4610",
+            "SOSC 5090",
+            "MASS 5020"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44915,6 +47874,8 @@ const courseData = [
         "code": "MGCS 5012",
         "title": "Quantitative Analysis of Social Data",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44952,6 +47913,10 @@ const courseData = [
         "code": "MGCS 5024",
         "title": "China in Comparative Perspective",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 6030E"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -44974,6 +47939,8 @@ const courseData = [
         "code": "MGCS 5026",
         "title": "International Law and China",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -44996,6 +47963,8 @@ const courseData = [
         "code": "MGCS 5032",
         "title": "Ethnicity in Chinese Context",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45018,6 +47987,10 @@ const courseData = [
         "code": "MGCS 5520",
         "title": "Comparative Politics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MASS 5200"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -45055,6 +48028,8 @@ const courseData = [
         "code": "MGMT 1120",
         "title": "Developing the Leader in You",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45107,6 +48082,8 @@ const courseData = [
         "code": "MGMT 2010",
         "title": "Business Ethics and the Individual",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45234,6 +48211,8 @@ const courseData = [
         "code": "MGMT 2110",
         "title": "Organizational Behavior",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45362,6 +48341,8 @@ const courseData = [
         "code": "MGMT 2110W",
         "title": "Organizational Behavior",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45385,6 +48366,8 @@ const courseData = [
         "code": "MGMT 2130",
         "title": "Business Ethics and Social Responsibility",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45497,6 +48480,8 @@ const courseData = [
         "code": "MGMT 3110",
         "title": "Human Resources Management",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45519,6 +48504,8 @@ const courseData = [
         "code": "MGMT 3120",
         "title": "Managerial Leadership",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45558,6 +48545,8 @@ const courseData = [
         "code": "MGMT 3130",
         "title": "Judgement and Decision Making in Organizations",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45597,6 +48586,8 @@ const courseData = [
         "code": "MGMT 3140",
         "title": "Negotiation",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45645,6 +48636,10 @@ const courseData = [
         "code": "MGMT 3160",
         "title": "Environmental Business Strategies",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ENVR 3310"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -45668,6 +48663,8 @@ const courseData = [
         "code": "MGMT 3170",
         "title": "Managing CSR (Corporate Social Responsibility)",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45690,6 +48687,8 @@ const courseData = [
         "code": "MGMT 4000G",
         "title": "Strategic Decision Making",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45722,6 +48721,8 @@ const courseData = [
         "code": "MGMT 4210",
         "title": "Corporate Strategy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45789,6 +48790,8 @@ const courseData = [
         "code": "MGMT 4220",
         "title": "Entrepreneurship and Innovation",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45828,6 +48831,10 @@ const courseData = [
         "code": "MGMT 4240",
         "title": "Strategic Management in China",
         "credits": 4,
+        "matchingRequired": true,
+        "exclusions": [
+            "MGMT 5480"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -45865,6 +48872,8 @@ const courseData = [
         "code": "MGMT 4250",
         "title": "Management Consulting",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45887,6 +48896,8 @@ const courseData = [
         "code": "MGMT 4290",
         "title": "HR Analytics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -45910,6 +48921,10 @@ const courseData = [
         "code": "MGMT 5210",
         "title": "Preparing to Lead",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "IMBA 5010"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -45950,6 +48965,10 @@ const courseData = [
         "code": "MGMT 5230",
         "title": "Management of Organizations",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "IMBA 5090"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -46002,6 +49021,10 @@ const courseData = [
         "code": "MGMT 5410",
         "title": "Strategic Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "IMBA 5020"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -46079,6 +49102,10 @@ const courseData = [
         "code": "MGMT 5480",
         "title": "Strategic Management in China",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "MIMT 5120"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -46151,6 +49178,8 @@ const courseData = [
         "code": "MGMT 5550",
         "title": "Effective Negotiations",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46313,6 +49342,8 @@ const courseData = [
         "code": "MGMT 5570",
         "title": "Applied Merger and Acquisition for Corporates",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46400,6 +49431,8 @@ const courseData = [
         "code": "MGMT 5590",
         "title": "Responsible Leadership",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46432,6 +49465,8 @@ const courseData = [
         "code": "MGMT 5640",
         "title": "Time to Lead",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46466,6 +49501,10 @@ const courseData = [
         "code": "MGMT 5760",
         "title": "Management Consulting",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "MGMT 5540"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -46558,6 +49597,8 @@ const courseData = [
         "code": "MGMT 5971",
         "title": "Innovating via Entrepreneurship and Intrapreneurship",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46650,6 +49691,8 @@ const courseData = [
         "code": "MGMT 5972",
         "title": "Interpersonal Dynamics, Networking and the Art of Influencing Business Leaders",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46682,6 +49725,8 @@ const courseData = [
         "code": "MGMT 5984",
         "title": "Strategy Consulting Analytics and Operations Consulting Analytics",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46739,6 +49784,8 @@ const courseData = [
         "code": "MGMT 5985",
         "title": "Strategic Analytics Implementation",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46776,6 +49823,10 @@ const courseData = [
         "code": "MGMT 6501Q",
         "title": "Communication for Business Leaders",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "MGMT 5110"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -46798,6 +49849,8 @@ const courseData = [
         "code": "MGMT 6501S",
         "title": "The Secret Life of Organizations: Structures, Behaviors and Motivations at Work",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46850,6 +49903,8 @@ const courseData = [
         "code": "MGMT 6501T",
         "title": "Developing to be an Effective CEO",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46882,6 +49937,8 @@ const courseData = [
         "code": "MGMT 7100",
         "title": "Behavioral Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46904,6 +49961,8 @@ const courseData = [
         "code": "MILE 5109",
         "title": "Bi/Multilingual Approaches to Language Education",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46926,6 +49985,8 @@ const courseData = [
         "code": "MILE 5201",
         "title": "World Englishes",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46949,6 +50010,8 @@ const courseData = [
         "code": "MILE 5208",
         "title": "Discourse Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46972,6 +50035,8 @@ const courseData = [
         "code": "MILE 5209",
         "title": "English-Medium Instruction and International Education",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -46995,6 +50060,8 @@ const courseData = [
         "code": "MILE 5210",
         "title": "Functional Linguistics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47018,6 +50085,8 @@ const courseData = [
         "code": "MILE 5301",
         "title": "Chinese Writing and Culture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47041,6 +50110,8 @@ const courseData = [
         "code": "MILE 5303",
         "title": "Advanced Phonetics and Phonology of the Chinese Language",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47063,6 +50134,8 @@ const courseData = [
         "code": "MILE 5304",
         "title": "Chinese Lexicology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47085,6 +50158,8 @@ const courseData = [
         "code": "MILE 5308",
         "title": "The Practice of Teaching International Chinese",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47108,6 +50183,8 @@ const courseData = [
         "code": "MILE 6000",
         "title": "Supervised Teaching Practicum",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -47147,6 +50224,8 @@ const courseData = [
         "code": "MILE 6980",
         "title": "Research Project in International Language Education",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "R1",
@@ -47169,6 +50248,8 @@ const courseData = [
         "code": "MIMT 5020",
         "title": "Managerial Decision Making",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47211,6 +50292,8 @@ const courseData = [
         "code": "MIMT 5110",
         "title": "Doing Business in Asia",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47263,6 +50346,8 @@ const courseData = [
         "code": "MIMT 5200",
         "title": "Global Citizenship: Responsible Citizenship and Global Sustainability",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47295,6 +50380,8 @@ const courseData = [
         "code": "MIMT 5210",
         "title": "Managing Global Complexity",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47327,6 +50414,10 @@ const courseData = [
         "code": "MIMT 5310",
         "title": "Understanding Consumers: A Strategic Approach",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "MARK 5290"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -47359,6 +50450,11 @@ const courseData = [
         "code": "MIMT 5350",
         "title": "Project Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "ISOM 5460",
+            "ISOM 5770"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -47411,6 +50507,8 @@ const courseData = [
         "code": "MIMT 5410",
         "title": "Business and Climate Change in Asia Pacific",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47500,6 +50598,8 @@ const courseData = [
         "code": "MIMT 5560",
         "title": "Management and Decision Making with Artificial Intelligence",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47542,6 +50642,8 @@ const courseData = [
         "code": "MIMT 5570",
         "title": "The Art and Science of Crisis Negotiation and Management",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47574,6 +50676,10 @@ const courseData = [
         "code": "MIMT 6200",
         "title": "Business Project",
         "credits": 5,
+        "matchingRequired": false,
+        "exclusions": [
+            "SBMT 6100"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -47606,6 +50712,12 @@ const courseData = [
         "code": "MSBD 5002",
         "title": "Data Mining and Knowledge Discovery",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "COMP 5331",
+            "CSIT 5210",
+            "MFIT 5004"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -47628,6 +50740,8 @@ const courseData = [
         "code": "MSBD 5003",
         "title": "Big Data Computing",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47650,6 +50764,8 @@ const courseData = [
         "code": "MSBD 5005",
         "title": "Data Visualization",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47672,6 +50788,8 @@ const courseData = [
         "code": "MSBD 5007",
         "title": "Optimization and Matrix Computation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47694,6 +50812,8 @@ const courseData = [
         "code": "MSBD 5010",
         "title": "Image Processing and Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47716,6 +50836,8 @@ const courseData = [
         "code": "MSBD 5013",
         "title": "Statistical Prediction",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47738,6 +50860,8 @@ const courseData = [
         "code": "MSBD 5022",
         "title": "Fintech: Foundation and Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47760,6 +50884,8 @@ const courseData = [
         "code": "MSBD 6000P",
         "title": "Big Data Algorithms",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47782,6 +50908,10 @@ const courseData = [
         "code": "MSDM 5004",
         "title": "Numerical Methods and Modeling in Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 5410"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -47804,6 +50934,8 @@ const courseData = [
         "code": "MSDM 5005",
         "title": "Innovation in Practice",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47841,6 +50973,11 @@ const courseData = [
         "code": "MSDM 5053",
         "title": "Quantitative Analysis of Time Series",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MSBD 5006",
+            "MAFS 5130"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -47863,6 +51000,10 @@ const courseData = [
         "code": "MSDM 5055",
         "title": "Deep Learning for Modeling: Concepts, Tools, and Techniques",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CSIT 5910"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -47900,6 +51041,8 @@ const courseData = [
         "code": "MSDM 5058",
         "title": "Information Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47937,6 +51080,8 @@ const courseData = [
         "code": "MSDM 5059",
         "title": "Operations Research and Optimization",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -47974,6 +51119,8 @@ const courseData = [
         "code": "MSDM 6771",
         "title": "Data-Driven Modeling Seminars and Tutorials",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -47996,6 +51143,8 @@ const courseData = [
         "code": "MSPY 5003",
         "title": "Metamaterials and Applications",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48018,6 +51167,8 @@ const courseData = [
         "code": "MSPY 5120",
         "title": "Contemporary Physics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48040,6 +51191,8 @@ const courseData = [
         "code": "MSPY 5210",
         "title": "Physical Properties of Materials",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48062,6 +51215,8 @@ const courseData = [
         "code": "MSPY 5240",
         "title": "Computational Methods in Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48084,6 +51239,8 @@ const courseData = [
         "code": "MSPY 5250",
         "title": "Applications of Artificial Intelligence in Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48106,6 +51263,8 @@ const courseData = [
         "code": "MSPY 6771",
         "title": "MSc Physics Seminars and Tutorials",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -48128,6 +51287,8 @@ const courseData = [
         "code": "MTLE 6980",
         "title": "Technology Leadership and Entrepreneurship Project",
         "credits": 9,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48150,6 +51311,10 @@ const courseData = [
         "code": "NANO 5200",
         "title": "Physics of Nanostructured Semiconductors",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 5810"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -48173,6 +51338,10 @@ const courseData = [
         "code": "NANO 5320",
         "title": "Statistical Mechanics I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 5310"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -48196,6 +51365,8 @@ const courseData = [
         "code": "OCES 1001",
         "title": "The Earth as a Blue Planet",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48219,6 +51390,10 @@ const courseData = [
         "code": "OCES 1010",
         "title": "Principles and Applications of Environmental Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "OCES 1030"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -48242,6 +51417,8 @@ const courseData = [
         "code": "OCES 2002",
         "title": "Marine Chemistry",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48265,6 +51442,8 @@ const courseData = [
         "code": "OCES 3001",
         "title": "Coastal Environmental Monitoring",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -48302,6 +51481,8 @@ const courseData = [
         "code": "OCES 3204",
         "title": "Essential Oceanography",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48334,6 +51515,8 @@ const courseData = [
         "code": "OCES 4001",
         "title": "Ocean and Climate Change",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48357,6 +51540,8 @@ const courseData = [
         "code": "OCES 4103",
         "title": "Fisheries and Aquaculture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48380,6 +51565,8 @@ const courseData = [
         "code": "OCES 4202",
         "title": "Marine Biotechnology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48412,6 +51599,8 @@ const courseData = [
         "code": "OCES 4204",
         "title": "Coral Reef Ecosystem Science",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48435,6 +51624,8 @@ const courseData = [
         "code": "OCES 4301",
         "title": "Environmental Conservation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48458,6 +51649,8 @@ const courseData = [
         "code": "OCES 4320",
         "title": "Marine Toxicology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48481,6 +51674,8 @@ const courseData = [
         "code": "OCES 5200",
         "title": "Physical Oceanography",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48513,6 +51708,8 @@ const courseData = [
         "code": "OCES 5300",
         "title": "Chemical Oceanography",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48536,6 +51733,8 @@ const courseData = [
         "code": "OCES 5303",
         "title": "Machine Learning for Ocean Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48558,6 +51757,10 @@ const courseData = [
         "code": "OCES 5320",
         "title": "Ecotoxicology",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "ENVS 5113"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -48595,6 +51798,8 @@ const courseData = [
         "code": "OCES 5401",
         "title": "Sustainable Fisheries and Aquaculture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48617,6 +51822,8 @@ const courseData = [
         "code": "OCES 5402",
         "title": "Marine Resources Management",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48639,6 +51846,8 @@ const courseData = [
         "code": "OCES 5403",
         "title": "Deep Sea Resources",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48661,6 +51870,8 @@ const courseData = [
         "code": "OCES 6011J",
         "title": "Postgraduate Seminar",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -48683,6 +51894,10 @@ const courseData = [
         "code": "OCES 6770",
         "title": "Professional Development in Marine Science",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "ENVS 6770"
+        ],
         "sections": [
             {
                 "id": "T1",
@@ -48705,6 +51920,8 @@ const courseData = [
         "code": "PDEV 6800Z",
         "title": "Introduction to Teaching and Learning in Higher Education",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T01",
@@ -48757,6 +51974,8 @@ const courseData = [
         "code": "PHYS 1001",
         "title": "Physics and the Modern Society",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48825,6 +52044,11 @@ const courseData = [
         "code": "PHYS 1002",
         "title": "Introduction to Astrophysics and Astronomy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 1006",
+            "PHYS 3071"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -48864,6 +52088,8 @@ const courseData = [
         "code": "PHYS 1003",
         "title": "Energy and Related Environmental Issues",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -48912,6 +52138,10 @@ const courseData = [
         "code": "PHYS 1007",
         "title": "Quantum Information for Everyone",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 4812"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -48944,6 +52174,8 @@ const courseData = [
         "code": "PHYS 1101",
         "title": "Introductory Physics",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -49058,6 +52290,11 @@ const courseData = [
         "code": "PHYS 1112",
         "title": "General Physics I with Calculus",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 1111",
+            "PHYS 1312"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -49397,6 +52634,8 @@ const courseData = [
         "code": "PHYS 1113",
         "title": "Laboratory for General Physics I",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -49449,6 +52688,10 @@ const courseData = [
         "code": "PHYS 1114",
         "title": "General Physics II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 1314"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -49639,6 +52882,8 @@ const courseData = [
         "code": "PHYS 1115",
         "title": "Laboratory for General Physics II",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -49721,6 +52966,10 @@ const courseData = [
         "code": "PHYS 1314",
         "title": "Honors General Physics II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 1114"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -49759,6 +53008,8 @@ const courseData = [
         "code": "PHYS 2010",
         "title": "Introductory Biological Physics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -49806,6 +53057,12 @@ const courseData = [
         "code": "PHYS 2124",
         "title": "Mathematical Methods in Physics I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 2350",
+            "MATH 2351",
+            "MATH 2352"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -49844,6 +53101,8 @@ const courseData = [
         "code": "PHYS 3032",
         "title": "Classical Mechanics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -49891,6 +53150,8 @@ const courseData = [
         "code": "PHYS 3034",
         "title": "Electricity and Magnetism II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -49929,6 +53190,10 @@ const courseData = [
         "code": "PHYS 3036",
         "title": "Quantum Mechanics I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 3037"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -49982,6 +53247,10 @@ const courseData = [
         "code": "PHYS 3037",
         "title": "Honors Quantum Mechanics I",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 3036"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -50015,6 +53284,8 @@ const courseData = [
         "code": "PHYS 3042",
         "title": "Structure and Properties of Crystalline Solids",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50062,6 +53333,8 @@ const courseData = [
         "code": "PHYS 3071",
         "title": "Introduction to Stellar Astrophysics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50100,6 +53373,10 @@ const courseData = [
         "code": "PHYS 3142",
         "title": "Computational Methods in Physics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MATH 3312"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -50138,6 +53415,8 @@ const courseData = [
         "code": "PHYS 3152",
         "title": "Methods of Experimental Physics I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50242,6 +53521,8 @@ const courseData = [
         "code": "PHYS 3153",
         "title": "Methods of Experimental Physics II",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50346,6 +53627,8 @@ const courseData = [
         "code": "PHYS 4071",
         "title": "Big Bang Cosmology and Inflation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50369,6 +53652,10 @@ const courseData = [
         "code": "PHYS 4191",
         "title": "Capstone Project",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 4291"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -50452,6 +53739,10 @@ const courseData = [
         "code": "PHYS 5170",
         "title": "Solid State Physics I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "NANO 5140"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -50484,6 +53775,10 @@ const courseData = [
         "code": "PHYS 5310",
         "title": "Statistical Mechanics I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "NANO 5320"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -50507,6 +53802,10 @@ const courseData = [
         "code": "PHYS 5520",
         "title": "Introduction to Quantum Field Theory",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 6810K"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -50530,6 +53829,10 @@ const courseData = [
         "code": "PHYS 5810",
         "title": "Modern Semiconductor Physics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "NANO 5200"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -50553,6 +53856,11 @@ const courseData = [
         "code": "PHYS 6771",
         "title": "Professional Development in Physics",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "PHYS 6000",
+            "PHYS 6770"
+        ],
         "sections": [
             {
                 "id": "T1",
@@ -50575,6 +53883,8 @@ const courseData = [
         "code": "PPOL 1120",
         "title": "Public Policy for a Healthy Society",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50598,6 +53908,8 @@ const courseData = [
         "code": "PPOL 1130",
         "title": "Introduction to Global Public Policy Through Film",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50620,6 +53932,10 @@ const courseData = [
         "code": "PPOL 5120",
         "title": "Research Methods in Public Policy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 5790"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -50642,6 +53958,8 @@ const courseData = [
         "code": "PPOL 5150",
         "title": "Public Policy Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50679,6 +53997,8 @@ const courseData = [
         "code": "PPOL 5160",
         "title": "Evidence in Public Policy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50716,6 +54036,8 @@ const courseData = [
         "code": "PPOL 5220",
         "title": "Complex Systems for Policy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50738,6 +54060,8 @@ const courseData = [
         "code": "PPOL 5260",
         "title": "Public Management: Theories and Practices",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50760,6 +54084,8 @@ const courseData = [
         "code": "PPOL 5290",
         "title": "Managing for Sustainability",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50782,6 +54108,11 @@ const courseData = [
         "code": "PPOL 5351",
         "title": "Environmental Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 5351",
+            "ENVR 5250"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -50814,6 +54145,8 @@ const courseData = [
         "code": "PPOL 5380",
         "title": "Technology Disruptions and Public Policy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50836,6 +54169,8 @@ const courseData = [
         "code": "PPOL 5410",
         "title": "Public Management through the Lens of the Asian Development Bank",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50868,6 +54203,8 @@ const courseData = [
         "code": "PPOL 5470",
         "title": "Technology and Global Security",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50890,6 +54227,8 @@ const courseData = [
         "code": "PPOL 5490",
         "title": "Rise, Fall, and Resurgence of the East Asian Developmental State Model",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50912,6 +54251,8 @@ const courseData = [
         "code": "PPOL 5500",
         "title": "Preventing and Combating Corruption in Public and Private Sectors",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50934,6 +54275,8 @@ const courseData = [
         "code": "PPOL 5540",
         "title": "Urban Studies, Disaster Governance and Resilience",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -50956,6 +54299,8 @@ const courseData = [
         "code": "PPOL 5770",
         "title": "Professional Development for Taught Postgraduate Students",
         "credits": 0,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "R1",
@@ -50993,6 +54338,8 @@ const courseData = [
         "code": "PPOL 6100X",
         "title": "Crisis Management and Public Policy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51015,6 +54362,8 @@ const courseData = [
         "code": "PPOL 6100Z",
         "title": "Experiments in Power: Why We Make the Rules We Make",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51037,6 +54386,8 @@ const courseData = [
         "code": "PPOL 6110",
         "title": "Policy Analysis Project",
         "credits": 6,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "R1",
@@ -51059,6 +54410,8 @@ const courseData = [
         "code": "RMBI 1020",
         "title": "Business Intelligence for Data-Driven Decisions",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51082,6 +54435,8 @@ const courseData = [
         "code": "RMBI 3110",
         "title": "Introduction to Risk Management and Business Intelligence",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51120,6 +54475,8 @@ const courseData = [
         "code": "RMBI 4220",
         "title": "Life Contingencies Models and Insurance Risk",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51158,6 +54515,8 @@ const courseData = [
         "code": "RMBI 4310",
         "title": "Advanced Data Mining for Risk Management and Business Intelligence",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51196,6 +54555,8 @@ const courseData = [
         "code": "RMBI 4990",
         "title": "Risk Management and Business Intelligence Capstone Project II",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "T1",
@@ -51248,6 +54609,8 @@ const courseData = [
         "code": "SBMT 5020",
         "title": "Fundamentals of Economics and Finance",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51270,6 +54633,8 @@ const courseData = [
         "code": "SBMT 5715",
         "title": "AI, Innovation, and Product Management",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51322,6 +54687,8 @@ const courseData = [
         "code": "SBMT 5755",
         "title": "Fundamental Value Investing: Applications to Public and Private Equity",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51374,6 +54741,8 @@ const courseData = [
         "code": "SBMT 6011U",
         "title": "Effective People Decisions and Career Management : Unlocking Talent and Personal Success",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51406,6 +54775,8 @@ const courseData = [
         "code": "SBMT 6011V",
         "title": "Marketing Analytics: Driving Business Decisions",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51438,6 +54809,8 @@ const courseData = [
         "code": "SBMT 6011W",
         "title": "Strategic AI: Transforming Business and Redefining Leadership",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51460,6 +54833,8 @@ const courseData = [
         "code": "SBMT 6011X",
         "title": "Crisis Communications and Reputation Management",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51492,6 +54867,8 @@ const courseData = [
         "code": "SBMT 6012C",
         "title": "Venture Finance: The AI-Driven Frontiers",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51524,6 +54901,8 @@ const courseData = [
         "code": "SBMT 6012D",
         "title": "The 10X Entrepreneur - Using AI To Amplify Your Impact",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51556,6 +54935,8 @@ const courseData = [
         "code": "SBMT 6012F",
         "title": "Innovation Ignited: The Art of Business Breakthroughs",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51628,6 +55009,8 @@ const courseData = [
         "code": "SBMT 6012G",
         "title": "The Geopolitics of Emerging Technologies",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51650,6 +55033,8 @@ const courseData = [
         "code": "SBMT 6020F",
         "title": "Design Thinking for Managers",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51682,6 +55067,8 @@ const courseData = [
         "code": "SCIE 1102",
         "title": "Designing Your Life for Science Students",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51704,6 +55091,8 @@ const courseData = [
         "code": "SCIE 1120",
         "title": "Chemistry and Life",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51743,6 +55132,8 @@ const courseData = [
         "code": "SCIE 1500",
         "title": "Guided Study on Research I",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51765,6 +55156,8 @@ const courseData = [
         "code": "SCIE 3110",
         "title": "Teaching Science Using Innovative Teaching Tools",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51812,6 +55205,8 @@ const courseData = [
         "code": "SGFN 4733",
         "title": "Green Finance Case Analyses",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51835,6 +55230,10 @@ const courseData = [
         "code": "SHSS 4991",
         "title": "Capstone Project",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SHSS 4992"
+        ],
         "sections": [
             {
                 "id": "T1",
@@ -51887,6 +55286,11 @@ const courseData = [
         "code": "SHSS 4992",
         "title": "Honors Thesis",
         "credits": 6,
+        "matchingRequired": false,
+        "exclusions": [
+            "SHSS 4991",
+            "SHSS 4993"
+        ],
         "sections": [
             {
                 "id": "T1",
@@ -51909,6 +55313,10 @@ const courseData = [
         "code": "SHSS 4993",
         "title": "Honors Research",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SHSS 4992"
+        ],
         "sections": [
             {
                 "id": "T1",
@@ -51931,6 +55339,8 @@ const courseData = [
         "code": "SOSC 1100",
         "title": "Quantitative Data Analysis for Social Research I",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51954,6 +55364,8 @@ const courseData = [
         "code": "SOSC 1110",
         "title": "Data Analysis for Quantitative Social Research",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -51986,6 +55398,10 @@ const courseData = [
         "code": "SOSC 1270",
         "title": "International Law",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1770"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52025,6 +55441,10 @@ const courseData = [
         "code": "SOSC 1300",
         "title": "The World of Politics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 1309"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52048,6 +55468,10 @@ const courseData = [
         "code": "SOSC 1420",
         "title": "Poverty",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1720"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52071,6 +55495,15 @@ const courseData = [
         "code": "SOSC 1440",
         "title": "Introduction to Economics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "ECON 2103",
+            "ECON 2113",
+            "ECON 2123",
+            "ECON 3113",
+            "ECON 3133",
+            "SOSC 1449"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52094,6 +55527,8 @@ const courseData = [
         "code": "SOSC 1700",
         "title": "What Is Democracy?",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52117,6 +55552,10 @@ const courseData = [
         "code": "SOSC 1850",
         "title": "Understanding Society",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 1859"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52140,6 +55579,10 @@ const courseData = [
         "code": "SOSC 1860",
         "title": "Population and Society",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 1860"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52179,6 +55622,10 @@ const courseData = [
         "code": "SOSC 1960",
         "title": "Introduction to Psychology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 1969"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52218,6 +55665,10 @@ const courseData = [
         "code": "SOSC 1969",
         "title": "Discovering Mind and Behavior",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 1960"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52241,6 +55692,8 @@ const courseData = [
         "code": "SOSC 1980",
         "title": "Psychology of Personal Growth",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52263,6 +55716,8 @@ const courseData = [
         "code": "SOSC 1990",
         "title": "Research Methods in Psychological Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52300,6 +55755,10 @@ const courseData = [
         "code": "SOSC 2130",
         "title": "Education and Society",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 2730"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52323,6 +55782,8 @@ const courseData = [
         "code": "SOSC 2210",
         "title": "Social Psychology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52346,6 +55807,10 @@ const courseData = [
         "code": "SOSC 2290",
         "title": "Understanding Globalization",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 2299"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52369,6 +55834,10 @@ const courseData = [
         "code": "SOSC 2299",
         "title": "The Rise and Fall of Globalization",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SOSC 2290"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52392,6 +55861,8 @@ const courseData = [
         "code": "SOSC 2800",
         "title": "Cognitive Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52429,6 +55900,8 @@ const courseData = [
         "code": "SOSC 2990",
         "title": "Developmental Psychology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52452,6 +55925,11 @@ const courseData = [
         "code": "SOSC 3001",
         "title": "Understanding China, 1700-2000: A Data Analytic Approach",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 3701",
+            "MGCS 5001"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52474,6 +55952,10 @@ const courseData = [
         "code": "SOSC 3130",
         "title": "Hong Kong Culture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 3730"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52497,6 +55979,8 @@ const courseData = [
         "code": "SOSC 3250",
         "title": "Gender and Development",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52519,6 +56003,8 @@ const courseData = [
         "code": "SOSC 3400",
         "title": "Population Health",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52542,6 +56028,8 @@ const courseData = [
         "code": "SOSC 3520",
         "title": "Understanding Comparative Politics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52565,6 +56053,8 @@ const courseData = [
         "code": "SOSC 3720",
         "title": "Introduction to Social Network Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52602,6 +56092,8 @@ const courseData = [
         "code": "SOSC 3730",
         "title": "Survey Design and Methods",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52640,6 +56132,8 @@ const courseData = [
         "code": "SOSC 3850",
         "title": "Ethics and Public Affairs",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52663,6 +56157,10 @@ const courseData = [
         "code": "SOSC 3880",
         "title": "Social Inequality and Social Mobility",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "CORE 3880"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52686,6 +56184,8 @@ const courseData = [
         "code": "SOSC 3888A",
         "title": "Family Psychology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52709,6 +56209,8 @@ const courseData = [
         "code": "SOSC 3888B",
         "title": "Neuropsychology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52732,6 +56234,8 @@ const courseData = [
         "code": "SOSC 3900",
         "title": "Abnormal Psychology",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52755,6 +56259,8 @@ const courseData = [
         "code": "SOSC 4110",
         "title": "Capstone Project",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "R1",
@@ -52778,6 +56284,8 @@ const courseData = [
         "code": "SOSC 4280",
         "title": "China in the Global Political Economy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52800,6 +56308,8 @@ const courseData = [
         "code": "SOSC 4300",
         "title": "Computational Social Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52837,6 +56347,8 @@ const courseData = [
         "code": "SOSC 4600",
         "title": "Understanding Chinese Politics",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52859,6 +56371,8 @@ const courseData = [
         "code": "SOSC 5170",
         "title": "Qualitative Research Methods",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52881,6 +56395,10 @@ const courseData = [
         "code": "SOSC 5340",
         "title": "Econometric Approaches to Social Science Research",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "MGCS 5011"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52903,6 +56421,8 @@ const courseData = [
         "code": "SOSC 5440",
         "title": "Economics of Development",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52925,6 +56445,8 @@ const courseData = [
         "code": "SOSC 5500",
         "title": "Computational Social Science",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -52962,6 +56484,10 @@ const courseData = [
         "code": "SOSC 5790",
         "title": "Research Methods in Public Policy",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "PPOL 5120"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -52984,6 +56510,8 @@ const courseData = [
         "code": "SOSC 5810",
         "title": "Introduction to Social Network Analysis",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -53021,6 +56549,8 @@ const courseData = [
         "code": "SOSC 6030P",
         "title": "Political Culture",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -53043,6 +56573,8 @@ const courseData = [
         "code": "SOSC 6880",
         "title": "Seminar on Emotion",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -53065,6 +56597,10 @@ const courseData = [
         "code": "SUST 1010",
         "title": "Introduction to Sustainability",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "SUST 1000"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -53132,6 +56668,8 @@ const courseData = [
         "code": "SUST 1020",
         "title": "Climate Films and Sustainable Future",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -53155,6 +56693,8 @@ const courseData = [
         "code": "SUST 1030",
         "title": "Climate Change and Sustainability: An Interdisciplinary Perspective",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -53178,6 +56718,8 @@ const courseData = [
         "code": "TEMG 3950",
         "title": "T&M Case Analysis and Product Innovation",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -53200,6 +56742,8 @@ const courseData = [
         "code": "TEMG 4950Q",
         "title": "T&M Corporate Consulting Project: Urban Smart Farming Solutions for Hong Kong",
         "credits": 4,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -53222,6 +56766,10 @@ const courseData = [
         "code": "UPOP 1920",
         "title": "Career Readiness Training Program",
         "credits": 1,
+        "matchingRequired": false,
+        "exclusions": [
+            "AISC 2920"
+        ],
         "sections": [
             {
                 "id": "T1",
@@ -53264,6 +56812,10 @@ const courseData = [
         "code": "UTOP 3201",
         "title": "Practicum in STEAM Education",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "UTOP 2910"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -53287,6 +56839,10 @@ const courseData = [
         "code": "WBBA 2000C",
         "title": "Navigating the Future: Developments in Hong Kong's Financial Services Industry",
         "credits": 2,
+        "matchingRequired": false,
+        "exclusions": [
+            "SBMT 6020G"
+        ],
         "sections": [
             {
                 "id": "L1",
@@ -53319,6 +56875,8 @@ const courseData = [
         "code": "WBBA 2050",
         "title": "Global Financial Markets and Institutions",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [],
         "sections": [
             {
                 "id": "L1",
@@ -53342,6 +56900,11 @@ const courseData = [
         "code": "WBBA 2080",
         "title": "Doing Business in Asia",
         "credits": 3,
+        "matchingRequired": false,
+        "exclusions": [
+            "WBBA 2010",
+            "WBBA 2020"
+        ],
         "sections": [
             {
                 "id": "L1",
