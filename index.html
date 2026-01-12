@@ -470,6 +470,11 @@
         </div>
         
         <div class="timetable-wrapper">
+            <div id="empty-state" style="display: none; text-align: center; padding: 60px 20px; color: #999;">
+                <div style="font-size: 3rem; margin-bottom: 15px;">📅</div>
+                <div style="font-size: 1.1rem; font-weight: 500; margin-bottom: 8px;">Your timetable is empty</div>
+                <div style="font-size: 0.9rem;">Browse courses from the sidebar to get started</div>
+            </div>
             <table id="grid">
                 <thead>
                     <tr>
@@ -521,8 +526,18 @@
         
         document.getElementById('searchInput').addEventListener('input', (e) => {
             const val = e.target.value.trim();
-            if(val.length > 0) renderCourseList(val, true);
-            else showSubjectList();
+            if(val.length > 0) {
+                renderCourseList(val, true);
+            } else {
+                showSubjectList();
+            }
+        });
+        
+        // Prevent form submission on Enter in search
+        document.getElementById('searchInput').addEventListener('keydown', (e) => {
+            if(e.key === 'Enter') {
+                e.preventDefault();
+            }
         });
     });
 
@@ -571,16 +586,27 @@
     function switchPlan(newId) {
         currentPlanId = newId;
         addedSections = plans[currentPlanId];
+        closeModal(); // Close modal when switching plans
         initGrid();
         updateStats();
     }
 
     function createNewPlan() {
         const name = prompt("Enter new plan name:", `Plan ${Object.keys(plans).length + 1}`);
-        if(name && !plans[name]) {
-            plans[name] = [];
-            currentPlanId = name;
+        if(name) {
+            const trimmedName = name.trim();
+            if(!trimmedName) {
+                alert("Plan name cannot be empty!");
+                return;
+            }
+            if(plans[trimmedName]) {
+                alert(`Plan "${trimmedName}" already exists!`);
+                return;
+            }
+            plans[trimmedName] = [];
+            currentPlanId = trimmedName;
             addedSections = plans[currentPlanId];
+            closeModal(); // Close modal when creating new plan
             savePlans();
             updatePlanSelect();
             initGrid();
@@ -589,10 +615,22 @@
 
     function renamePlan() {
         const name = prompt("Rename current plan:", currentPlanId);
-        if(name && name !== currentPlanId && !plans[name]) {
-            plans[name] = plans[currentPlanId];
+        if(name) {
+            const trimmedName = name.trim();
+            if(!trimmedName) {
+                alert("Plan name cannot be empty!");
+                return;
+            }
+            if(trimmedName === currentPlanId) {
+                return; // No change
+            }
+            if(plans[trimmedName]) {
+                alert(`Plan "${trimmedName}" already exists!`);
+                return;
+            }
+            plans[trimmedName] = plans[currentPlanId];
             delete plans[currentPlanId];
-            currentPlanId = name;
+            currentPlanId = trimmedName;
             savePlans();
             updatePlanSelect();
         }
@@ -617,6 +655,7 @@
         if(confirm("Clear current timetable?")) {
             plans[currentPlanId] = [];
             addedSections = [];
+            closeModal(); // Close modal when clearing plan
             savePlans();
             initGrid();
         }
@@ -691,11 +730,34 @@
     // Timetable Logic
     function initGrid() {
         const tbody = document.getElementById('grid-body');
+        const emptyState = document.getElementById('empty-state');
+        const grid = document.getElementById('grid');
+        
+        // Show/hide empty state
+        if(addedSections.length === 0) {
+            emptyState.style.display = 'block';
+            grid.style.display = 'none';
+        } else {
+            emptyState.style.display = 'none';
+            grid.style.display = 'table';
+        }
+        
         tbody.innerHTML = "";
         for(let h=8; h<=22; h++) {
             const tr = document.createElement('tr');
             const tdTime = document.createElement('td');
-            if(h !== 22) tdTime.innerHTML = `${h > 12 ? h-12 : h} ${h>=12?'PM':'AM'}`;
+            if(h !== 22) {
+                let displayHour = h;
+                let period = 'AM';
+                if(h === 12) {
+                    displayHour = 12;
+                    period = 'PM';
+                } else if(h > 12) {
+                    displayHour = h - 12;
+                    period = 'PM';
+                }
+                tdTime.innerHTML = `${displayHour} ${period}`;
+            }
             tr.appendChild(tdTime);
             
             for(let d=1; d<=6; d++) {
@@ -721,7 +783,14 @@
                         div.style.top = (offset * 42) + 'px'; 
                         div.style.height = (duration * 42 - 2) + 'px';
                         div.innerHTML = `<b>${item.code} (${item.sec.id})</b><br>${slot.venue}`;
-                        div.onclick = (e) => { e.stopPropagation(); removeSection(item.uid); };
+                        div.onclick = (e) => { 
+                            e.stopPropagation(); 
+                            // Open modal to show all sections of this course
+                            const course = courseData.find(c => c.code === item.code);
+                            if(course) {
+                                openModal(course);
+                            }
+                        };
                         td.appendChild(div);
                     }
                 }
@@ -729,9 +798,20 @@
         });
     }
 
+    // Store current course in modal for refresh
+    let currentModalCourse = null;
+
     // Modal
     function openModal(course) {
+        currentModalCourse = course;
         document.getElementById('modalTitle').textContent = `${course.code} - ${course.title}`;
+        refreshModalContent();
+        document.getElementById('modalOverlay').style.display = 'flex';
+    }
+
+    function refreshModalContent() {
+        if(!currentModalCourse) return;
+        const course = currentModalCourse;
         const tbody = document.getElementById('sectionList');
         tbody.innerHTML = "";
 
@@ -763,14 +843,28 @@
             `;
             tbody.appendChild(tr);
         });
-
-        document.getElementById('modalOverlay').style.display = 'flex';
     }
 
     function addSection(code, secId) {
         const course = courseData.find(c => c.code === code);
+        if(!course) {
+            alert(`Course ${code} not found!`);
+            return;
+        }
         const sec = course.sections.find(s => s.id === secId);
+        if(!sec) {
+            alert(`Section ${secId} not found for ${code}!`);
+            return;
+        }
         
+        const uid = `${code}-${secId}`;
+        // Check if already added
+        if(addedSections.some(x => x.uid === uid)) {
+            alert(`Section ${code} (${secId}) is already added!`);
+            return;
+        }
+        
+        // Check for time conflicts
         for (let newSlot of sec.slots) {
             for (let existing of addedSections) {
                 for (let existSlot of existing.sec.slots) {
@@ -785,33 +879,55 @@
             }
         }
 
-        addedSections.push({ uid: `${code}-${secId}`, code, credits: course.credits, sec });
+        addedSections.push({ uid, code, credits: course.credits, sec });
         savePlans();
-        initGrid(); 
-        closeModal();
+        initGrid();
+        // Refresh modal content instead of closing
+        if(currentModalCourse && currentModalCourse.code === code) {
+            refreshModalContent();
+        }
     }
 
     function removeSection(uid) {
         const idx = addedSections.findIndex(x => x.uid === uid);
-        if(idx !== -1) addedSections.splice(idx, 1);
-        savePlans();
-        initGrid();
-        closeModal();
+        if(idx !== -1) {
+            const removed = addedSections[idx];
+            addedSections.splice(idx, 1);
+            savePlans();
+            initGrid();
+            // Refresh modal if open and showing the same course
+            const modal = document.getElementById('modalOverlay');
+            if(modal.style.display === 'flex' && currentModalCourse && currentModalCourse.code === removed.code) {
+                refreshModalContent();
+            }
+        }
     }
 
     function updateStats() {
         const unique = new Set(addedSections.map(x => x.code));
-        const total = Array.from(unique).reduce((sum, code) => sum + courseData.find(c => c.code === code).credits, 0);
+        const total = Array.from(unique).reduce((sum, code) => {
+            const course = courseData.find(c => c.code === code);
+            return sum + (course ? course.credits : 0);
+        }, 0);
         document.getElementById('credit-count').textContent = total;
     }
 
     function closeModal() {
         document.getElementById('modalOverlay').style.display = 'none';
+        currentModalCourse = null;
     }
 
     function closeModalOnOverlay(event) {
         if(event.target.id === 'modalOverlay') closeModal();
     }
+
+    // Keyboard support
+    document.addEventListener('keydown', (e) => {
+        if(e.key === 'Escape') {
+            const modal = document.getElementById('modalOverlay');
+            if(modal.style.display === 'flex') closeModal();
+        }
+    });
 </script>
 </body>
 </html>
