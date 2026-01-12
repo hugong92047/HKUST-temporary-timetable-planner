@@ -264,7 +264,7 @@
         .event {
             position: absolute; 
             left: 2px; 
-            right: 2px;
+            width: calc(100% - 4px);
             padding: 3px 4px; 
             border-radius: 3px; 
             color: white;
@@ -728,7 +728,60 @@
     }
 
     // Timetable Logic
+    let eventLayout = {}; // key -> { col, cols }
+    
+    function computeEventLayout() {
+        eventLayout = {};
+        const byDay = {}; // day -> [{ key, start, end }]
+
+        addedSections.forEach(item => {
+            item.sec.slots.forEach((slot, sIdx) => {
+                slot.days.forEach(day => {
+                    if (day < 1 || day > 6) return; // grid only renders Mon(1) to Sat(6)
+                    const key = `${item.uid}|${sIdx}|${day}`;
+                    (byDay[day] ||= []).push({ key, start: slot.start, end: slot.end });
+                });
+            });
+        });
+  
+        Object.keys(byDay).forEach(day => {
+            const events = byDay[day].sort((a, b) => a.start - b.start || a.end - b.end);
+            
+            let active = [];              // [{ end, col, key }]
+            let componentKeys = [];
+            let componentMax = 0;
+            
+            for (const ev of events) {
+                // drop finished
+                active = active.filter(a => a.end > ev.start);
+                
+                // if a component ended, finalize its cols
+                if (active.length === 0 && componentKeys.length > 0) {
+                    componentKeys.forEach(k => eventLayout[k].cols = componentMax);
+                    componentKeys = [];
+                    componentMax = 0;
+                }
+                
+                const used = new Set(active.map(a => a.col));
+                let col = 0;
+                while (used.has(col)) col++;
+                
+                eventLayout[ev.key] = { col, cols: 1 }; // cols finalized later
+                active.push({ end: ev.end, col, key: ev.key });
+                componentKeys.push(ev.key);
+                componentMax = Math.max(componentMax, active.length);
+            }
+  
+            // finalize last component
+            if (componentKeys.length > 0) {
+                componentKeys.forEach(k => eventLayout[k].cols = componentMax);
+            }
+        });
+    }
+
+
     function initGrid() {
+        computeEventLayout();
         const tbody = document.getElementById('grid-body');
         const emptyState = document.getElementById('empty-state');
         const grid = document.getElementById('grid');
@@ -772,28 +825,40 @@
 
     function renderEventsInCell(td, h, d) {
         addedSections.forEach((item, idx) => {
-            item.sec.slots.forEach(slot => {
-                if (slot.days.includes(d)) {
-                    if (Math.floor(slot.start) === h) {
-                        const div = document.createElement('div');
-                        div.className = 'event';
-                        div.style.backgroundColor = colors[idx % colors.length];
-                        const duration = slot.end - slot.start;
-                        const offset = slot.start - h;
-                        div.style.top = (offset * 42) + 'px'; 
-                        div.style.height = (duration * 42 - 2) + 'px';
-                        div.innerHTML = `<b>${item.code} (${item.sec.id})</b><br>${slot.venue}`;
-                        div.onclick = (e) => { 
-                            e.stopPropagation(); 
-                            // Open modal to show all sections of this course
-                            const course = courseData.find(c => c.code === item.code);
-                            if(course) {
-                                openModal(course);
-                            }
-                        };
-                        td.appendChild(div);
+            item.sec.slots.forEach((slot, sIdx) => {
+                if(!slot.days.includes(d)) return;
+                if(Math.floor(slot.start) !== h) return; // Only render in start hour cell
+                
+                const div = document.createElement('div');
+                div.className = 'event';
+                div.style.backgroundColor = colors[idx % colors.length];
+      
+                const duration = slot.end - slot.start;
+                const offset = slot.start - h;
+                
+                div.style.top = (offset * 42) + 'px';
+                div.style.height = (duration * 42 - 2) + 'px';
+
+                // Apply Split Layout if needed
+                const key = `${item.uid}|${sIdx}|${d}`;
+                const layout = eventLayout[key];
+                if (layout) {
+                    const { col, cols } = layout;
+                    if (cols > 1) {
+                        div.style.width = `calc((100% - 4px) / ${cols})`;
+                        div.style.left = `calc(2px + ${col} * ((100% - 4px) / ${cols}))`;
                     }
                 }
+      
+                div.innerHTML = `<b>${item.code} ${item.sec.id}</b><br>${slot.venue}`;
+                div.onclick = (e) => {
+                    e.stopPropagation();
+                    // Open modal to show all sections of this course
+                    const course = courseData.find(c => c.code === item.code);
+                    if(course) openModal(course);
+                };
+                
+                td.appendChild(div);
             });
         });
     }
@@ -918,26 +983,64 @@
         const course = courseData.find(c => c.code === code);
         const sec = course.sections.find(s => s.id === secId);
         
-        // 1. Conflict Check
+        // 1. Check for Max Overlaps (Blocking Rule: Max 2 allowed)
         for (let newSlot of sec.slots) {
-            for (let existing of addedSections) {
-                for (let existSlot of existing.sec.slots) {
-                    const commonDays = newSlot.days.filter(d => existSlot.days.includes(d));
-                    if (commonDays.length > 0 && newSlot.start < existSlot.end && newSlot.end > existSlot.start) {
-                        alert(`Time Conflict with ${existing.code} (${existing.sec.id})`);
-                        return;
+            for (let day of newSlot.days) {
+                // Gather all existing slots on this day
+                const existingSlotsOnDay = [];
+                addedSections.forEach(ex => {
+                    ex.sec.slots.forEach(s => {
+                        if(s.days.includes(day)) existingSlotsOnDay.push(s);
+                    });
+                });
+                // Add new slot temporarily for calculation
+                existingSlotsOnDay.push(newSlot);
+
+                // Create scan-line events
+                const points = [];
+                existingSlotsOnDay.forEach(s => {
+                    points.push({t: s.start, type: 1}); // start
+                    points.push({t: s.end, type: -1});  // end
+                });
+                // Sort: time asc, then end (-1) before start (1)
+                points.sort((a,b) => (a.t - b.t) || (a.type - b.type));
+
+                let active = 0;
+                for (let p of points) {
+                    active += p.type;
+                    if (active > 2) {
+                        alert("Cannot add: Time slot has too many overlaps (max 2 allowed).");
+                        return; // BLOCK ADDITION
                     }
                 }
             }
         }
 
-        // 2. Commit to Plan
+        // 2. Check for Time Conflict (Alert Only)
+        let conflictMsg = null;
+        for (let newSlot of sec.slots) {
+            for (let existing of addedSections) {
+                for (let existSlot of existing.sec.slots) {
+                    const commonDays = newSlot.days.filter(d => existSlot.days.includes(d));
+                    if (commonDays.length === 0) continue;
+                    if (newSlot.start < existSlot.end && newSlot.end > existSlot.start) {
+                        conflictMsg = `Time Conflict with ${existing.code} ${existing.sec.id}`;
+                    }
+                }
+            }
+        }
+
+        if (conflictMsg) {
+            alert(conflictMsg); // Alert but continue
+        }
+
+        // 3. Commit to Plan
         addedSections.push({ uid: `${code}-${secId}`, code, credits: course.credits, sec });
         savePlans();
         initGrid();
-        closeModal();
+        closeModal(); // Close modal on success
 
-        // 3. Reminder Logic for Tutorials AND Labs
+        // 4. Reminder Logic for Tutorials AND Labs
         if (secId.startsWith('L') && !secId.startsWith('LA')) {
             const hasTutorials = course.sections.some(s => s.id.startsWith('T'));
             const hasLabs = course.sections.some(s => s.id.startsWith('LA'));
@@ -947,7 +1050,6 @@
                     let missing = [];
                     if (hasTutorials) missing.push("Tutorial");
                     if (hasLabs) missing.push("Laboratory");
-                    
                     alert(`Action Required: ${code} also requires a ${missing.join(" and ")}.`);
                     openModal(course); // Re-open to pick the missing parts
                 }, 400);
@@ -962,14 +1064,17 @@
             addedSections.splice(idx, 1);
             savePlans();
             initGrid();
+            
             // Refresh modal if open and showing the same course
             const modal = document.getElementById('modalOverlay');
             if(modal.style.display === 'flex' && currentModalCourse && currentModalCourse.code === removed.code) {
                 refreshModalContent();
+            } else {
+                closeModal();
             }
-            closeModal(); 
         }
     }
+
 
     function updateStats() {
         const unique = new Set(addedSections.map(x => x.code));
