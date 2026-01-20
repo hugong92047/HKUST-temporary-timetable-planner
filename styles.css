@@ -124,6 +124,49 @@ aside {
 .c-code { display: block; font-weight: bold; color: var(--primary); font-size: 0.9rem; }
 .c-title { font-size: 0.8rem; color: #555; }
 
+/* place badge inline at end of code line */
+.c-code { position: relative; padding-right: 54px; }
+.c-meta { float: right; display: flex; align-items: center; gap: 8px; }
+.c-code .credit-badge {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary);
+    color: white;
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+}
+
+.modal-credit-cell .credit-badge {
+    position: static;
+    transform: none;
+    background: var(--primary);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 700;
+    display: inline-block;
+    font-size: 0.85rem;
+}
+.course-item .btn-icon { padding: 4px 6px; border-radius: 6px; }
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    background: #333;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    z-index: 200;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    max-width: 320px;
+}
+.tooltip.hidden { display: none; }
+
 #nav-header {
     display: none;
     align-items: center;
@@ -343,6 +386,12 @@ td:first-child {
     font-size: 0.85rem;
 }
 
+.modal-credit-cell {
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary);
+}
+
 .slot-row {
     display: block;
     margin-bottom: 4px;
@@ -437,4 +486,11 @@ border-radius: 4px;
     .modal-overlay { padding: 0; align-items: stretch; }
     .modal { max-width: 100%; max-height: 100%; width: 100%; height: 100%; border-radius: 0; }
     .modal-header { border-radius: 0; }
+}
+
+/* Make credit badges smaller on narrow screens */
+@media (max-width: 480px) {
+    .c-code { padding-right: 40px; }
+    .c-code .credit-badge { right: 8px; padding: 2px 6px; font-size: 0.65rem; }
+    .modal-credit-cell .credit-badge { padding: 2px 6px; font-size: 0.75rem; }
 }
