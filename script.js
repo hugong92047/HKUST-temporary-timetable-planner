@@ -216,11 +216,43 @@ function renderCourseList(filter, isSearch) {
     filtered.forEach(c => {
         const li = document.createElement('li');
         li.className = 'course-item';
-        li.innerHTML = `<span class="c-code">${c.code}</span><span class="c-title">${c.title}</span>`;
+
+        const codeSpan = document.createElement('span');
+        codeSpan.className = 'c-code';
+        codeSpan.textContent = c.code;
+
+        const titleSpan = document.createElement('span');
+        titleSpan.className = 'c-title';
+        titleSpan.textContent = c.title;
+
+    const metaSpan = document.createElement('span');
+    metaSpan.className = 'c-meta';
+    // credits badge
+    const credits = (typeof c.credits === 'number') ? c.credits : (c.credit || 0);
+    const badge = document.createElement('span');
+    badge.className = 'credit-badge';
+    badge.textContent = credits;
+    // attach badge to codeSpan so it appears at end of code line
+    codeSpan.appendChild(badge);
+
+        // CCC detection (flexible)
+        const isCCC = !!(c.ccc || (c.attributes && c.attributes.includes && c.attributes.includes('CCC')) || (c.core && c.core.includes && c.core.includes('CCC')));
+        if (isCCC) {
+            const cccSpan = document.createElement('small');
+            cccSpan.style.marginLeft = '6px';
+            cccSpan.style.color = '#d2691e';
+            cccSpan.textContent = 'CCC';
+            metaSpan.appendChild(cccSpan);
+        }
+
+    li.appendChild(codeSpan);
+    li.appendChild(titleSpan);
+    li.appendChild(metaSpan);
+
         li.onclick = () => {
             openModal(c);
         };
-        list.appendChild(li);
+    list.appendChild(li);
     });
     
     if(isSearch) document.getElementById('nav-header').style.display = 'none';
@@ -370,18 +402,20 @@ function renderEventsInCell(td, h, d) {
 
 // Store current course in modal for refresh
 let currentModalCourse = null;
+let pendingLecture = null; // { code, lectureId } when user selected a lecture but must choose subsections
 
 function openModal(course) {
+    currentModalCourse = course;
     document.getElementById('modalTitle').textContent = `${course.code} - ${course.title}`;
     const tbody = document.getElementById('sectionList');
     tbody.innerHTML = "";
-
     // Find the active Lecture (Pure Lecture, not Lab/Tutorial)
-    const activeLecture = addedSections.find(s => s.code === course.code && s.sec.id.startsWith('L') && !s.sec.id.startsWith('LA'));
+    const activeLecture = addedSections.find(s => s.code === course.code && s.sec.id.startsWith('L') && !s.sec.id.startsWith('LA'))
+        || (pendingLecture && pendingLecture.code === course.code ? { sec: { id: pendingLecture.lectureId } } : null);
     
     course.sections.forEach(sec => {
         const uid = `${course.code}-${sec.id}`;
-        const isAdded = addedSections.some(x => x.uid === uid);
+    const isAdded = addedSections.some(x => x.uid === uid) || (pendingLecture && pendingLecture.code === course.code && pendingLecture.lectureId === sec.id);
         
         // Define Section Types
         const isLecture = sec.id.startsWith('L') && !sec.id.startsWith('LA'); // L1, L2
@@ -426,11 +460,12 @@ function openModal(course) {
         // Render Row
         const tr = document.createElement('tr');
         
-        if (isSubSection) tr.style.backgroundColor = "#fafafa";
+    if (isSubSection) tr.style.backgroundColor = "#fafafa";
         if (isDisabled && !isAdded) tr.style.opacity = "0.4";
 
         tr.innerHTML = `
             <td><b>${sec.id}</b></td>
+            <td class="modal-credit-cell"><span class="credit-badge">${course.credits || ''}</span></td>
             <td>${timeHTML}</td>
             <td>${Array.from(instrSet).join("<br>") || "TBA"}</td>
             <td>
@@ -438,7 +473,7 @@ function openModal(course) {
                     ${isDisabled && !isAdded ? 'disabled' : ''}
                     title="${tooltip}"
                     onclick="${isAdded ? `removeSection('${uid}')` : `addSection('${course.code}', '${sec.id}')`}">
-                    ${isAdded ? 'Remove' : 'Add'}
+                    ${isAdded ? (pendingLecture && pendingLecture.code === course.code && pendingLecture.lectureId === sec.id ? 'Selected' : 'Remove') : 'Add'}
                 </button>
             </td>
         `;
@@ -446,6 +481,7 @@ function openModal(course) {
     });
 
     document.getElementById('modalOverlay').style.display = 'flex';
+    renderPendingBanner();
 }
 
 function refreshModalContent() {
@@ -456,7 +492,7 @@ function refreshModalContent() {
 
     course.sections.forEach(sec => {
         const uid = `${course.code}-${sec.id}`;
-        const isAdded = addedSections.some(x => x.uid === uid);
+    const isAdded = addedSections.some(x => x.uid === uid) || (pendingLecture && pendingLecture.code === course.code && pendingLecture.lectureId === sec.id);
         
         let timeHTML = "";
         let instrHTML = "";
@@ -471,112 +507,178 @@ function refreshModalContent() {
         const tr = document.createElement('tr');
         tr.innerHTML = `
             <td><b>${sec.id}</b></td>
+            <td class="modal-credit-cell"><span class="credit-badge">${course.credits || ''}</span></td>
             <td>${timeHTML}</td>
             <td>${instrHTML}</td>
             <td>
                 <button class="btn ${isAdded ? 'btn-remove' : 'btn-add'}" 
                     onclick="${isAdded ? `removeSection('${uid}')` : `addSection('${course.code}', '${sec.id}')`}">
-                    ${isAdded ? 'Remove' : 'Add'}
+                    ${isAdded ? (pendingLecture && pendingLecture.code === course.code && pendingLecture.lectureId === sec.id ? 'Selected' : 'Remove') : 'Add'}
                 </button>
             </td>
         `;
         tbody.appendChild(tr);
     });
+    renderPendingBanner();
 }
+
+// Render a small banner in the modal when a lecture is pending selection
+function renderPendingBanner() {
+    const modalBody = document.querySelector('.modal .modal-body');
+    if(!modalBody) return;
+    // remove existing banner if any
+    const existing = document.getElementById('pendingBanner');
+    if(existing) existing.remove();
+
+    if(pendingLecture && currentModalCourse && pendingLecture.code === currentModalCourse.code) {
+        const banner = document.createElement('div');
+        banner.id = 'pendingBanner';
+        banner.style.padding = '10px';
+        banner.style.marginBottom = '10px';
+        banner.style.background = '#fff3cd';
+        banner.style.border = '1px solid #ffeeba';
+        banner.style.borderRadius = '4px';
+        banner.innerHTML = `Selected Lecture <strong>${pendingLecture.lectureId}</strong>. Please choose the matching Tutorial/Lab to complete the selection. <button class="btn" style="margin-left:8px;" onclick="cancelPending()">Cancel</button>`;
+        modalBody.insertBefore(banner, modalBody.firstChild);
+    }
+}
+
+function cancelPending() {
+    pendingLecture = null;
+    refreshModalContent();
+}
+
 
 function addSection(code, secId) {
     const course = courseData.find(c => c.code === code);
     const sec = course.sections.find(s => s.id === secId);
-    
-    // 1. Check for Max Overlaps (Blocking Rule: Max 2 allowed)
-    for (let newSlot of sec.slots) {
-        for (let day of newSlot.days) {
-            // Gather all existing slots on this day
-            const existingSlotsOnDay = [];
-            addedSections.forEach(ex => {
-                ex.sec.slots.forEach(s => {
-                    if(s.days.includes(day)) existingSlotsOnDay.push(s);
+    // New behavior requirements:
+    // (1) If selecting a Lecture, mark it as pending and require user to pick matching Tutorial/Lab (if any) and add together.
+    // (2) Time conflicts should only alert (no blocking) — already the behavior, but ensure we don't return on conflicts.
+    // (3) Deleting any part removes all sections of that course (handled in removeSection).
+
+    const uid = `${code}-${secId}`;
+
+    // If this is a Lecture and the course has subsections that must match, set pendingLecture and re-open modal
+    const isLecture = secId.startsWith('L') && !secId.startsWith('LA');
+    const hasTutorials = course.sections.some(s => s.id.startsWith('T'));
+    const hasLabs = course.sections.some(s => s.id.startsWith('LA'));
+
+    // If the course requires matching, selecting a Lecture must be followed by selecting matching subs
+    if (isLecture && (hasTutorials || hasLabs) && course.matchingRequired) {
+        // mark pending and re-render modal so user selects subs
+        pendingLecture = { code, lectureId: secId };
+        // show a selected state immediately (modal stays open)
+        refreshModalContent();
+        return;
+    }
+
+    // If we have a pendingLecture for this course, and the user is now selecting a matching sub (T or LA),
+    // perform a batch add: lecture + the selected sub + any other required subs that match the lecture number.
+    // Guard: if pendingLecture exists, only allow selecting subsections that match the lecture number
+    if (pendingLecture && pendingLecture.code === code && course.matchingRequired) {
+        const isSubSectionClick = secId.startsWith('T') || secId.startsWith('LA');
+        if (isSubSectionClick) {
+            const matchingNum = pendingLecture.lectureId.replace(/\D/g, '');
+            const subNum = secId.replace(/\D/g, '');
+            if (matchingNum !== subNum) {
+                alert(`Please select the Tutorial/Lab that matches ${pendingLecture.lectureId}.`);
+                return; // block non-matching clicks
+            }
+        }
+
+        // gather lecture section object
+        const lectureSec = course.sections.find(s => s.id === pendingLecture.lectureId);
+        const matchingNum = pendingLecture.lectureId.replace(/\D/g, '');
+
+        // collect to-add sections: lecture + all subsections whose numeric suffix matches
+        const toAdd = [lectureSec];
+        course.sections.forEach(s => {
+            if ((s.id.startsWith('T') || s.id.startsWith('LA')) && s.id.replace(/\D/g, '') === matchingNum) {
+                toAdd.push(s);
+            }
+        });
+
+        // Conflict detection: alert only, do not block
+        const conflicts = [];
+        toAdd.forEach(newSec => {
+            newSec.slots.forEach(newSlot => {
+                addedSections.forEach(existing => {
+                    existing.sec.slots.forEach(exSlot => {
+                        const commonDays = newSlot.days.filter(d => exSlot.days.includes(d));
+                        if (commonDays.length === 0) return;
+                        if (newSlot.start < exSlot.end && newSlot.end > exSlot.start) {
+                            conflicts.push(`${existing.code} ${existing.sec.id}`);
+                        }
+                    });
                 });
             });
-            // Add new slot temporarily for calculation
-            existingSlotsOnDay.push(newSlot);
+        });
+        if (conflicts.length > 0) {
+            alert(`Time Conflict with ${[...new Set(conflicts)].join(', ')}`);
+        }
 
-            // Create scan-line events
-            const points = [];
-            existingSlotsOnDay.forEach(s => {
-                points.push({t: s.start, type: 1}); // start
-                points.push({t: s.end, type: -1});  // end
+        // Commit all collected sections for this lecture component
+        toAdd.forEach(s => {
+            const addUid = `${code}-${s.id}`;
+            if (!addedSections.some(x => x.uid === addUid)) {
+                addedSections.push({ uid: addUid, code, credits: course.credits, sec: s });
+            }
+        });
+
+        // clear pending and refresh
+        pendingLecture = null;
+        savePlans();
+        initGrid();
+        closeModal();
+        return;
+    }
+
+    // Otherwise (no pending lecture requirements), perform normal single add but only alert on conflicts
+    const conflicts = [];
+    sec.slots.forEach(newSlot => {
+        addedSections.forEach(existing => {
+            existing.sec.slots.forEach(exSlot => {
+                const commonDays = newSlot.days.filter(d => exSlot.days.includes(d));
+                if (commonDays.length === 0) return;
+                if (newSlot.start < exSlot.end && newSlot.end > exSlot.start) {
+                    conflicts.push(`${existing.code} ${existing.sec.id}`);
+                }
             });
-            // Sort: time asc, then end (-1) before start (1)
-            points.sort((a,b) => (a.t - b.t) || (a.type - b.type));
-
-            let active = 0;
-            for (let p of points) {
-                active += p.type;
-                if (active > 2) {
-                    alert("Cannot add: Time slot has too many overlaps (max 2 allowed).");
-                    return; // BLOCK ADDITION
-                }
-            }
-        }
+        });
+    });
+    if (conflicts.length > 0) {
+        alert(`Time Conflict with ${[...new Set(conflicts)].join(', ')}`);
     }
 
-    // 2. Check for Time Conflict (Alert Only)
-    let conflictMsg = null;
-    for (let newSlot of sec.slots) {
-        for (let existing of addedSections) {
-            for (let existSlot of existing.sec.slots) {
-                const commonDays = newSlot.days.filter(d => existSlot.days.includes(d));
-                if (commonDays.length === 0) continue;
-                if (newSlot.start < existSlot.end && newSlot.end > existSlot.start) {
-                    conflictMsg = `Time Conflict with ${existing.code} ${existing.sec.id}`;
-                }
-            }
-        }
+    // Commit single section
+    if (!addedSections.some(x => x.uid === uid)) {
+        addedSections.push({ uid, code, credits: course.credits, sec });
     }
-
-    if (conflictMsg) {
-        alert(conflictMsg); // Alert but continue
-    }
-
-    // 3. Commit to Plan
-    addedSections.push({ uid: `${code}-${secId}`, code, credits: course.credits, sec });
     savePlans();
     initGrid();
     closeModal(); // Close modal on success
-
-    // 4. Reminder Logic for Tutorials AND Labs
-    if (secId.startsWith('L') && !secId.startsWith('LA')) {
-        const hasTutorials = course.sections.some(s => s.id.startsWith('T'));
-        const hasLabs = course.sections.some(s => s.id.startsWith('LA'));
-        
-        if (hasTutorials || hasLabs) {
-            setTimeout(() => {
-                let missing = [];
-                if (hasTutorials) missing.push("Tutorial");
-                if (hasLabs) missing.push("Laboratory");
-                alert(`Action Required: ${code} also requires a ${missing.join(" and ")}.`);
-                openModal(course); // Re-open to pick the missing parts
-            }, 400);
-        }
-    }
 }
 
 function removeSection(uid) {
-    const idx = addedSections.findIndex(x => x.uid === uid);
-    if(idx !== -1) {
-        const removed = addedSections[idx];
-        addedSections.splice(idx, 1);
-        savePlans();
-        initGrid();
-        
-        // Refresh modal if open and showing the same course
-        const modal = document.getElementById('modalOverlay');
-        if(modal.style.display === 'flex' && currentModalCourse && currentModalCourse.code === removed.code) {
-            refreshModalContent();
-        } else {
-            closeModal();
-        }
+    // New behavior: deleting any section of a course removes all sections of that course from the plan
+    const target = addedSections.find(x => x.uid === uid);
+    if (!target) return;
+    const code = target.code;
+    if(!confirm(`Remove all sections of ${code} from current plan? This will delete lecture(s) and any tutorial/lab associated.`)) return;
+    // remove all with this course code
+    const remaining = addedSections.filter(x => x.code !== code);
+    addedSections.length = 0;
+    remaining.forEach(r => addedSections.push(r));
+    savePlans();
+    initGrid();
+
+    // If modal open for same course, refresh; otherwise close
+    const modal = document.getElementById('modalOverlay');
+    if(modal.style.display === 'flex' && currentModalCourse && currentModalCourse.code === code) {
+        refreshModalContent();
+    } else {
+        closeModal();
     }
 }
 
@@ -593,6 +695,7 @@ function updateStats() {
 function closeModal() {
     document.getElementById('modalOverlay').style.display = 'none';
     currentModalCourse = null;
+    pendingLecture = null;
     if(window.innerWidth <= 768) closeSidebar();
 }
 
